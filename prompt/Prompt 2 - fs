@@ -1,0 +1,330 @@
+You have a state table (ST) in HTML representing the transitions of a finite state automaton.
+
+state_table = """
+<table> 
+    <thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> * -> q0 </th>
+            <th> </th>
+            <th> q2 </th>
+        </tr>
+        <tr>
+            <th> q1 </th>
+            <th> q0 </th>
+            <th> </th>
+        </tr>
+        <tr>
+            <th> q2 </th>
+            <th> </th>
+            <th> q1 </th>
+        </tr>
+    </tbody>
+</table>
+"""
+
+Alphabet = {0,1}
+Accepted Language = (110)* 
+The automaton can be drawn as a triangle.
+
+How to read the ST: 
+-> indicates an initial state; 
+* indicates a final state. 
+
+Note that these symbols in a cell mark the state that follows as initial and/or final, they are not state names.
+
+The ST contains a header (between <thead>...</thead>). The header contains a first empty cell, followed by as many cells as there are characters in the alphabet, one cell per character. In the body (between <tbody>...</tbody>), there are as many rows as the number of states in the automaton. The first column represents a specific state. In the following columns, you can either find empty cells, indicating no corresponding transition, or cells with state names, representing transitions to those states using the character in the corresponding column.
+
+Here below, you can find 10 examples from which to learn:
+
+Example 1:
+<table>
+	<thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> * -> q0 </th>
+            <th> </th>
+            <th> q0 </th>
+        </tr>
+    </tbody>
+</table>
+
+The ST in example 1 indicates that q0 is both initial and accepting state. From the initial state q0 there is no transition with input 0 (empty cell in the middle column) and a transition to q0 with input 1 (cell contains q0, in the last column). 
+The answer to the question "how many transitions are there?" is 1. To compute this, you have to count all the transitions per state. Since there is only one state, you have to count only the transitions from q0. In this case only one, as the only string in the row containing all the transition from q0 is "q0".
+
+Example 2:
+<table>
+	<thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> * -> q0 </th>
+            <th> q0 </th>
+            <th> </th>
+        </tr>
+    </tbody>
+</table>
+
+The ST in example 2 indicates that q0 is both initial and final state. From the initial state q0 there is a transition to q0 with 0 as input (cell contains q0, in the middle column), and no transition with input 1 (empty cell in the last column). 
+The answer to the question "how many transitions are there?" is 1. To compute this, you have to count all the transitions per state. Since there is only one state, you have to count only the transitions from q0. In this case only one, as the only string in the row containing all the transition from q0 is "q0".
+
+Example 3:
+<table>
+	<thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> -> q0 </th>
+            <th> q1 </th>
+            <th> </th>
+        </tr>
+        <tr>
+            <th> * q1</th>
+            <th> q0 </th>
+            <th> </th>
+        </tr>
+    </tbody>
+</table>
+
+The ST in example 3 indicates that q0 is the initial state and q1 is the final state. From the initial state q0 there is a transition to q1 with 0 as input (cell contains q0, in the middle column), and no transition with input 1 (empty cell in the last column). From q1 there is a transition to q1 with 0 as input, and no transition with 1 as input. 
+The answer to the question "how many transitions are there?" is 2. To compute this, you have to count all the transitions per state. One transition from q0, as there is only the string "q1" in the cells indicating the transitions from q0, and one transition from q1, as there is only the string "q0" in the cells indicating the transitions from q1.
+
+Example 4:
+<table>
+	<thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> * q0 </th>
+            <th> </th>
+            <th> q1 </th>
+        </tr>
+        <tr>
+            <th> -> q1</th>
+            <th> q0 </th>
+            <th> </th>
+        </tr>
+    </tbody>
+</table>
+
+The ST in example 4 indicates that q1 is the initial state and q0 is the final state. From the initial state q1 there is a transition to q0 with 0 as input (cell contains q0, in the middle column), and no transition with input 1 (empty cell in the last column). From q0 there is no transition with 0 as input and a transition to q1 with 1 as input. 
+The answer to the question "how many transitions are there?" is 2. To compute this, you have to count all the transitions per state. One transition from q0, as there is only the string "q1" in the cells indicating the transitions from q0, and one transition from q1, as there is only the string "q0" in the cells indicating the transitions from q1.
+
+Example 5:
+<table>
+	<thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> * q0 </th>
+            <th> </th>
+            <th> q0 </th>
+        </tr>
+        <tr>
+            <th> -> q1</th>
+            <th> q0 </th>
+            <th> </th>
+        </tr>
+    </tbody>
+</table>
+
+The ST in example 5 indicates that q1 is the initial state and q0 is the final state. From the initial state q1 there is a transition to q0 with 0 as input (cell contains q0, in the middle column), and no transition with input 1 (empty cell in the last column). From q0 there is no transition with 0 as input and one transition to itself with 1 as input.
+The answer to the question "how many transitions are there?" is 2. To compute this, you have to count all the transitions per state. One transition from q0, as there is only the string "q0" in the cells indicating the transitions from q0, and one transition from q1, as there is only the string "q0" in the cells indicating the transitions from q1.
+
+Example 6:
+<table>
+	<thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> * q0 </th>
+            <th> </th>
+            <th> </th>
+        </tr>
+        <tr>
+            <th> -> q1</th>
+            <th> q0 </th>
+            <th> q1 </th>
+        </tr>
+    </tbody>
+</table>
+
+The ST in example 6 indicates that q1 is the initial state and q0 is the final state. From the initial state q1 there is a transition to q0 with 0 as input (cell contains q0, in the middle column), and a transition to q1 with input 1 (q1 in the last column). From q0 there are no transitions .
+The answer to the question "how many transitions are there?" is 2. To compute this, you have to count all the transitions per state. Zero from q0, as there are only empty cells in q0 row, and two transition from q1, as there is one transition with input 0 and one with input 1.
+
+Example 7:
+<table>
+	<thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+            <th>2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> -> q0 </th>
+            <th> q1 </th>
+            <th> </th>
+            <th> </th>
+        </tr>
+        <tr>
+            <th> q1 </th>
+            <th> </th>
+            <th> q2 </th>
+            <th> </th>
+        </tr>
+        <tr>
+            <th> * q2 </th>
+            <th> </th>
+            <th> </th>
+            <th> q0 </th>
+        </tr>
+    </tbody>
+</table>
+
+The ST in example 7 indicates that q0 is initial and q2 is the final state. From the initial state q0 there is one transition to q1 marked by 0, and no transitions with 1 and 2 as input (empty cells in the corresponding columns). From q1 there is only one transition to q2 marked as 1. Finally, from the final state q2 there is just one transition to q0 marked by 2. 
+The answer to the question "how many transitions are there?" is 3. To compute this, you have to count all the transitions per state. One from q0, as there is only one non-empty cell with only one state name, one from q1, and one from q2.
+
+Example 8:
+<table>
+	<thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> * -> q0 </th>
+            <th> q2 </th>
+            <th> </th>
+        </tr>
+        <tr>
+            <th> q1 </th>
+            <th> </th>
+            <th> q2 </th>
+        </tr>
+        <tr>
+            <th> q2 </th>
+            <th> q0 </th>
+            <th> q1 </th>
+        </tr>
+    </tbody>
+</table>
+
+The ST in example 8 indicates that q0 is both initial and accepting state. From the initial state q0 there is a transition to q2 with 0 as input (cell contains q2, in the middle column), and no transition with input 1 (empty cell in the last column). From q1 there is no transition with input 0 (empty cell in the middle column), and a transition to q2 with 1 as input (cell contains q2, in the last column). Finally, from q2 there is a transition to q0 with 0 as input (cell contains q0, in the middle column) and a transition to q1 with input 1 (cell contains q1 in the last column).
+The answer to the question "how many transitions are there?" is 4. To compute this, you have to count all the transitions per state. One from q0, as there is only one non-empty cell with only one state name, one from q1, and two from q2.
+
+Example 9:
+<table>
+	<thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> -> q0 </th>
+            <th> q1, q2 </th>
+            <th> q0 </th>
+        </tr>
+        <tr>
+            <th> * q1 </th>
+            <th> q1 </th>
+            <th> q2 </th>
+        </tr>
+        <tr>
+            <th> q2 </th>
+            <th> q1 </th>
+            <th> q0, q2 </th>
+        </tr>
+    </tbody>
+</table>
+
+The ST in example 9 indicates that q0 is initial and q1 is the final state. From the initial state q0 there are two transitions, one to q2 and one to q1 with 0 as input, and a transition to q0 with input 1. From q1 there is a transition to q1 with 0 as input, and another to q2 with input 1. Finally, from q2 there is a transition to q1 with input 0, and two transitions, one to q0 and one to q2, with 1 as input.
+The answer to the question "how many transitions are there?" is 8. To compute this, you have to count all the transitions per state. Three from q0, as there are two transitions with input 0 (two state names in the corresponding cell), and one with input 1, two from q1, and three from q2.
+
+Example 10:
+<table>
+	<thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+            <th>2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> -> * q0 </th>
+            <th> q3 </th>
+            <th> </th>
+            <th> </th>
+        </tr>
+        <tr>
+            <th> q1 </th>
+            <th> q0 </th>
+            <th> </th>
+            <th> q3 </th>
+        </tr>
+        <tr>
+            <th> q2 </th>
+            <th> </th>
+            <th> q3 </th>
+            <th> </th>
+        </tr>
+        <tr>
+            <th> q3 </th>
+            <th> </th>
+            <th> q2 </th>
+            <th> q1 </th>
+        </tr>
+    </tbody>
+</table>
+
+The ST in example 10 indicates that q0 is both initial and final. From the initial state q0 there is a transition to q3 with input 0, and no transitions with input 1 or 2. Then, from from q1 there is one transition to q0 with input 0, none with input 1 and one to q3 with input 2. From q2 there are no transitions with 0 and 2 as input, and a transition to q3 with input 1. From q3 there is no transition with input 0, one to q2 with input 1 and another to q1 with input 2.
+The answer to the question "how many transitions are there?" is 6. To compute this, you have to count all the transitions per state. Three from q0, as there is only one transition with input 0, two from q1, one from q2, and two from q3.
+
+Based on the ST provided between """, can you tell me how many transitions are there? Please answer using the template "The number of transition is n." (where n is the number of transitions you identified) followed by a motivation.

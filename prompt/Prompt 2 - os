@@ -1,0 +1,63 @@
+You have a state table (ST) in HTML representing the transitions of a finite state automaton.
+
+ST = """
+<table> 
+    <thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> * -> q0 </th>
+            <th> </th>
+            <th> q2 </th>
+        </tr>
+        <tr>
+            <th> q1 </th>
+            <th> q0 </th>
+            <th> </th>
+        </tr>
+        <tr>
+            <th> q2 </th>
+            <th> </th>
+            <th> q1 </th>
+        </tr>
+    </tbody>
+</table>
+"""
+Alphabet = {0,1}
+Accepted Language = (110)* 
+The automaton can be drawn as a triangle.
+
+How to read the ST: 
+-> indicates an initial state; 
+* indicates a final state. 
+
+Note that these symbols in a cell mark the state that follows as initial and/or final, they are not state names.
+
+The ST contains a header (between <thead>...</thead>). The header contains a first empty cell, followed by as many cells as there are characters in the alphabet, one cell per character. In the body (between <tbody>...</tbody>), there are as many rows as the number of states in the automaton. The first column represents a specific state. In the following columns, you can either find empty cells, indicating no corresponding transition, or cells with state names, representing transitions to those states using the character in the corresponding column.
+
+Example:
+<table>
+    <thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> * -> q0 </th>
+            <th> </th>
+            <th> q0 </th>
+        </tr>
+    </tbody>
+</table>
+
+The ST in the example indicates that q0 is both initial and accepting state. From the initial state q0 there is no transition with input 0 (empty cell in the middle column) and a transition to q0 with input 1 (cell contains q0, in the last column). The answer to the question "how many transitions are there?" is 1. To compute this you have to count all the transitions per state. Since there is only one state, you have to count only the transitions from q0. In this case only one, as the only string in the row containing all the transition from q0 is "q0".
+
+Based on the ST provided between """, can you tell me how many transitions there are? Please answer using the template "The number of transition is n." (where n is the number of transitions you identified) followed by a motivation.

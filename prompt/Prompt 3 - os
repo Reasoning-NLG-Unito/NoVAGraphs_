@@ -1,0 +1,65 @@
+You have a state table in HTML (state_table) representing the transitions of a finite state automaton.
+
+ST = """
+<table> 
+    <thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> * -> q0 </th>
+            <th> </th>
+            <th> q2 </th>
+        </tr>
+        <tr>
+            <th> q1 </th>
+            <th> q0 </th>
+            <th> </th>
+        </tr>
+        <tr>
+            <th> q2 </th>
+            <th> </th>
+            <th> q1 </th>
+        </tr>
+    </tbody>
+</table>
+"""
+Alphabet = {0,1}
+The automaton can be drawn as a triangle.
+
+How to read the ST: 
+-> indicates an initial state; 
+* indicates a final state. 
+
+Note that these symbols in a cell mark the state that follows as initial and/or final, they are not state names.
+
+The ST contains a header (between <thead>...</thead>). The header contains a first empty cell, followed by as many cells as there are characters in the alphabet, one cell per character. In the body (between <tbody>...</tbody>), there are as many rows as the number of states in the automaton. The first column represents a specific state. In the following columns, you can either find empty cells, indicating no corresponding transition, or cells with state names, representing transitions to those states using the character in the corresponding column.
+
+How to know the accepted language:
+You need to follow the transitions starting from the initial state and ending with the final one. You have to consider all the possible paths that can lead to the final state.
+
+Example:
+<table>
+    <thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> * -> q0 </th>
+            <th> </th>
+            <th> q0 </th>
+        </tr>
+    </tbody>
+</table>
+
+The accepted language is (1)*. The reason is that since q0 is both initial and accepting state, the empty string is part of the language (indicated by *) and from q0 there is only one transition to q0 with input 1 (cell contains q0, in the last column). Therefore, the only strings accepted are the empty string and the ones which are sequences of 1.
+
+Based on the ST provided between """, can you tell me what is the accepted language? Please answer using the template "The accepted language is x." (where x is the accepted language you identified) followed by a motivation.

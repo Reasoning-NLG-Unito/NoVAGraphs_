@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Novagraph</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap.min.css"
+    integrity="sha512-zPXXoOhkaaGtJzUhR9E9XZ5Y5V7jK1RdfuV7z5cOFJnK7Q/cJxgMWVn+XfKmpY6ArvJ6wEa6J2BC8yKjJ0d7Ng=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #333;
+    }
+
+    h1,
+    h2,
+    label,
+    th {
+      font-weight: 500;
+      color: #000000;
+    }
+
+    table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    table tr:nth-child(odd) {
+      background-color: #ffffff;
+    }
+
+    .table-responsive {
+      overflow: auto;
+    }
+
+    .footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f2f2f2;
+      padding: 10px;
+    }
+
+    .footer p {
+      flex: 1 1 100%;
+      text-align: center;
+      margin: 0;
+    }
+
+    .nav-tabs.nav-tabs-lg .nav-item .nav-link {
+      font-size: 1.3rem;
+      /* dimensione del testo */
+      padding: 1rem 2rem;
+      /* spazio interno (padding) del link */
+    }
+
+    .navbar-brand {
+      font-size: 1.6rem;
+      /* dimensione del testo */
+      padding: 1rem 2rem;
+      /* spazio interno (padding) del link */
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <a class="navbar-brand" href="#">NoVAGraphS</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08"
+        aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample08">
+        <ul class="nav nav-tabs nav-tabs-lg">
+          <li class="nav-item">
+            <a class="nav-link" href="homepageABC.html">Homepage<span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="chatbotABC.html">Experiment 1<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="diagramABC.html">Experiment 2<span class="sr-only"></span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <div class="container my-5">
+    <h1 class="text-center display-4">Chatbot</h1>
+    <h4 class="text-center display-6">Automaton 1</h4>
+    <br>
+    <br>
+    <br>
+    <h3 class="text-center mb-5">Please enter your question</h3>
+    <form action="//chatbotABC.html" method="post" class="form-group" id="formData" autocomplete="on">
+      <label for="query">Question:</label>
+      <input type="text" name="query" id="query" class="form-control"
+        placeholder="Write down something you want to know about the automaton....">
+      <button type="submit" class="btn btn-primary mt-3 btn-lg btn-block">Send</button>
+    </form>
+    <div id="answer" class="mt-5"></div>
+    <br>
+    <br>
+    <br>
+    <h3 class="text-center mt-5">History of Q&A</h3>
+    <br>
+    <div class="table-responsive mt-5" style="height: 500px;">
+      <table id="history" class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Question</th>
+            <th>Answer</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <br>
+    <br>
+  </div>
+
+  <footer class="footer">
+    <p>All Right Reserved © NoVAGraphS - Università degli Studi di Torino</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+    integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script>
+    const form = document.querySelector("form");
+    const answer = document.querySelector("#answer");
+    const table = document.querySelector("#history");
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      // Ottieni la query dell'utente
+      const query = form.elements.query.value;
+
+      // Invia la richiesta al server solo se la query non è vuota
+      if (query.trim()) {
+        const response = await fetch("//delorean.di.unito.it/novagraph/chatbotABC.html", {
+          method: "POST",
+          body: JSON.stringify({ query }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+
+        const data = await response.json();
+        answer.innerHTML = data.answer;
+
+        // Crea una nuova riga e aggiungi le celle
+        const row = table.insertRow(1);
+        const counterCell = row.insertCell(0);
+        const queryCell = row.insertCell(1);
+        const answerCell = row.insertCell(2);
+
+        // Imposta il contenuto delle celle
+        counterCell.innerHTML = table.rows.length - 1;
+        queryCell.innerHTML = data.query;
+        answerCell.innerHTML = data.answer;
+
+        // Pulisci la query dall'input
+        form.elements.query.value = "";
+      }
+    });
+  </script>
+</body>
+
+</html>

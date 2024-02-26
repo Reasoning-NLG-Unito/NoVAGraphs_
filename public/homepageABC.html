@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Novagraph</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap.min.css"
+        integrity="sha512-zPXXoOhkaaGtJzUhR9E9XZ5Y5V7jK1RdfuV7z5cOFJnK7Q/cJxgMWVn+XfKmpY6ArvJ6wEa6J2BC8yKjJ0d7Ng=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        h1,
+        h2,
+        label,
+        th {
+            font-weight: 500;
+            color: #000000;
+        }
+
+        .table-responsive {
+            overflow: auto;
+        }
+
+        .footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+
+        .footer p {
+            flex: 1 1 100%;
+            text-align: center;
+            margin: 0;
+        }
+
+        .nav-tabs.nav-tabs-lg .nav-item .nav-link {
+            font-size: 1.3rem;
+            /* dimensione del testo */
+            padding: 1rem 2rem;
+            /* spazio interno (padding) del link */
+        }
+
+        .navbar-brand {
+            font-size: 1.6rem;
+            /* dimensione del testo */
+            padding: 1rem 2rem;
+            /* spazio interno (padding) del link */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="#">NoVAGraphS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08"
+                aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample08">
+                <ul class="nav nav-tabs nav-tabs-lg">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="homepageABC.html">Homepage<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="chatbotABC.html">Experiment 1<span
+                                class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="diagramABC.html">Experiment 2<span
+                                class="sr-only"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container my-5">
+        <h1 class="text-center display-4">NoVAGraphS</h1>
+        <h5 class="text-center display-6"></h5>
+        <br>
+        <div>
+            <h2 class="text-center mb-5">Welcome!</h2>
+            In this website, you can access information about two different automata (<b>Experiment 1</b> and <b>Experiment 2</b>).<br>
+            These two automata will be presented to you via two different approaches: verbal and graphical. You will be
+            testing the verbal, interactive approach using the novel chatbot <i>NoVAGraphS</i>, and the graphical approach using
+            the method of the state transition table.<br>
+            <br>
+            To fully participate to this research experiment you will need to acquire knowledge about the automata using
+            this website and fill in the form at this <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXnfEvJfOmdrETruECrZUTc5yG2ALlARoJBYksfsx_KlXtrA/viewform" target="_blank">Google Form link</a>.
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <h3 class="text-center mb-5">What is a finite-state automaton?</h3>
+        <p>
+            A finite-state automaton is a dynamic, discrete, invariant system in which the sets of input,
+            output and state are finite.<br>
+            The system can be in any of a finite number of internal states that define
+            the automaton. A particularly important class of automata is that of automata capable of recognizing whether
+            or not
+            a string is part of a given language or not: recognizer automata.<br>
+            Such a finite-state automaton consists of a finite set of states and a finite set of
+            transitions from one state to another. For each distinct pair formed by a state of the automaton (the
+            departure state) and an alphabet symbol, there is a transition to an arrival state. The symbol of the
+            pair is said to be associated with the transition, or even that the transition "accepts the symbol." The
+            state of
+            arrival state can also coincide with the start state. Each finite-state automaton is uniquely associated
+            with
+            an oriented graph called a transition diagram. The nodes of the graph coincide with the states of the
+            automaton.
+            If there is a transition from state q to state p with a as the associated symbol, then there is an arc
+            oriented from node q to node p and labeled with the symbol a.<br>
+            A mathematical model formed by the quintuple is needed to describe an automaton:<br>
+            A = {S, I, U, f, g}<br>
+            where:
+        <ul>
+            <li>S is the finite set of states</li>
+            <li>I is the finite set of possible input symbols</li>
+            <li>U is the finite set of possible output symbols</li>
+            <li>f is the transition function of successive internal states, which connects the state at the instant
+                next to the current value at the input and the current state</li>
+            <li>g is the function that determines the value of the outputs</li>
+        </ul>
+        </p>
+        <br>
+        <br>
+        <br>
+        <h3 class="text-center mb-5">How to use chatbot</h3>
+        <p>Here are some guidelines for you to follow:</p>
+        <ul>
+            <li>Write down clear and concise questions (for example, you might ask: <i> Briefly describe the automaton</i>, <i>How many states are
+                there?</i>, <i>Is there an arc from q0 to q1?</i>, <i>How is the automaton represented?</i>)</li>
+            <li>Questions should purely concern finite-state automata (no small talk, for example)</li>
+            <li>Questions may refer to the description of the automaton, the states and transitions present, the accepted language, and its representation</li>
+            <li>You can always refer to past questions and aswers looking at the table at the bottom of the chatbot page which keeps track of the conversation history</li>
+        </ul>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <footer class="footer">
+        <p>All Right Reserved © NoVAGraphS - Università degli Studi di Torino</p>
+    </footer>
+</body>
+
+</html>

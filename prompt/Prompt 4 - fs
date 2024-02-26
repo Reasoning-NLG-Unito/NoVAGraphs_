@@ -1,0 +1,321 @@
+You have a state table (ST) in HTML representing the transitions of a finite state automaton.
+
+ST = """
+<table> 
+    <thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> * -> q0 </th>
+            <th> </th>
+            <th> q2 </th>
+        </tr>
+        <tr>
+            <th> q1 </th>
+            <th> q0 </th>
+            <th> </th>
+        </tr>
+        <tr>
+            <th> q2 </th>
+            <th> </th>
+            <th> q1 </th>
+        </tr>
+    </tbody>
+</table>
+"""
+Alphabet = {0,1}
+Accepted Language = (110)* 
+The automaton can be drawn as a triangle.
+
+How to read the ST: 
+-> indicates an initial state; 
+* indicates a final state. 
+
+Note that these symbols in a cell mark the state that follows as initial and/or final, they are not state names.
+
+The ST contains a header (between <thead>...</thead>). The header contains a first empty cell, followed by as many cells as there are characters in the alphabet, one cell per character. In the body (between <tbody>...</tbody>), there are as many rows as the number of states in the automaton. The first column represents a specific state. In the following columns, you can either find empty cells, indicating no corresponding transition, or cells with state names, representing transitions to those states using the character in the corresponding column.
+
+Here below, you can find 10 examples from which to learn:
+
+Example 1:
+<table>
+    <thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> * -> q0 </th>
+            <th> </th>
+            <th> q0 </th>
+        </tr>
+    </tbody>
+</table>
+
+
+The answer to "which are the initial and final states?" in example 1 is "q0 is both initial and final state as q0 (first column of the first tbody row) is the only state in the ST maked with * and -> indicating final and initial state, respectively."
+
+Example 2:
+<table>
+	<thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> * -> q0 </th>
+            <th> q0 </th>
+            <th> </th>
+        </tr>
+	</tbody>
+</table>
+
+The answer to "which are the initial and final states?" in example 2 is "q0 is both initial and final state as q0 (first column of the first tbody row) is the only state in the ST maked with * and -> indicating final and initial state, respectively."
+
+Example 3:
+<table>
+	<thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> -> q0 </th>
+            <th> q1 </th>
+            <th> </th>
+        </tr>
+        <tr>
+            <th> * q1</th>
+            <th> q0 </th>
+            <th> </th>
+        </tr>
+	</tbody>
+</table>
+
+The answer to "which are the initial and final states?" in example 3 is "q0 is the initial state, as in it its cell (first column of the first tbody row) there is this symbol ->, and q1 is the final state as in its cell (first column of the second and last tbody row) there is *."
+
+Example 4:
+<table>
+	<thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> * q0 </th>
+            <th> </th>
+            <th> q1 </th>
+        </tr>
+        <tr>
+            <th> -> q1</th>
+            <th> q0 </th>
+            <th> </th>
+        </tr>
+	</tbody>
+</table>
+
+The answer to "which are the initial and final states?" in example 4 is "q0 is the final state because it its cell there is * and q1 is the initial state because in the cell there is ->."
+
+Example 5:
+<table>
+	<thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> * q0 </th>
+            <th> </th>
+            <th> q0 </th>
+        </tr>
+        <tr>
+            <th> -> q1</th>
+            <th> q0 </th>
+            <th> </th>
+        </tr>
+	</tbody>
+</table>
+
+The answer to "which are the initial and final states?" in example 5 is "q0 is the final state as it its cell there is * and q1 is the initial state as in the cell there is ->."
+
+Example 6:
+<table>
+	<thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> * q0 </th>
+            <th> </th>
+            <th> </th>
+        </tr>
+        <tr>
+            <th> -> q1</th>
+            <th> q0 </th>
+            <th> q1 </th>
+        </tr>
+	</tbody>
+</table>
+
+The answer to "which are the initial and final states?" in example 6 is "q0 is the final state as it its cell there is * and q1 is the initial state as in the cell there is ->."
+
+Example 7:
+<table>
+	<thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+            <th>2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> -> q0 </th>
+            <th> q1 </th>
+            <th> </th>
+            <th> </th>
+        </tr>
+        <tr>
+            <th> q1 </th>
+            <th> </th>
+            <th> q2 </th>
+            <th> </th>
+        </tr>
+        <tr>
+            <th> * q2 </th>
+            <th> </th>
+            <th> </th>
+            <th> q0 </th>
+        </tr>
+	</tbody>
+</table>
+
+The answer to "which are the initial and final states?" in example 7 is "q0 is the initial state as in its cell there is -> and q2 is the final state as in its cell there is *."
+
+Example 8:
+<table>
+	<thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> * -> q0 </th>
+            <th> q2 </th>
+            <th> </th>
+        </tr>
+        <tr>
+            <th> q1 </th>
+            <th> </th>
+            <th> q2 </th>
+        </tr>
+        <tr>
+            <th> q2 </th>
+            <th> q0 </th>
+            <th> q1 </th>
+        </tr>
+	</tbody>
+</table>
+
+The answer to "which are the initial and final states?" in example 8 is "q0 is both initial and final state as q0 is the only state in the ST maked with * and -> indicating final and initial state, respectively."
+
+Example 9:
+<table>
+	<thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> -> q0 </th>
+            <th> q1, q2 </th>
+            <th> q0 </th>
+        </tr>
+        <tr>
+            <th> * q1 </th>
+            <th> q1 </th>
+            <th> q2 </th>
+        </tr>
+        <tr>
+            <th> q2 </th>
+            <th> q1 </th>
+            <th> q0, q2 </th>
+        </tr>
+	</tbody>
+</table>
+
+The answer to "which are the initial and final states?" in example 9 is "q0 is the initial state as in its cell there is -> and q1 is the final state as in its cell there is *."
+
+Example 10:
+<table>
+	<thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+            <th>2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> -> * q0 </th>
+            <th> q3 </th>
+            <th> </th>
+            <th> </th>
+        </tr>
+        <tr>
+            <th> q1 </th>
+            <th> q0 </th>
+            <th> </th>
+            <th> q3 </th>
+        </tr>
+        <tr>
+            <th> q2 </th>
+            <th> </th>
+            <th> q3 </th>
+            <th> </th>
+        </tr>
+        <tr>
+            <th> q3 </th>
+            <th> </th>
+            <th> q2 </th>
+            <th> q1 </th>
+        </tr>
+	</tbody>
+</table>
+
+The answer to "which are the initial and final states?" in example 10 is "q0 is both initial and final state as q0 is the only state in the ST maked with * and -> indicating final and initial state, respectively."
+
+Based on the ST provided between """, can you tell me which are the initial and final states?
+Please answer by saying the names of the initial and final states followed by a motivation.

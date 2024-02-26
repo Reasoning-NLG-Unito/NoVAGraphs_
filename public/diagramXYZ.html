@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Novagraph</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap.min.css"
+        integrity="sha512-zPXXoOhkaaGtJzUhR9E9XZ5Y5V7jK1RdfuV7z5cOFJnK7Q/cJxgMWVn+XfKmpY6ArvJ6wEa6J2BC8yKjJ0d7Ng=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        h1,
+        h2,
+        label,
+        th {
+            font-weight: 500;
+            color: #000000;
+        }
+
+        .table-responsive {
+            overflow: auto;
+        }
+
+        .footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+
+        .footer p {
+            flex: 1 1 100%;
+            text-align: center;
+            margin: 0;
+        }
+
+        /* aggiunta di stili per la tabella */
+        table {
+            margin: 0 auto;
+        }
+
+        td,
+        th {
+            text-align: center;
+        }
+
+        th:first-child {
+            width: 70%;
+            border-right: 2px solid black;
+        }
+
+        th:not(:first-child) {
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+        }
+
+        .nav-tabs.nav-tabs-lg .nav-item .nav-link {
+            font-size: 1.3rem;
+            /* dimensione del testo */
+            padding: 1rem 2rem;
+            /* spazio interno (padding) del link */
+        }
+
+        .navbar-brand {
+            font-size: 1.6rem;
+            /* dimensione del testo */
+            padding: 1rem 2rem;
+            /* spazio interno (padding) del link */
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="#">NoVAGraphS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08"
+                aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarsExample08">
+                <ul class="nav nav-tabs nav-tabs-lg">
+                    <li class="nav-item">
+                        <a class="nav-link" href="homepageXYZ.html">Homepage<span
+                                class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="diagramXYZ.html">Experiment 1<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="chatbotXYZ.html">Experiment 2<span class="sr-only"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container my-5">
+        <h1 class="text-center display-4">State Table</h1>
+        <h4 class="text-center display-6">Automaton 1</h4>
+        <br>
+        <br>
+        <br>
+        <div class="table-responsive mt-5">
+            <table id="transition" class="table" style="width: 30%;">
+                <thead>
+                    <tr>
+                        <th> </th>
+                        <th>0</th>
+                        <th>1</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th> * → q0 </th>
+                        <th> / </th>
+                        <th> q1 </th>
+                    </tr>
+                    <tr>
+                        <th> q1 </th>
+                        <th> / </th>
+                        <th> q2 </th>
+                    </tr>
+                    <tr>
+                        <th> q2 </th>
+                        <th> / </th>
+                        <th> q3 </th>
+                    </tr>
+                    <tr>
+                        <th> q3 </th>
+                        <th> q4 </th>
+                        <th> / </th>
+                    </tr>
+                    <tr>
+                        <th> q4 </th>
+                        <th> q0 </th>
+                        <th> / </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div><b>Accepted Language = (11100)*</b></div>
+        <br>
+        <br>
+        <br>
+        <div>
+            A state transition table or state table is a table that shows which state the automaton will move toward
+            when the number of states is finite, based on its current state and based on other inputs. Inputs are
+            usually placed on the left, separated from outputs, which are on the right. Outputs represent the next state
+            of the automaton. </div>
+        <br>
+        <div>
+            Please note <br>
+            →:<i> represents the initial state</i> <br>
+            *:<i> represents the final state</i></div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer class="footer">
+        <p>All Right Reserved © NoVAGraphS - Università degli Studi di Torino</p>
+    </footer>
+</body>
+
+</html>

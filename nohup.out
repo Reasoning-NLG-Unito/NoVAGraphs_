@@ -1,0 +1,1017 @@
+Il server è in ascolto su http://localhost:3000/
+There are a total of 5 states. q0, q1, q2, q3, and q4. q0 is both initial and final      state. |  | states
+There are a total of 5 arcs. Try asking me if there is a particular pattern among      them. |  | arcs
+q0 is both the initial and final state. |  | end state
+q0 is both the initial and final state. |  | initial state
+Il server è in ascolto su http://localhost:3000/
+You can ask me to describe it. For example, you can ask me about transitions or      whether there is a path between two nodes. |  me the number of states and transitions of this automaton,me the number of states and transitions of this automaton | can you tell me the number of states and transitions of this automaton 
+This automaton accepts zero or more words in a binary alphabet formed by a sequence of      a couple of 1s followed by a 0. |  describe, describe  | describe in brief
+You can ask me to describe it. For example, you can ask me about transitions or      whether there is a path between two nodes. |  me more,me more | tell me more
+This automaton accepts zero or more words in a binary alphabet formed by a sequence of      a couple of 1s followed by a 0. |  ffe,defds | ffe briefly defds
+You can ask me to describe it. For example, you can ask me about transitions or      whether there is a path between two nodes. |  me more,me more | tell me more
+I don't know, try asking something like, "What is the initial state?" |  hi  | hi
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a couple of 1s followed by a 0.      There are a total of 3 states: q0, q1, and q2.      q0 is both initial and end state.      From each state one arc starts: from q0 the arc points to q2 and is marked by 1.      From q2 it points to q1 and is marked by 1.      Finally, from q1 it points to q0 and is marked by 0. | the automaton | describe the automaton
+No, there is no such transition. From q2 there is only one transition to q1 marked with          1. |  q0,q0 | There is a transition between q2 and q0 
+I don't know, try asking something like, "Describe this automaton." |  There is a transition between q5 and q7  | There is a transition between q5 and q7 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a couple of 1s followed by a 0.      There are a total of 3 states: q0, q1, and q2.      q0 is both initial and end state.      From each state one arc starts: from q0 the arc points to q2 and is marked by 1.      From q2 it points to q1 and is marked by 1.      Finally, from q1 it points to q0 and is marked by 0. | it please | Describe it please
+There are a total of 3 arcs. Try asking me if there is a particular pattern among      them. | does the automaton contain | How many transitions does the automaton contain 
+Yes, there is only one arc starting from each state. The first 2 in anti-clockwise      direction are marked by 1, the remaining by 0. |  there is a particular,among them | there is a particular pattern among them 
+I don't know, try just asking something like, "How many states are there?" |  What is the alphabet  | What is the alphabet 
+I don't know, try just asking something like, "How many states are there?" |  What are the transitions  | What are the transitions 
+No, there is not a state called like this. |  What are the states  | What are the states 
+I don't know, try asking something like, "What is the accepted language?" |  What is q1  | What is q1 
+You can ask me to describe it. For example, you can ask me about transitions or      whether there is a path between two nodes. |  me something about the automaton,me something about the automaton | Tell me something about the automaton 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a couple of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked by 1.      From q1 it points to q2 and is marked by 1.      From q2 it points to q3 and is marked by 1.      From q3 points to q4 and is marked by 0.      Finally, from q4 points to q0 and is marked again by 0. | it | describe it
+Il server è in ascolto su http://localhost:3000/
+Pagina non trovata
+Pagina non trovata
+I don't know, try asking something like, "Describe this automaton." |  ffweioj2eoice  | ffweioj2eoice
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a couple of 1s followed by a 0.      There are a total of 3 states: q0, q1, and q2.      q0 is both initial and end state.      From each state one arc starts: from q0 the arc points to q2 and is marked by 1.      From q2 it points to q1 and is marked by 1.      Finally, from q1 it points to q0 and is marked by 0. | this automaton | describe this automaton
+There are a total of 3 states. q0, q1, and q2. q0 is both initial and final state. | this automaton | states
+There are a total of 3 arcs. Try asking me if there is a particular pattern among      them. | this automaton | arcs
+I don't know, try just asking something like, "How many states are there?" |  transitions  | transitions
+I don't know, try just asking something like, "How many states are there?" |  transition  | transition
+I don't know, try asking something like, "What is the accepted language?" |  q0  | q0
+Pagina non trovata
+There are a total of 3 arcs. Try asking me if there is a particular pattern among      them. |  | how many arcs 
+I don't know, try asking something like, "Describe this automaton." |  transitions  | transitions 
+There are a total of 3 states. q0, q1, and q2. q0 is both initial and final state. |  transitions  | states
+Il server è in ascolto su http://localhost:3000/
+I don't know, try asking something like, "Describe this automaton." |  hi  | hi
+I don't know, try just asking something like, "How many states are there?" |  hello  | hello
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a couple of 1s followed by a 0.      There are a total of 3 states: q0, q1, and q2.      q0 is both initial and end state.      From each state one arc starts: from q0 the arc points to q2 and is marked by 1.      From q2 it points to q1 and is marked by 1.      Finally, from q1 it points to q0 and is marked by 0. |  please,this automaton | please describe this automaton
+The language accepted by this automaton is made of zero or more words formed by a sequence of      a couple of 1s followed by a 0. |  what is the accepted | what is the accepted language 
+No, there is not a state called like this. |  show me the,table | show me the state table
+The language accepted by this automaton is made of zero or more words formed by a sequence of      a couple of 1s followed by a 0. |  The automaton accepts a,allowing words made of an odd number of 0s and 1s | The automaton accepts a language allowing words made of an odd number of 0s and 1s
+I don't know, try asking something like, "What is the accepted language?" |  what is q2  | what is q2
+I don't know, just try asking something like, "How is the automaton represented?" |  is q2 final  | is q2 final 
+No, there is not a state called like this. |  does,q2 exist | does state q2 exist
+q0 is both the initial and final state. |  is there a, is there a | is there a final state 
+Yes there is. It is q0. |  is,final | is state final
+Of course it exists. It is q0. |  is,initial | is state initial
+q0 is both the initial and final state. |  is there an, is there an | is there an initial state
+No, there is no such transition. From q0 there is only one transition to q1 marked with          1. |  is there a transition from,q2 | is there a transition from q0 to q2
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a couple of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked by 1.      From q1 it points to q2 and is marked by 1.      From q2 it points to q3 and is marked by 1.      From q3 points to q4 and is marked by 0.      Finally, from q4 points to q0 and is marked again by 0. | the automaton | describe the automaton
+I don't know, try asking something like, "Describe the automaton." |  fdsfsdf  | fdsfsdf
+Il server è in ascolto su http://localhost:3000/
+Hi. I'm the chatbot NoVAGraphS. I'm programmed to answer questions to describe graphical structures, and in particular, automata. Ask me to describe you in general Automaton 1 or a more specific question about it. |  | hi
+There are a total of 5 states. q0, q1, q2, q3, and q4. q0 is both initial and final      state. |  | how many states
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a couple of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again by 0. | it | describe it
+This automaton accepts zero or more words in a binary alphabet formed by a sequence of      a triple of 1s followed by a couple of 0s. |  describe it, describe it  | describe it briefly
+I dont' know. Just try asking something like, "How is the automaton represented?" |  tell me more  | tell me more
+I dont' know. Try asking something like, "Describe the automaton." |  is there a state q0  | is there a state q0 
+I dont' know. Try asking something like, "What is the accepted language?" |  does it exist a state q0  | does it exist a state q0 
+I dont' know. Try asking something like, "Which is the initial state?" |  q0  | q0
+There are a total of 5 states. q0, q1, q2, q3, and q4. q0 is both initial and final      state. |  q0  | state 
+There are a total of 5 arcs. Try asking me if there is a particular pattern among      them. |  q0  | arcs
+There are a total of 5 arcs. Try asking me if there is a particular pattern among      them. |  | how many arcs
+This automaton can be represented as a pentagon with its states arranged as vertices. |  how is, how is  | how is drawn
+This automaton has five transitions. From q0 to q1 there is an arc marked as 1. From q1 to q2 there is another arc marked as 1. From q2 to q3 there is an arc marked as 1. From q3 to q4 there is an arc marked as 0. Finally, from q4 to q0 there is an arc marked as 0. | the transitions | what are the transitions
+I dont' know. Try just asking something like, "How many states are there?" |  end states  | end states
+q0 is both the initial and final state. |  end states , end states  | end state
+Hi. I'm the chatbot NoVAGraphS. I'm programmed to answer questions to describe graphical structures, and in particular, automata. Ask me to describe you in general Automaton 1 or a more specific question about it. |  | hello
+Examples of questions may be: Briefly describe the automaton, How many states are there?, Is      there an arc from q0 to q1?, How is the automaton represented?      For more information click on Homepage tab. |  | help
+This automaton accepts zero or more words in a binary alphabet formed by a sequence of      a triple of 1s followed by a couple of 0s. |  end states , end states  | in brief
+I dont' know. Just try asking something like, "How is the automaton represented?" |  tell me more  | tell me more
+I dont' know. Try asking something like, "Describe the automaton." |  what do you knoe  | what do you knoe
+You can ask me to describe it. For example, you can ask me about transitions or      whether there is a path between two nodes. |  what do you, what do you  | what do you know
+You can ask me to describe it. For example, you can ask me about transitions or      whether there is a path between two nodes. |  what do you,about | what do you know about 
+This automaton has five states. q0 is the initial and final state. From q0 to q1 there is an arc marked as 1. From q1 to q2 there is another arc marked as 1. From q2 to q3 there is an arc marked as 1. From q3 to q4 there is an arc marked as 0. Finally, from q4 to q0 there is an arc marked as 0. |  tell me,states | tell me more about states
+I dont' know. Try asking something like, "Describe the automaton." |  tell me about states  | tell me about states
+Il server è in ascolto su http://localhost:3000/
+This automaton accepts zero or more words in a binary alphabet formed by a sequence of a triple of 1s followed by a couple of 0s. |  describe, describe  | describe in brief
+There are a total of 5 states: q0, q1, q2, q3, and q4.      q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again by 0. |  | tell me more
+This automaton accepts zero or more words in a binary alphabet formed by a sequence of a couple of 1s followed by a 0. |  describe, describe  | describe in brief
+There are a total of 3 states: q0, q1, and q2.
+      q0 is both initial and end state.
+      From each state one arc starts: from q0 the arc points to q2 and is marked with 1.
+      From q2 it points to q1 and is marked with 1.
+      Finally, from q1 it points to q0 and is marked with 0. |  | tell me more
+Pagina non trovata
+Pagina non trovata
+I dont' know. Try asking something like, "What is the accepted language?" |  description  | description
+The language accepted by this automaton is made of zero or more words formed by a sequence of
+      a couple of 1s followed by a 0. |  What is the accepted | What is the accepted language 
+Il server è in ascolto su http://localhost:3000/
+Pagina non trovata
+Hi. I'm the chatbot NoVAGraphS. I'm programmed to answer questions to describe graphical structures, and in particular, automata. Ask me to describe you in general Automaton 1 or a more specific question about it. |  | hello
+I dont' know. Try asking something like, "Describe the automaton." |  sda  | sda
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a pair of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again by 0. |  | Describe the automaton
+I dont' know. Just try asking something like, "How is the automaton represented?" |  sacas  | sacas
+I dont' know. Try asking something like, "Describe the automaton." |  sacas  | sacas
+Hi. I'm the chatbot NoVAGraphS. I'm programmed to answer questions to describe graphical structures, and in particular, automata. Ask me to describe you in general Automaton 2 or a more specific question about it. |  | hello
+I dont' know. Try asking something like, "What is the accepted language?" |  sac  | sac
+No, there is no such transition. From q0 there is only one transition to q2 marked with
+          1. |  q1,q1 | does it exist a transition between q0 and q1 
+Yes, there is a transition from q2 to q1 and is marked with 1. |  q1,q1 | transition between q2 and q1
+No, there is no such transition. From q1 there is only one transition to q0 marked with
+          0. |  q2,q2 | transition between q1 and q2
+Yes, there is a transtion from q0 to q2 and is marked with 1. |  q2,q2 | transition between q0 and q2
+No, there is no such transition. From q2 there is only one transition to q1 marked with
+          1. |  q0,q0 | transition between q2 and q0
+Yes, there is a transition from q1 to q0 and is marked with 0. |  transition from,q0 | transition from q1 to q0
+Hi. I'm the chatbot NoVAGraphS. I'm programmed to answer questions to describe graphical structures, and in particular, automata. Ask me to describe you in general Automaton 1 or a more specific question about it. |  | hi
+The language accepted by this automaton is made of zero or more words formed by a      sequence of a triple of 1s followed by a pair of 0s. |  what s the accepted,of the automaton | what s the accepted language of the automaton
+There are a total of 5 states. q0, q1, q2, q3, and q4. q0 is both initial and final      state. | are there | how many states are there 
+No, it doesn't exist. The states of this automaton are q0 (initial and final          state), q1, q2, q3, and q4. | q5 | does q5 exist
+q4 is a state of this automaton. q4 is conntected to q0 via a transition marked with 0. q3 and q4 are connected via a transition marked with 1. | q4 | what is q4
+q5 is not a state of this automaton. This automaton has only 5 states: q0, q1, q2, q3, and q4. | q5 | what is q5
+I'm not sure about your question. Do you what to know about states or transitions? Ask me to know more about transitions, for example. | q7 | what is q7
+You can ask me to describe it. For example, you can ask me about transitions or      whether there is a path between two nodes. |  i want to,more about transitions | i want to know more about transitions
+This automaton has five states. q0 is the initial and final state. From q0 to q1 there is an arc marked as 1. From q1 to q2 there is another arc marked as 1. From q2 to q3 there is an arc marked as 1. From q3 to q4 there is an arc marked as 0. Finally, from q4 to q0 there is an arc marked as 0. |  tell me,transitions | tell me more about transitions
+Hi. I'm the chatbot NoVAGraphS. I'm programmed to answer questions to describe graphical structures, and in particular, automata. Ask me to describe you in general Automaton 2 or a more specific question about it. |  | hi
+You can ask me to describe the automaton. For example, you can ask me about transitions or
+      whether there is a path between two nodes (e.g. 'Is there a path between q0 and q3?'). |  me,me | what can you tell me 
+I dont' know. Try asking something like, "Describe the automaton." |  tell me about transitions  | tell me about transitions
+I dont' know. Try asking something like, "What is the accepted language?" |  tell me about transitions  | tell me about transitions
+I dont' know. Try just asking something like, "How many states are there?" |  transitions  | transitions
+This automaton has three transitions. The first one starts at q0, being it the initial and final state. From q0 and q2 there is an arc marked as 1. From q2 to q1 there is another arc marked as 1. Finally from q1 to q0 there is an arc marked as 0. | transitions | what are transitions
+A transition is a function which defines the movement of an automaton from one state to another by treating the current state and current input symbol as an ordered pair. For each pair of "current state" and "current input symbol" (the function input), the transition function produces as output the next state in the automaton. | a transition | what is a transition
+The language accepted by this automaton is made of zero or more words formed by a sequence of
+      a pair of 1s followed by a 0. |  what s the accepted,of the automaton | what s the accepted language of the automaton
+There are a total of 3 states. q0, q1, and q2. q0 is both initial and final
+      state. | are there | how many states are there 
+No, it doesn't exist. The states of this automaton are q0 (initial and final
+          state), q1, and q2. | q5 | does q5 exist
+q4 is not a state of this automaton. This automaton has only 3 states, q0, q1, and q2. | q4 | what is q4
+I'm not sure about your question. Do you what to know about states or transitions? Ask me to know more about transitions, for example. | q7 | what is q7
+No, there is no such transition. From q2 there is only one transition to q1 marked with
+          1. |  q7,q7 | is there a transition from q2 and q7
+You can ask me to describe the automaton. For example, you can ask me about transitions or
+      whether there is a path between two nodes (e.g. 'Is there a path between q0 and q3?'). |  i want to,more about transitions | i want to know more about transitions
+This automaton has three transitions. The first one starts at q0, being it the initial and final state. From q0 and q2 there is an arc marked as 1. From q2 to q1 there is another arc marked as 1. Finally from q1 to q0 there is an arc marked as 0. |  tell me,transitions | tell me more about transitions
+I dont' know. Just try asking something like, "How is the automaton represented?" |  what s an arc  | what s an arc
+An arc or transition is a function which defines the movement of an automaton from one state to another by treating the current state and current input symbol as an ordered pair. For each pair of "current state" and "current input symbol" (the function input), the transition function produces as output the next state in the automaton. | an arc | what is an arc
+You can ask me to describe the automaton. For example, you can ask me about transitions or
+      whether there is a path between two nodes (e.g. 'Is there a path between q0 and q3?'). |  what do you, what do you  | what do you know
+I dont' know. Try asking something like, "Describe the automaton." |  what can I ask you  | what can I ask you
+I dont' know. Try just asking something like, "How many states are there?" |  tell me more  | tell me more
+I dont' know. Try just asking something like, "How many states are there?" |  tell me more  | tell me more
+I'm not sure about your question. Do you what to know about states or transitions? Ask me to know more about transitions, for example. | the automaton | what is the automaton
+I'm not sure about your question. Do you what to know about states or transitions? Ask me to know more about transitions, for example. | the automaton | what is the automaton
+This automaton accepts zero or more words in a binary alphabet formed by a sequence of a triple of 1s followed by a pair of 0s. |  could you,describe the automaton | could you briefly describe the automaton
+There are a total of 5 states: q0, q1, q2, q3, and q4.      q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again by 0. |  | tell me more
+This automaton accepts zero or more words in a binary alphabet formed by a sequence of a triple of 1s followed by a pair of 0s. |  could you,describe me the automaton | could you briefly describe me the automaton
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a pair of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again by 0. |  could you,me the automaton breifly | could you describe me the automaton breifly
+This automaton accepts zero or more words in a binary alphabet formed by a sequence of a triple of 1s followed by a pair of 0s. | describe me the automaton | briefly describe me the automaton
+This automaton has three transitions. The first one starts at q0, being it the initial and final state. From q0 and q2 there is an arc marked as 1. From q2 to q1 there is another arc marked as 1. Finally from q1 to q0 there is an arc marked as 0. |  tell me,arcs | tell me more about arcs
+It is an automaton which accepts zero or more words in a binary alphabet formed by a
+      sequence of a pair of 1s followed by a 0. There are a total of 3 states: q0, q1, and
+      q2. q0 is both initial and end state.
+      From each state 1 arc starts: from q0 the arc points to q2 and is marked with 1.
+      From q2 it points to q1 and is marked with 1.
+      From q1 it points to q0 and is marked with 0. | me the automaton in general | describe me the automaton in general
+I dont' know. Try just asking something like, "How many states are there?" |  tell me more  | tell me more
+This automaton accepts zero or more words in a binary alphabet formed by a sequence of a pair of 1s followed by a 0. |  describe me,the automaton | describe me briefly the automaton
+There are a total of 3 states: q0, q1, and q2.
+      q0 is both initial and end state.
+      From each state one arc starts: from q0 the arc points to q2 and is marked with 1.
+      From q2 it points to q1 and is marked with 1.
+      Finally, from q1 it points to q0 and is marked with 0. |  | tell me more
+There are a total of 5 states. q0, q1, q2, q3, and q4. q0 is both initial and final      state. | does the automaton has | How many states does the automaton has
+I'm sorry. I can only describe the automaton. Why don't you ask me to tell you more about transitions? |  the transition table,the transition table | what about the transition table 
+I'm sorry. I can only describe the automaton. Why don't you ask me to tell you more about transitions? |  tell me,transition | tell me more about transition
+Yes, there is a transition from q0 to q1 and is marked with 1. |  q1,q1 | is there a transition between q0 and q1 
+Yes, there is a transition from q1 to q2 and is marked with 1. |  q2,q2 | q1 and q2 
+No, there is no such transition. From q1 there is only one transition to q2 marked with          1. |  q3,q3 | q1 and q3 
+There are a total of 5 arcs. Try asking me if there is a particular pattern among      them. | depart from q0 | how many arcs depart from q0 
+Yes, there is only one arc starting from each state. The first three in clockwise      direction are marked with 1, the remaining two by 0. |  do arcs follow a | do arcs follow a pattern 
+I dont' know. Try just asking something like, "How many states are there?" |  is there an order between the arcs  | is there an order between the arcs 
+I dont' know. Try just asking something like, "How many states are there?" |  arcs from q0  | arcs from q0 
+I dont' know. Try asking something like, "What is the accepted language?" |  to which state q0 is connected  | to which state q0 is connected 
+I dont' know. Try asking something like, "Which is the initial state?" |  q0 q1  | q0 q1 
+Yes, there is a transition from q0 to q1 and is marked with 1. |  q1,q1 | q0 and q1 
+Yes, there is a transition from q1 to q2 and is marked with 1. |  q2,q2 | q1 and q2 
+Yes, there is a transition from q2 to q3 and is marked with 1. |  q3,q3 | q2 and q3 
+Yes, there is a transition from q3 to q4 and is marked with 0. |  q4,q4 | q3 and q4 
+No, there is no such transition. From q4 there is only one transition to q0 marked with          0. |  q5,q5 | q4 and q5 
+q0 is both the initial and final state. |  which is the, which is the | which is the final state 
+I'm sorry. I can only describe the automaton. Why don't you ask me to tell you more about transitions? |  the transition table,the transition table | what about the transition table 
+This automaton has three transitions. The first one starts at q0, being it the initial and final state. From q0 and q2 there is an arc marked as 1. From q2 to q1 there is another arc marked as 1. Finally from q1 to q0 there is an arc marked as 0. |  tell me,transitions |  tell me more about transitions
+There are a total of 3 arcs. Try asking me if there is a particular pattern among
+      them. | depart from q0 |  how many arcs depart from q0
+I dont' know. Try asking something like, "Describe the automaton." |  is there an order between the arcs  | is there an order between the arcs 
+I dont' know. Try asking something like, "Which is the initial state?" |  arcs from q0  |  arcs from q0 
+I'm sorry. I can only describe the automaton. Why don't you ask me to tell you more about transitions? |  STATES,STATES | WHAT ABOUT STATES
+Il server è in ascolto su http://localhost:3000/
+This automaton has three states. q0 is the initial and final state. q0
+          is connected to q2 which is in turn connected to q1. Finally, q1 is connected to q0. |  states,states | what about states
+No, there is no such transition. From q0 there is only one transition to q2 marked with
+          1. |  arcs from, arcs from  | arcs from q0 
+Il server è in ascolto su http://localhost:3000/
+From q0 there is only one transition to q2 marked with 1. |  arcs from, arcs from  | arcs from q0 
+From q0 there is only one transition to q2 marked with 1. |  is connected,is connected | to which state q0 is connected 
+From q0 there is only one transition to q2 marked with 1. |  q1,q1 | q0 q1 
+Yes, there is a transtion from q0 to q2 and is marked with 1. |  q2,q2 | q0 q2 
+There is only one arc starting from each state. The first three in clockwise
+      direction are marked with 1, the remaining two with 0. |  between the arcs,between the arcs | is there an order between the arcs 
+From q0 there is only one transition to q2 marked with 1. |  how many arcs depart from, how many arcs depart from  |  how many arcs depart from q0 
+I'm sorry. I can only describe the automaton. Why don't you ask me to describe it? |  the transition table,the transition table | what about the transition table 
+I'm sorry. I can only describe the automaton. Why don't you ask me to describe it? |  the transition table,the transition table | what about the transition table 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a
+      sequence of a pair of 1s followed by a 0. There are a total of 3 states: q0, q1, and
+      q2. q0 is both initial and end state.
+      From each state 1 arc starts: from q0 the arc points to q2 and is marked with 1.
+      From q2 it points to q1 and is marked with 1.
+      From q1 it points to q0 and is marked with 0. |  | transition table
+Il server è in ascolto su http://localhost:3000/
+It is an automaton which accepts zero or more words in a binary alphabet formed by a
+      sequence of a pair of 1s followed by a 0. There are a total of 3 states: q0, q1, and
+      q2. q0 is both initial and end state.
+      From each state 1 arc starts: from q0 the arc points to q2 and is marked with 1.
+      From q2 it points to q1 and is marked with 1.
+      From q1 it points to q0 and is marked with 0. |  what about the | what about the transition table 
+I'm sorry. I can only describe the automaton. Why don't you ask me to describe it? |  the PATTERN  what about the,the PATTERN  what about the | order
+I'm not sure about your question. Do you what to know about states or transitions? Or
+          you can ask me to briefly describe you the automaton, for example. | about the order | what s about the order
+I'm not sure about your question. Do you what to know about states or transitions? Or
+          you can ask me to briefly describe you the automaton, for example. | the order | what is the order 
+There is only one arc starting from each state. The first three in clockwise
+      direction are marked with 1, the remaining two with 0. |  is there a, is there a  | is there a order 
+From q0 there is only one transition to q2 marked with 1. |  arcs from, arcs from  | arcs from q0 
+From q0 there is only one transition to q2 marked with 1. |  is connected,is connected | to which state q0 is connected 
+From q0 there is only one transition to q2 marked with 1. |  q1,q1 | q0 q1 
+There is only one arc starting from each state. The first three in clockwise
+      direction are marked with 1, the remaining two with 0. |  between the arcs,between the arcs | is there an order between the arcs 
+From q0 there is only one transition to q2 marked with 1. |  how many arcs depart from, how many arcs depart from  | how many arcs depart from q0 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a
+      sequence of a pair of 1s followed by a 0. There are a total of 3 states: q0, q1, and
+      q2. q0 is both initial and end state.
+      From each state 1 arc starts: from q0 the arc points to q2 and is marked with 1.
+      From q2 it points to q1 and is marked with 1.
+      From q1 it points to q0 and is marked with 0. |  what about the | what about the transition table 
+node:internal/modules/cjs/loader:988
+  throw err;
+  ^
+
+Error: Cannot find module '/opt/novagraph/NovagraphV1.4.2_server/app.ks'
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:985:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:833:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:22:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+Il server è in ascolto su http://localhost:3000/
+Hi. I'm the chatbot NoVAGraphS. I'm programmed to answer questions to describe      graphical structures, and in particular, automata. Ask me to describe you in general Automaton      1 or a more specific question about it. | dear | Hello dear
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a pair of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again by 0. |  | describe me the automaton
+I'm sorry. I can only describe the automaton. Why don't you ask me to describe it? |  tell me,it | tell me more about it
+From q0 there is only one transition to q1 marked with 1. |  how many arcs start from, how many arcs start from  | how many arcs start from q0 
+From q0 there is only one transition to q1 marked with 1. |  how many arcs arrive to, how many arcs arrive to  | how many arcs arrive to q0 
+There is only one arc starting from each state. The first three in clockwise      direction are marked with 1, the remaining two with 0. |  is there an, is there an  | is there an order 
+There are a total of 3 states. q0, q1, and q2. q0 is both initial and final
+      state. | and transitions are there | how many states and transitions are there 
+There are a total of 3 arcs. Try asking me if there is a particular pattern among
+      them. | are there | how many transitions are there 
+I'm not sure about your question. Do you what to know about states or transitions? Or          you can ask me to briefly describe you the automaton, for example. | initial and final states | what are initial and final states
+I'm not sure about your question. Do you what to know about states or transitions? Or          you can ask me to briefly describe you the automaton, for example. | the initial and final states | what are the initial and final states
+I'm not sure about your question. Do you what to know about states or transitions? Or          you can ask me to briefly describe you the automaton, for example. | the initial and final state | what are the initial and final state
+q0 is both the initial and final state. | and | initial and final state
+q0 is both the initial and final state. |  and,and | initial and final states
+I'm not sure about your question. Do you what to know about states or transitions? Or
+          you can ask me to briefly describe you the automaton, for example. | the initial and final states | what are the initial and final states
+Il server è in ascolto su http://localhost:3000/
+I dont' know. Just try asking something like, "How is the automaton represented?" |  ciao  | ciao
+Hi. I'm the chatbot NoVAGraphS. I'm programmed to answer questions to describe
+      graphical structures, and in particular, automata. Ask me to describe you in general Automaton
+      2 or a more specific question about it. |  | hi
+From q0 there is only one transition to q2 marked with 1. |  arcs from, arcs from  |  arcs from q0 
+From q0 there is only one transition to q2 marked with 1. |  is connected,is connected | to which state q0 is connected 
+From q0 there is only one transition to q2 marked with 1. |  q1,q1 |  q0 q1 
+Yes, there is only one arc starting from each state. The first 2 in anti-clockwise
+      direction are marked by 1, the remaining by 0. |  between the arcs,between the arcs |  is there an order between the arcs 
+From q0 there is only one transition to q2 marked with 1. |  how many arcs depart from, how many arcs depart from  |  how many arcs depart from q0 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a
+      sequence of a pair of 1s followed by a 0. There are a total of 3 states: q0, q1, and
+      q2. q0 is both initial and end state.
+      From each state 1 arc starts: from q0 the arc points to q2 and is marked with 1.
+      From q2 it points to q1 and is marked with 1.
+      From q1 it points to q0 and is marked with 0. |  what about the | what about the transition table 
+This automaton has three transitions. The first one starts at q0,
+          being it the initial and final state. From q0 to q2 there is a transition marked as 1.
+          From q2 to q1 there is another transition marked as 1. Finally from q1 to q0 there is a
+          transition marked as 0. |  tell me,transitions |  tell me more about transitions
+I'm not sure about your question. Do you what to know about states or transitions? Or
+          you can ask me to briefly describe you the automaton, for example. | the transitions and states | what are the transitions and states 
+I'm here to describe you the automaton. For example, you can ask me about transitions
+      or
+      whether there is a path between two nodes (e.g. 'Is there a path between q0 and q3?'). |  Do you what to,about states or transitions | Do you what to know about states or transitions 
+I'm here to describe you the automaton. For example, you can ask me about transitions
+      or
+      whether there is a path between two nodes (e.g. 'Is there a path between q0 and q3?'). |  what to,about states or transitions | what to know about states or transitions 
+In this automaton there are 3 states and 3 transitions. From each state only one transition starts. Each state receives one transition. | transitions | how many states and transitions
+Hi. I'm the chatbot NoVAGraphS. I'm programmed to answer questions to describe      graphical structures, and in particular, automata. Ask me to describe you in general Automaton      1 or a more specific question about it. |  | hi
+I'm here to describe you the automaton. For example, you can ask me about transitions or      whether there is a path between two nodes (e.g. 'Is there a path between q0 and q3?'). |  what do you | what do you know
+There are a total of 5 arcs. Try asking me if there is a particular pattern among      them. |  what do you  | transitions
+There are a total of 5 states. q0, q1, q2, q3, and q4. q0 is both initial and final      state. |  what do you  | states
+There is only one arc starting from each state. The first three in clockwise      direction are marked with 1, the remaining two with 0. | transitions | pattern transitions
+Il server è in ascolto su http://localhost:3000/
+I'm not sure about your question. Try asking about states or transitions. Or          you can ask me to briefly describe you the automaton, for example. | the transitions and states | what are the transitions and states
+There are a total of 5 states. q0, q1, q2, q3, and q4. q0 is both initial and final      state. | the transitions and states | states
+There are a total of 5 arcs. Try asking me if there is a particular pattern among      them. | the transitions and states | transitions
+This automaton accepts zero or more words in a binary alphabet formed by a sequence of      a triple of 1s followed by a pair of 0s. |  describe,the automato | describe briefly the automato
+I dont' know. Try asking something like, "Which is the initial state?" |  tell me more  | tell me more
+Il server è in ascolto su http://localhost:3000/
+This automaton accepts zero or more words in a binary alphabet formed by a sequence of a triple of 1s followed by a pair of 0s. |  describe | describe briefly
+There are a total of 5 states: q0, q1, q2, q3, and q4.      q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again by 0. |  | tell me more
+Hi. I'm the chatbot NoVAGraphS. I'm programmed to answer questions to describe
+      graphical structures, and in particular, automata. Ask me to describe you in general Automaton
+      2 or a more specific question about it. |  | Hello
+There are a total of 3 states. q0, q1, and q2. q0 is both initial and final
+      state. | are there | How many states are there 
+There are a total of 3 arcs. Try asking me if there is a particular pattern among
+      them. | are there | How many transitions are there 
+Yes, there is only one arc starting from each state. The first 2 in anti-clockwise
+      direction are marked by 1, the remaining by 0. |  there is a particular,among them | there is a particular pattern among them 
+From q0 there is only one transition to q2 marked with 1. |  Is there a transition from,q5 | Is there a transition from q0 to q5 
+I'm not sure about your question. Try asking about states or transitions. Or
+          you can ask me to briefly describe you the automaton, for example. | its optimal spatial representation |  what is its optimal spatial representation 
+This automaton accepts zero or more words in a binary alphabet formed by a sequence of a pair of 1s followed by a 0. | describe you the automaton | briefly describe you the automaton
+The language accepted by this automaton is made of zero or more words formed by a
+      sequence of
+      a pair of 1s followed by a 0. |  The automaton accepts a,allowing words made of an odd number of 0s and 1s | The automaton accepts a language allowing words made of an odd number of 0s and 1s
+Yes, there is only one arc starting from each state. The first 2 in anti-clockwise
+      direction are marked by 1, the remaining by 0. |  It is possible to find a repetitive,in the transitions | It is possible to find a repetitive pattern in the transitions
+The language accepted by this automaton is made of zero or more words formed by a
+      sequence of
+      a pair of 1s followed by a 0. |  If q2 were the final state the,accepted by the automaton is the same | If q2 were the final state the language accepted by the automaton is the same
+In this automaton there are 5 states and 5 transitions. From each state only one transition starts. Each state receives one transition. | transitions | how many states and transitions
+This automaton has five transitions. q0 is the initial and final          state. From q0 to q1 there is a transition marked as 1. From q1 to q2 there is another          transition marked as 1. From q2 to q3 there is a transition marked as 1. From q3 to q4          there is a transition marked as 0. Finally, from q4 to q0 there is a transition marked as          0. |  tell me,transitions | tell me more about transitions
+The language accepted by this automaton is made of zero or more words formed by a      sequence of a triple of 1s followed by a pair of 0s. |  what s the accepted | what s the accepted language
+The alphabet accepted by this automaton is a binary alphabet made by 0s and 1s. If you want to      know about the language accepted, ask me about it. |  what s the | what s the alphabet
+This automaton accepts zero or more words in a binary alphabet formed by a sequence of a triple of 1s followed by a pair of 0s. | describe it | briefly describe it
+There are a total of 5 states: q0, q1, q2, q3, and q4.      q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again by 0. |  | tell me more
+No, there is not a state called like this. The only states are q0, q1, q2, q3, and q4. | q7 | does q7 exist 
+From q0 there is only one transition to q1 marked with 1. |  q4,q4 | is there a transition between q0 and q4
+From q1 there is only one transition to q2 marked with 1. |  is there a transition to, is there a transition to  | is there a transition to q1
+q0 is both the initial and final state. |  what s the, what s the | what s the final state
+I'm not sure about your question. Try asking about states or transitions. Or          you can ask me to briefly describe you the automaton, for example. | the accepting state | what s the accepting state
+This automaton has five states. q0 is the initial and final state. From          q0 to q1 there is an arc marked as 1. From q1 to q2 there is another arc marked as 1. From          q2 to q3 there is an arc marked as 1. From q3 to q4 there is an arc marked as 0. Finally,          from q4 to q0 there is an arc marked as 0. |  tell me,states | tell me more about states
+I'm not sure about your question. Try asking about states or transitions. Or          you can ask me to briefly describe you the automaton, for example. | the accepting states | what are the accepting states
+Hi. I'm the chatbot NoVAGraphS. I'm programmed to answer questions to describe
+      graphical structures, and in particular, automata. Ask me to describe you in general Automaton
+      2 or a more specific question about it. |  | hi
+This automaton accepts zero or more words in a binary alphabet formed by a sequence of a pair of 1s followed by a 0. | describe the automaton | briefly describe the automaton
+This automaton has three transitions. The first one starts at q0,
+          being it the initial and final state. From q0 to q2 there is a transition marked as 1.
+          From q2 to q1 there is another transition marked as 1. Finally from q1 to q0 there is a
+          transition marked as 0. |  transitions,transitions | what about transitions
+This automaton has three states. q0 is the initial and final state. q0
+          is connected to q2 which is in turn connected to q1. Finally, q1 is connected to q0. |  states,states | what about states
+This automaton has three transitions. The first one starts at q0,
+          being it the initial and final state. From q0 to q2 there is an arc marked as 1. From q2
+          to q1 there is another arc marked as 1. Finally from q1 to q0 there is an arc marked as 0. | transitions | what are transitions
+This automaton has three arcs. The first one starts at q0, being it the
+          initial and final state. From q0 to q2 there is an arc marked as 1. From q2 to q1 there is
+          another arc marked as 1. Finally from q1 to q0 there is an arc marked as 0. | arcs | what are arcs
+I'm not sure about your question. Try asking about states or transitions. Or
+          you can ask me to briefly describe you the automaton, for example. | accepting state | what is accepting state
+undefined | states are there | how many transitions and states are there
+undefined | states are there | how many transitions and states are there
+undefined | transitions are there | how many states and transitions are there
+undefined | transitions are there | how many states and transitions are there
+This automaton has three states. q0 is the initial and final state.
+          q0 is connected to q2 which is in turn connected to q1. Finally, q1 is connected to q0. | the states | what are the states
+This automaton has three transitions. The first one starts at
+          q0, being it the initial and final state. From q0 and q2 there is a transition marked as
+          1. From q2 to q1 there is another transition marked as 1. Finally from q1 to q0 there is a
+          transition marked as 0. | the transitions | what are the transitions
+There are a total of 3 states. q0, q1, and q2. q0 is both initial and final
+      state. |  | How many states
+In this automaton there are 3 states and 3 transitions. From each state only one transition starts. Each state receives one transition. | transitions | How many states and transitions
+undefined | transitions are there | How many states and transitions are there
+Il server è in ascolto su http://localhost:3000/
+In this automaton there are 3 states and 3 transitions. From each state only one transition starts. Each state receives one transition. | transitions are there | how many states and transitions are there
+In this automaton there are 5 states and 5 transitions. From each state only one transition starts. Each state receives one transition. | transitions are there | how many states and transitions are there
+The language accepted by this automaton is made of zero or more words formed by a
+      sequence of
+      a pair of 1s followed by a 0. |  | language
+Hi. I'm the chatbot NoVAGraphS. I'm programmed to answer questions to describe      graphical structures, and in particular, automata. Ask me to describe you in general Automaton      1 or a more specific question about it. |  | hi
+There are a total of 5 states. q0, q1, q2, q3, and q4. q0 is both initial and final      state. | are there | how many states are there
+There are a total of 5 states. q0, q1, q2, q3, and q4. q0 is both initial and final      state. |  | how many states
+In this automaton there are 5 states and 5 transitions. From each state only one transition starts. Each state receives one transition. | transitions | how many states and transitions
+In this automaton there are 5 states and 5 transitions. From each state only one transition starts. Each state receives one transition. | aaaa | how many transitions and aaaa
+This automaton accepts zero or more words in a binary alphabet formed by a sequence of a triple of 1s followed by a pair of 0s. |  describe,the automaton | describe briefly the automaton
+There are a total of 5 states: q0, q1, q2, q3, and q4.      q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again by 0. |  | tell me more
+I'm not sure about your question. Try asking about states or transitions. Or          you can ask me to briefly describe you the automaton, for example. | automata | what are automata
+A finite-state automaton is a dynamic, discrete, invariant system          in which the sets of input, output and state are finite.          The system can be in any of a finite number of internal states that define the automaton.          A particularly important class of automata is that of automata capable of recognizing          whether or not a string is part of a given language or not: recognizer automata.          Such a finite-state automaton consists of a finite set of states and a finite set of          transitions from one state to another. For each distinct pair formed by a state of the          automaton (the departure state) and an alphabet symbol, there is a transition to an          arrival state. The symbol of the pair is said to be associated with the transition, or          even that the transition "accepts the symbol." The state of arrival state can also          coincide with the start state. Each finite-state automaton is uniquely associated with an          oriented graph called a transition diagram. The nodes of the graph coincide with the          states of the automaton. If there is a transition from state q to state p with a as the          associated symbol, then there is an arc oriented from node q to node p and labeled with          the symbol a. See the Homepage for more. | an automaton | what is an automaton
+A transition is a function which defines the movement of an          automaton from one state to another by treating the current state and current input symbol          as an ordered pair. For each pair of "current state" and "current input symbol" (the          function input), the transition function produces as output the next state in the          automaton. | a transition | what is a transition
+The language accepted by this automaton is made of zero or more words formed by a      sequence of a triple of 1s followed by a pair of 0s. |  what about the | what about the language
+The alphabet accepted by this automaton is a binary alphabet made by 0s and 1s. If you want to      know about the language accepted, ask me about it. |  what about the | what about the alphabet
+This automaton has five states. q0 is the initial and final state. From          q0 to q1 there is an arc marked as 1. From q1 to q2 there is another arc marked as 1. From          q2 to q3 there is an arc marked as 1. From q3 to q4 there is an arc marked as 0. Finally,          from q4 to q0 there is an arc marked as 0. |  states,states | tell me about states
+This automaton has five arcs. q0 is the initial and final state. From q0          to q1 there is an arc marked as 1. From q1 to q2 there is another arc marked as 1. From q2          to q3 there is an arc marked as 1. From q3 to q4 there is an arc marked as 0. Finally,          from q4 to q0 there is an arc marked as 0. |  arcs,arcs | tell me about arcs
+I'm not sure about your question. Try asking about states or transitions. Or          you can ask me to briefly describe you the automaton, for example. | an accepting state | what is an accepting state
+q0 is both the initial and final state. |  what s the, what s the | what s the initial state
+From q1 there is only one transition to q2 marked with 1. |  how may transitions start from, how may transitions start from  | how may transitions start from q1
+From q1 there is only one transition to q2 marked with 1. |  transitions to, transitions to  | transitions to q1
+From q1 there is only one transition to q2 marked with 1. |  how many transitions go to, how many transitions go to  | how many transitions go to q1
+In this automaton there are 5 states and 5 transitions. From each state only one transition starts. Each state receives one transition. | edges | how many states and edges 
+I dont' know. Just try asking something like, "How is the automaton represented?" |  is it directed  | is it directed 
+This automaton can be represented as a pentagon with its states arranged as vertices. |  How is the automaton, How is the automaton  | How is the automaton represented 
+I dont' know. Try asking something like, "Describe the automaton." |  has it cycles  | has it cycles 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a pair of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again with 0. |  | Describe the automaton
+The language accepted by this automaton is made of zero or more words formed by a      sequence of a triple of 1s followed by a pair of 0s. |  The automaton accepts a,allowing words made of an odd number of 0s and 1s | The automaton accepts a language allowing words made of an odd number of 0s and 1s 
+There is only one arc starting from each state. The first three in clockwise      direction are marked with 1, the remaining two with 0. |  is it possible repetitive,in the transactions | is it possible repetitive pattern in the transactions 
+The language accepted by this automaton is made of zero or more words formed by a      sequence of a triple of 1s followed by a pair of 0s. |  If q2 is the final state the,accepted by the automaton is the same | If q2 is the final state the language accepted by the automaton is the same
+I dont' know. Just try asking something like, "How is the automaton represented?" |  What can I use finite state automata for  | What can I use finite state automata for 
+There are a total of 3 states. q0, q1, and q2. q0 is both initial and final
+      state. | can I use in an automaton | How many states can I use in an automaton 
+I dont' know. Just try asking something like, "How is the automaton represented?" |  Can I use 5 states in an automaton  | Can I use 5 states in an automaton 
+I'm not sure about your question. Try asking about states or transitions. Or
+          you can ask me to briefly describe you the automaton, for example. | the final state of an automaton | What is the final state of an automaton 
+I dont' know. Try just asking something like, "How many states are there?" |  How can I define an automaton  | How can I define an automaton 
+I dont' know. Try asking something like, "Describe the automaton." |  How is an automaton defined  | How is an automaton defined 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a
+      sequence of a pair of 1s followed by a 0. There are a total of 3 states: q0, q1, and
+      q2. q0 is both initial and end state.
+      From each state 1 arc starts: from q0 the arc points to q2 and is marked with 1.
+      From q2 it points to q1 and is marked with 1.
+      From q1 it points to q0 and is marked with 0. |  | Describe the automaton
+I'm not sure about your question. Try asking about states or transitions. Or
+          you can ask me to briefly describe you the automaton, for example. | an example of accepted string | What is an example of accepted string 
+q0 is both the initial and final state. |  What is the, What is the | What is the final state 
+From q0 there is only one transition to q2 marked with 1. |  Which transitions start from, Which transitions start from  | Which transitions start from q0 
+From q0 there is only one transition to q2 marked with 1. |  How many transitions start from, How many transitions start from  | How many transitions start from q0 
+From q1 there is only one transition to q0 marked with 0. |  Which transitions start from, Which transitions start from  | Which transitions start from q1 
+From q2 there is only one transition to q1 marked with 1. |  Which transitions start from, Which transitions start from  | Which transitions start from q2 
+From q0 there is only one transition to q2 marked with 1. |  Which transitions end in, Which transitions end in  | Which transitions end in q0 
+I dont' know. Try asking something like, "Describe the automaton." |  0011  | 0011
+I dont' know. Try asking something like, "Describe the automaton." |  something  | something
+I dont' know. Try asking something like, "Describe the automaton." |  atomaton 2  | atomaton 2 
+I dont' know. Just try asking something like, "How is the automaton represented?" |  where is automaton 2  | where is automaton 2 
+The automaton can be represented with the states arranged as vertices of a triangle. |  How is the automaton | How is the automaton represented 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a
+      sequence of a pair of 1s followed by a 0. There are a total of 3 states: q0, q1, and
+      q2. q0 is both initial and end state.
+      From each state 1 arc starts: from q0 the arc points to q2 and is marked with 1.
+      From q2 it points to q1 and is marked with 1.
+      From q1 it points to q0 and is marked with 0. |  | Describe the automaton
+There are a total of 3 arcs. Try asking me if there is a particular pattern among
+      them. | are there | How many transitions are there 
+Yes, there is only one arc starting from each state. The first 2 in anti-clockwise
+      direction are marked by 1, the remaining by 0. |  Is there a,among the arcs | Is there a pattern among the arcs 
+This automaton accepts zero or more words in a binary alphabet formed by a sequence of a triple of 1s followed by a pair of 0s. | describe the automaton | Briefly describe the automaton
+I dont' know. Just try asking something like, "How is the automaton represented?" |  Does it only accept 1s and 0s  | Does it only accept 1s and 0s 
+This automaton can be represented as a pentagon with its states arranged as vertices. |  How is the automaton, How is the automaton  | How is the automaton represented 
+I dont' know. Try asking something like, "Which is the initial state?" |  And how about the arrows  | And how about the arrows 
+q0 is both the initial and final state. |  Which is the, Which is the | Which is the initial state 
+I dont' know. Try just asking something like, "How many states are there?" |  Does it have 5 states then  | Does it have 5 states then 
+There are a total of 5 states. q0, q1, q2, q3, and q4. q0 is both initial and final      state. | are there | How many states are there 
+I dont' know. Try asking something like, "Which is the initial state?" |  Give me a list of the arcs  | Give me a list of the arcs
+Yes, there is a transition from q0 to q1 and is marked with 1. |  Is there an arc from,q1 | Is there an arc from q0 to q1 
+I'm not sure about your question. Try asking about states or transitions. Or          you can ask me to briefly describe you the automaton, for example. | the shape of the arcs | What is the shape of the arcs 
+From q0 there is only one transition to q1 marked with 1. |  Is there an arc from,q2 q3 or q4 | Is there an arc from q0 to q2 q3 or q4 
+From q1 there is only one transition to q2 marked with 1. |  Which are the transitions from, Which are the transitions from  | Which are the transitions from q1 
+From q2 there is only one transition to q3 marked with 1. |  Which are the transitions from, Which are the transitions from  | Which are the transitions from q2 
+From q3 there is only one transition to q4 marked with 0. |  Which are the transitions from, Which are the transitions from  | Which are the transitions from q3 
+From q4 there is only one transition to q0 marked with 0. |  Which are the transitions from, Which are the transitions from  | Which are the transitions from q4 
+I'm not sure about your question. Try asking about states or transitions. Or          you can ask me to briefly describe you the automaton, for example. | the purpose of the automaton | What is the purpose of the automaton 
+From q1 there is only one transition to q2 marked with 1. |  What happens when a 0 comes to state, What happens when a 0 comes to state  | What happens when a 0 comes to state q1 
+There are a total of 5 states. q0, q1, q2, q3, and q4. q0 is both initial and final      state. | do you have | How many states do you have 
+I dont' know. Try asking something like, "What is the accepted language?" |  how are your states linked together  | how are your states linked together 
+From q0 there is only one transition to q1 marked with 1. |  linked to q0,linked to q0 | is q0 linked to q0 
+Pagina non trovata
+From q1 there is only one transition to q2 marked with 1. |  linked to q4,linked to q4 | is q1 linked to q4 
+I'm not sure about your question. Try asking about states or transitions. Or          you can ask me to briefly describe you the automaton, for example. | the transitions from q4 | what are the transitions from q4
+I'm not sure about your question. Try asking about states or transitions. Or          you can ask me to briefly describe you the automaton, for example. | the links of q4 | what are the links of q4 
+I'm not sure about your question. Try asking about states or transitions. Or          you can ask me to briefly describe you the automaton, for example. | the transitions from q4 | what are the transitions from q4 
+From q0 there is only one transition to q1 marked with 1. |  is q4 linked to, is q4 linked to  | is q4 linked to q0 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a pair of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again with 0. |  can you,me the automaton | can you describe me the automaton 
+I dont' know. Try asking something like, "Describe the automaton." |  What could be a minimal spatial representation for this automaton  | What could be a minimal spatial representation for this automaton 
+This automaton accepts zero or more words in a binary alphabet formed by a sequence of a triple of 1s followed by a pair of 0s. |  Could you,describe the automaton | Could you briefly describe the automaton 
+There are a total of 5 states. q0, q1, q2, q3, and q4. q0 is both initial and final      state. | are there | How many states are there 
+Yes, there is a transition from q0 to q1 and is marked with 1. |  Is there an arc from,q1 | Is there an arc from q0 to q1 
+Yes, there is a transition from q1 to q2 and is marked with 1. |  Is there an arc from,q2 | Is there an arc from q1 to q2 
+I'm not sure about your question. Try asking about states or transitions. Or          you can ask me to briefly describe you the automaton, for example. | the states connected to q0 | What are the states connected to q0 
+Yes, there is a transition from q2 to q3 and is marked with 1. |  Is there an arc from,q3 | Is there an arc from q2 to q3 
+Yes, there is a transition from q3 to q4 and is marked with 0. |  Is there an arc from,q4 | Is there an arc from q3 to q4 
+From q0 there is only one transition to q1 marked with 1. |  Is there an arc from q4 to, Is there an arc from q4 to  | Is there an arc from q4 to q0 
+From q4 there is only one transition to q0 marked with 0. |  Is there an arc from, Is there an arc from  | Is there an arc from q4 
+From q0 there is only one transition to q1 marked with 1. |  Is there an arc from, Is there an arc from  | Is there an arc from q0 
+From q1 there is only one transition to q2 marked with 1. |  Is there an arc from, Is there an arc from  | Is there an arc from q1 
+From q2 there is only one transition to q3 marked with 1. |  Is there an arc from, Is there an arc from  | Is there an arc from q2 
+From q3 there is only one transition to q4 marked with 0. |  Is there an arc from, Is there an arc from  | Is there an arc from q3 
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+There are a total of 3 states. q0, q1, and q2. q0 is both initial and final
+      state. | are there | how many states are there 
+From q0 there is only one transition to q2 marked with 1. |  q1,q1 | is there an arc between q0 and q1 
+I dont' know. Try asking something like, "Describe the automaton." |  which are the trasitions  | which are the trasitions 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a
+      sequence of a pair of 1s followed by a 0. There are a total of 3 states: q0, q1, and
+      q2. q0 is both initial and end state.
+      From each state 1 arc starts: from q0 the arc points to q2 and is marked with 1.
+      From q2 it points to q1 and is marked with 1.
+      From q1 it points to q0 and is marked with 0. |  | describe the automaton
+There are a total of 5 states. q0, q1, q2, q3, and q4. q0 is both initial and final      state. | does the automaton have | How many states does the automaton have 
+I dont' know. Try asking something like, "Which is the initial state?" |  Are there any loops  | Are there any loops 
+From q0 there is only one transition to q1 marked with 1. |  What transitions enter and exit, What transitions enter and exit  | What transitions enter and exit q0 
+From q1 there is only one transition to q2 marked with 1. |  What transitions enter and exit, What transitions enter and exit  | What transitions enter and exit q1 
+From q2 there is only one transition to q3 marked with 1. |  What transitions enter and exit, What transitions enter and exit  | What transitions enter and exit q2 
+From q4 there is only one transition to q0 marked with 0. |  What transitions enter and exit, What transitions enter and exit  | What transitions enter and exit q4 
+From q3 there is only one transition to q4 marked with 0. |  What transitions enter and exit, What transitions enter and exit  | What transitions enter and exit q3 
+I dont' know. Try just asking something like, "How many states are there?" |  What does the automaton recognize  | What does the automaton recognize 
+The language accepted by this automaton is made of zero or more words formed by a      sequence of a triple of 1s followed by a pair of 0s. |  What is the accepted | What is the accepted language 
+There are a total of 5 states. q0, q1, q2, q3, and q4. q0 is both initial and final      state. | are there | How many states are there 
+There are a total of 5 arcs. Try asking me if there is a particular pattern among      them. | are there | How many transitions are there 
+There is only one arc starting from each state. The first three in clockwise      direction are marked with 1, the remaining two with 0. |  Is there a particular | Is there a particular pattern 
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+I dont' know. Try asking something like, "Describe the automaton." |  Which are the principal pros  | Which are the principal pros 
+I dont' know. Try asking something like, "Which is the initial state?" |  Whatsappo  | Whatsappo
+I'm not sure about your question. Try asking about states or transitions. Or
+          you can ask me to briefly describe you the automaton, for example. | automaton | What are automaton 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a
+      sequence of a pair of 1s followed by a 0. There are a total of 3 states: q0, q1, and
+      q2. q0 is both initial and end state.
+      From each state 1 arc starts: from q0 the arc points to q2 and is marked with 1.
+      From q2 it points to q1 and is marked with 1.
+      From q1 it points to q0 and is marked with 0. | automaton | Describe automaton
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+I'm not sure about your question. Try asking about states or transitions. Or
+          you can ask me to briefly describe you the automaton, for example. | the phd for | what is the phd for 
+I dont' know. Just try asking something like, "How is the automaton represented?" |  maximum number of states in an automaton  | maximum number of states in an automaton
+The automaton can be represented with the states arranged as vertices of a triangle. |  How is the automaton | How is the automaton represented 
+There are a total of 3 states. q0, q1, and q2. q0 is both initial and final
+      state. | does a pentagon shaped automaton have | How many states does a pentagon shaped automaton have 
+This automaton accepts zero or more words in a binary alphabet formed by a sequence of a pair of 1s followed by a 0. | describe the automaton How many states are there | Briefly describe the automaton How many states are there 
+This automaton accepts zero or more words in a binary alphabet formed by a sequence of a pair of 1s followed by a 0. | describe the automaton 2 How many states are there | Briefly describe the automaton 2 How many states are there 
+There are a total of 3 states. q0, q1, and q2. q0 is both initial and final
+      state. | are in Automation 2 | How many states are in Automation 2
+There are a total of 3 arcs. Try asking me if there is a particular pattern among
+      them. | are there | How many transitions are there 
+From q0 there is only one transition to q2 marked with 1. |  Is there a transition from,q5 | Is there a transition from q0 to q5 
+I dont' know. Try asking something like, "Describe the automaton." |  According to your understanding of Automaton 2 what is its optimal spatial representation  | According to your understanding of Automaton 2 what is its optimal spatial representation 
+The language accepted by this automaton is made of zero or more words formed by a
+      sequence of
+      a pair of 1s followed by a 0. |  The automaton accepts a,allowing words made of an odd number of 0s and 1s | The automaton accepts a language allowing words made of an odd number of 0s and 1s
+I dont' know. Try asking something like, "Which is the initial state?" |  How many nodes are there  | How many nodes are there 
+q0 is both the initial and final state. |  Which is the, Which is the | Which is the initial state 
+There are a total of 5 states. q0, q1, q2, q3, and q4. q0 is both initial and final      state. |  | How many states 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a pair of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again with 0. |  Please | Please describe the automaton
+I dont' know. Try asking something like, "Describe the automaton." |  Can you provide a representation of the automaton  | Can you provide a representation of the automaton 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a pair of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again with 0. | graphically automaton | Describe graphically automaton
+I dont' know. Try asking something like, "Describe the automaton." |  Give me some examples of inputs and output  | Give me some examples of inputs and output
+I dont' know. Try asking something like, "Which is the initial state?" |  Can you provide me some examples of inputs  | Can you provide me some examples of inputs 
+q0 is both the initial and final state. |  Which is the, Which is the | Which is the initial state 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a pair of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again with 0. |  Can you,the input and the output | Can you describe the input and the output 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a pair of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again with 0. |  Can you,the transition function | Can you describe the transition function 
+I'm not sure about your question. Try asking about states or transitions. Or          you can ask me to briefly describe you the automaton, for example. | the output | What is the output 
+I dont' know. Try asking something like, "What is the accepted language?" |  Talk me about transitions  | Talk me about transitions
+The language accepted by this automaton is made of zero or more words formed by a      sequence of a triple of 1s followed by a pair of 0s. |  What is the accepted | What is the accepted language 
+I'm not sure about your question. Try asking about states or transitions. Or          you can ask me to briefly describe you the automaton, for example. | the result | What is the result 
+I dont' know. Try asking something like, "Which is the initial state?" |  Output  | Output 
+q0 is both the initial and final state. |  Which is the, Which is the | Which is the initial state 
+There are a total of 3 states. q0, q1, and q2. q0 is both initial and final
+      state. | are there | How many states are there 
+This automaton accepts zero or more words in a binary alphabet formed by a sequence of a pair of 1s followed by a 0. | describe the automaton | Briefly describe the automaton
+The automaton can be represented with the states arranged as vertices of a triangle. |  How is the automaton | How is the automaton represented 
+From q0 there is only one transition to q2 marked with 1. |  q1,q1 | Is there an arc between q0 and q1 
+From q1 there is only one transition to q0 marked with 0. |  q2,q2 | Is there an arc between q1 and q2 
+I'm not sure about your question. Try asking about states or transitions. Or          you can ask me to briefly describe you the automaton, for example. | optimization | what is optimization
+I'm not sure about your question. Try asking about states or transitions. Or          you can ask me to briefly describe you the automaton, for example. | automation | what is automation 
+From q0 there is only one transition to q1 marked with 1. |  is q5 linked to, is q5 linked to  | is q5 linked to q0 
+This automaton accepts zero or more words in a binary alphabet formed by a sequence of a triple of 1s followed by a pair of 0s. | describe the automaton | Briefly describe the automaton
+There are a total of 5 states. q0, q1, q2, q3, and q4. q0 is both initial and final      state. | are there | How many states are there 
+There are a total of 5 arcs. Try asking me if there is a particular pattern among      them. | are there | How many transitions are there 
+From q0 there is only one transition to q1 marked with 1. |  Is there a transition from,q5 | Is there a transition from q0 to q5 
+I'm not sure about your question. Try asking about states or transitions. Or          you can ask me to briefly describe you the automaton, for example. | its optimal spatial representation | what is its optimal spatial representation 
+I'm not sure about your question. Try asking about states or transitions. Or          you can ask me to briefly describe you the automaton, for example. | optimal spatial representation | what is optimal spatial representation 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a
+      sequence of a pair of 1s followed by a 0. There are a total of 3 states: q0, q1, and
+      q2. q0 is both initial and end state.
+      From each state 1 arc starts: from q0 the arc points to q2 and is marked with 1.
+      From q2 it points to q1 and is marked with 1.
+      From q1 it points to q0 and is marked with 0. |  | describe me the automaton
+There are a total of 3 states. q0, q1, and q2. q0 is both initial and final
+      state. | does the automaton have | how many states does the automaton have
+The language accepted by this automaton is made of zero or more words formed by a
+      sequence of
+      a pair of 1s followed by a 0. |  wat is the,recognised by the automaton | wat is the language recognised by the automaton 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a
+      sequence of a pair of 1s followed by a 0. There are a total of 3 states: q0, q1, and
+      q2. q0 is both initial and end state.
+      From each state 1 arc starts: from q0 the arc points to q2 and is marked with 1.
+      From q2 it points to q1 and is marked with 1.
+      From q1 it points to q0 and is marked with 0. |  | describe me the automaton
+I dont' know. Try just asking something like, "How many states are there?" |  Show me the automaton  | Show me the automaton
+There are a total of 3 states. q0, q1, and q2. q0 is both initial and final
+      state. | are These | How many states are These
+q0 is both the initial and final state. |  Which one si the, Which one si the | Which one si the final state
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+Pagina non trovata
+There are a total of 5 states. q0, q1, q2, q3, and q4. q0 is both initial and final      state. |  | how many states 
+I'm not sure about your question. Try asking about states or transitions. Or          you can ask me to briefly describe you the automaton, for example. | the input symbols | what are the input symbols 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a pair of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again with 0. |  can you | can you describe the automaton 
+This automaton can be represented as a pentagon with its states arranged as vertices. |  How is the automaton, How is the automaton  | How is the automaton represented 
+I dont' know. Try just asking something like, "How many states are there?" |  How are transitions defined  | How are transitions defined 
+I dont' know. Try asking something like, "Describe the automaton." |  can you deescribe the transitions  | can you deescribe the transitions 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a pair of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again with 0. |  can you,the transitions | can you describe the transitions 
+I dont' know. Try asking something like, "Which is the initial state?" |  if the input is 11100 which is the result  | if the input is 11100 which is the result 
+I dont' know. Try asking something like, "What is the accepted language?" |  if the input is 110 which is the result  | if the input is 110 which is the result 
+This automaton accepts zero or more words in a binary alphabet formed by a sequence of a pair of 1s followed by a 0. | describe the automation | briefly describe the automation
+There are a total of 3 states. q0, q1, and q2. q0 is both initial and final
+      state. |  | how many states 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a
+      sequence of a pair of 1s followed by a 0. There are a total of 3 states: q0, q1, and
+      q2. q0 is both initial and end state.
+      From each state 1 arc starts: from q0 the arc points to q2 and is marked with 1.
+      From q2 it points to q1 and is marked with 1.
+      From q1 it points to q0 and is marked with 0. |  HOW MANY ARCS,the automation | how many transitions 
+I'm not sure about your question. Try asking about states or transitions. Or
+          you can ask me to briefly describe you the automaton, for example. | the best way to represent this automa | What is the best way to represent this automa 
+I'm not sure about your question. Try asking about states or transitions. Or
+          you can ask me to briefly describe you the automaton, for example. | its optimal spatial representation | what is its optimal spatial representation
+q0 is both the initial and final state. |  What is the, What is the | What is the initial state 
+q0 is both the initial and final state. |  What is the, What is the | What is the final state 
+This automaton has three transitions. The first one starts at q0,
+          being it the initial and final state. From q0 to q2 there is a transition marked as 1.
+          From q2 to q1 there is another transition marked as 1. Finally from q1 to q0 there is a
+          transition marked as 0. |  transitions,transitions | What about transitions 
+The language accepted by this automaton is made of zero or more words formed by a
+      sequence of
+      a pair of 1s followed by a 0. |  what,accepts this auotmata | what language accepts this auotmata 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a pair of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again with 0. |  Can you | Can you describe the automaton 
+I'm not sure about your question. Try asking about states or transitions. Or          you can ask me to briefly describe you the automaton, for example. | the accepted inputs | What are the accepted inputs 
+The language accepted by this automaton is made of zero or more words formed by a      sequence of a triple of 1s followed by a pair of 0s. |  What is the accepted | What is the accepted language 
+The language accepted by this automaton is made of zero or more words formed by a      sequence of a triple of 1s followed by a pair of 0s. |  Is 11100 part of the accepted | Is 11100 part of the accepted language 
+There are a total of 5 arcs. Try asking me if there is a particular pattern among      them. | are there in the automaton | How many transitions are there in the automaton 
+There is only one arc starting from each state. The first three in clockwise      direction are marked with 1, the remaining two with 0. |  Is there a particular,among the arcs | Is there a particular pattern among the arcs 
+From q0 there is only one transition to q1 marked with 1. |  Is there a transition from,q5 | Is there a transition from q0 to q5 
+I'm not sure about your question. Try asking about states or transitions. Or          you can ask me to briefly describe you the automaton, for example. | all the transictions | what are all the transictions 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a pair of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again with 0. |  Please,the transitions | Please describe the transitions
+q0 is both the initial and final state. |  Is q0 the, Is q0 the | Is q0 the final state 
+This automaton accepts zero or more words in a binary alphabet formed by a sequence of a triple of 1s followed by a pair of 0s. | describe the automaton | Briefly describe the automaton
+There are a total of 5 states. q0, q1, q2, q3, and q4. q0 is both initial and final      state. |  | how many states 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a pair of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again with 0. |  can you | can you describe the automaton 
+I dont' know. Try asking something like, "Describe the automaton." |  which is finite set of possible output symbols  | which is finite set of possible output symbols 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a pair of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again with 0. |  can you,the transition function | can you describe the transition function 
+I dont' know. Just try asking something like, "How is the automaton represented?" |  if the input is 11100 which is the output  | if the input is 11100 which is the output 
+This automaton can be represented as a pentagon with its states arranged as vertices. |  How is the automaton, How is the automaton  | How is the automaton represented 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a pair of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again with 0. |  can you,the q0 state | can you describe the q0 state 
+Pagina non trovata
+Pagina non trovata
+A finite-state automaton is a dynamic, discrete, invariant system
+          in which the sets of input, output and state are finite.
+          The system can be in any of a finite number of internal states that define the automaton.
+          A particularly important class of automata is that of automata capable of recognizing
+          whether or not a string is part of a given language or not: recognizer automata.
+          Such a finite-state automaton consists of a finite set of states and a finite set of
+          transitions from one state to another. For each distinct pair formed by a state of the
+          automaton (the departure state) and an alphabet symbol, there is a transition to an
+          arrival state. The symbol of the pair is said to be associated with the transition, or
+          even that the transition "accepts the symbol." The state of arrival state can also
+          coincide with the start state. Each finite-state automaton is uniquely associated with an
+          oriented graph called a transition diagram. The nodes of the graph coincide with the
+          states of the automaton. If there is a transition from state q to state p with a as the
+          associated symbol, then there is an arc oriented from node q to node p and labeled with
+          the symbol a. See the Homepage for more. | an automaton | what is an automaton 
+I'm not sure about your question. Try asking about states or transitions. Or
+          you can ask me to briefly describe you the automaton, for example. | the initial stage of the automaton | what is the initial stage of the automaton
+It is an automaton which accepts zero or more words in a binary alphabet formed by a
+      sequence of a pair of 1s followed by a 0. There are a total of 3 states: q0, q1, and
+      q2. q0 is both initial and end state.
+      From each state 1 arc starts: from q0 the arc points to q2 and is marked with 1.
+      From q2 it points to q1 and is marked with 1.
+      From q1 it points to q0 and is marked with 0. |  Breifly,me the automaton | Breifly describe me the automaton
+I'm not sure about your question. Try asking about states or transitions. Or
+          you can ask me to briefly describe you the automaton, for example. | the initial state of the automaton | what is the initial state of the automaton
+The language accepted by this automaton is made of zero or more words formed by a
+      sequence of
+      a pair of 1s followed by a 0. |  what is the,accepted by the automaton | what is the language accepted by the automaton 
+I dont' know. Try asking something like, "Describe the automaton." |  is the string 110 accepted by the automaton  | is the string 110 accepted by the automaton 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a
+      sequence of a pair of 1s followed by a 0. There are a total of 3 states: q0, q1, and
+      q2. q0 is both initial and end state.
+      From each state 1 arc starts: from q0 the arc points to q2 and is marked with 1.
+      From q2 it points to q1 and is marked with 1.
+      From q1 it points to q0 and is marked with 0. |  | Describe the automaton
+It is an automaton which accepts zero or more words in a binary alphabet formed by a
+      sequence of a pair of 1s followed by a 0. There are a total of 3 states: q0, q1, and
+      q2. q0 is both initial and end state.
+      From each state 1 arc starts: from q0 the arc points to q2 and is marked with 1.
+      From q2 it points to q1 and is marked with 1.
+      From q1 it points to q0 and is marked with 0. | the transition table of the automaton | describe the transition table of the automaton 
+From q0 there is only one transition to q2 marked with 1. |  is there an arc from,q1 | is there an arc from q0 to q1 
+From q1 there is only one transition to q0 marked with 0. |  is there an arc from q2 to, is there an arc from q2 to  | is there an arc from q2 to q1 
+There are a total of 3 states. q0, q1, and q2. q0 is both initial and final
+      state. | there are | how many states there are 
+I'm not sure about your question. Try asking about states or transitions. Or
+          you can ask me to briefly describe you the automaton, for example. |  what symbols does the automaton accept  | what symbols does the automaton accept
+I'm not sure about your question. Try asking about states or transitions. Or
+          you can ask me to briefly describe you the automaton, for example. | the symbols accepted by the automaton | what are the symbols accepted by the automaton 
+The alphabet accepted by this automaton is a binary alphabet made by 0s and 1s. If you want to
+      know about the language accepted, ask me about it. |  what is the | what is the alphabet 
+The automaton can be represented with the states arranged as vertices of a triangle. |  how is the automaton | how is the automaton represented 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a
+      sequence of a pair of 1s followed by a 0. There are a total of 3 states: q0, q1, and
+      q2. q0 is both initial and end state.
+      From each state 1 arc starts: from q0 the arc points to q2 and is marked with 1.
+      From q2 it points to q1 and is marked with 1.
+      From q1 it points to q0 and is marked with 0. |  | describe
+It is an automaton which accepts zero or more words in a binary alphabet formed by a
+      sequence of a pair of 1s followed by a 0. There are a total of 3 states: q0, q1, and
+      q2. q0 is both initial and end state.
+      From each state 1 arc starts: from q0 the arc points to q2 and is marked with 1.
+      From q2 it points to q1 and is marked with 1.
+      From q1 it points to q0 and is marked with 0. |  brilli | brilli describe
+This automaton accepts zero or more words in a binary alphabet formed by a sequence of a pair of 1s followed by a 0. |  brilli, brilli  | briefly
+I dont' know. Try asking something like, "Describe the automaton." |  Vorrei una descrizione di Automa1  | Vorrei una descrizione di Automa1
+I dont' know. Try just asking something like, "How many states are there?" |  Descrivi l automa  | Descrivi l automa
+There are a total of 3 states. q0, q1, and q2. q0 is both initial and final
+      state. | are there | How many states are there 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a
+      sequence of a pair of 1s followed by a 0. There are a total of 3 states: q0, q1, and
+      q2. q0 is both initial and end state.
+      From each state 1 arc starts: from q0 the arc points to q2 and is marked with 1.
+      From q2 it points to q1 and is marked with 1.
+      From q1 it points to q0 and is marked with 0. | automa | Describe automa
+I dont' know. Try asking something like, "Describe the automaton." |  How many regions are there in Italy  | How many regions are there in Italy 
+I dont' know. Try asking something like, "Describe the automaton." |  In which year we are  | In which year we are 
+I dont' know. Try asking something like, "Describe the automaton." |  In which year we are  | In which year we are 
+Yes, there is only one arc starting from each state. The first 2 in anti-clockwise
+      direction are marked by 1, the remaining by 0. |  It is possible to find a repetitive,in the transitions | It is possible to find a repetitive pattern in the transitions
+The language accepted by this automaton is made of zero or more words formed by a
+      sequence of
+      a pair of 1s followed by a 0. |  The automaton accepts a,allowing words made of an odd number of 0s and 1s | The automaton accepts a language allowing words made of an odd number of 0s and 1s
+The language accepted by this automaton is made of zero or more words formed by a
+      sequence of
+      a pair of 1s followed by a 0. |  If q2 were the final state the,accepted by the automaton is the same | If q2 were the final state the language accepted by the automaton is the same
+The language accepted by this automaton is made of zero or more words formed by a
+      sequence of
+      a pair of 1s followed by a 0. |  If q2 were the final state the,accepted by the automaton is the same | If q2 were the final state the language accepted by the automaton is the same
+The language accepted by this automaton is made of zero or more words formed by a
+      sequence of
+      a pair of 1s followed by a 0. |  If q0 were the final state the,accepted by the automaton is the same | If q0 were the final state the language accepted by the automaton is the same 
+I dont' know. Try just asking something like, "How many states are there?" |  which are the transitions  | which are the transitions
+I dont' know. Try asking something like, "Which is the initial state?" |  dddd  | dddd
+From q0 there is only one transition to q1 marked with 1. |  Is there an arc from q4 to, Is there an arc from q4 to  | Is there an arc from q4 to q0 
+From q0 there is only one transition to q1 marked with 1. |  is there an arc to, is there an arc to  | is there an arc to q0
+From q4 there is only one transition to q0 marked with 0. |  is there an arc to, is there an arc to  | is there an arc to q4
+I'm not sure about your question. Try asking about states or transitions. Or          you can ask me to briefly describe you the automaton, for example. | your inputs | What are your inputs 
+This automaton accepts zero or more words in a binary alphabet formed by a sequence of a triple of 1s followed by a pair of 0s. |  Can you,describe the automaton | Can you briefly describe the automaton 
+There are a total of 5 states. q0, q1, q2, q3, and q4. q0 is both initial and final      state. | are there | How many states are there 
+From q0 there is only one transition to q1 marked with 1. |  itself,itself | There is an arch between q0 and itself 
+Yes, there is a transition from q0 to q1 and is marked with 1. |  q1,q1 | How it is marked the transaction between q0 and q1 
+I'm not sure about your question. Try asking about states or transitions. Or          you can ask me to briefly describe you the automaton, for example. | the outputs of the automata | What are the outputs of the automata 
+From q1 there is only one transition to q2 marked with 1. |  an ending state,an ending state | is q1 an ending state 
+I'm not sure about your question. Try asking about states or transitions. Or
+          you can ask me to briefly describe you the automaton, for example. | the starting state | What is the starting state 
+This automaton has three states. q0 is the initial and final state.
+          q0 is connected to q2 which is in turn connected to q1. Finally, q1 is connected to q0. | the states | What are the states 
+I dont' know. Try asking something like, "Describe the automaton." |  What direction are the connections between the states  | What direction are the connections between the states 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a
+      sequence of a pair of 1s followed by a 0. There are a total of 3 states: q0, q1, and
+      q2. q0 is both initial and end state.
+      From each state 1 arc starts: from q0 the arc points to q2 and is marked with 1.
+      From q2 it points to q1 and is marked with 1.
+      From q1 it points to q0 and is marked with 0. |  | Describe the automaton
+There are a total of 5 states. q0, q1, q2, q3, and q4. q0 is both initial and final      state. | does Automaton 1 have | How many states does Automaton 1 have 
+There are a total of 5 arcs. Try asking me if there is a particular pattern among      them. | does the automata have | How many transitions does the automata have 
+I dont' know. Just try asking something like, "How is the automaton represented?" |  Show me the transitions of the automaton  | Show me the transitions of the automaton
+I dont' know. Try asking something like, "Describe the automaton." |  What transitions does the automaton have  | What transitions does the automaton have 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a pair of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again with 0. |  | Describe the automaton
+There are a total of 3 states. q0, q1, and q2. q0 is both initial and final
+      state. | has the automata | how many states has the automata 
+There are a total of 3 arcs. Try asking me if there is a particular pattern among
+      them. | are there in the automata | how many arcs are there in the automata
+Yes, there is only one arc starting from each state. The first 2 in anti-clockwise
+      direction are marked by 1, the remaining by 0. |  is there a particulare,among automata arcs | is there a particulare pattern among automata arcs
+I dont' know. Try asking something like, "What is the accepted language?" |  which is the transition function  | which is the transition function 
+The language accepted by this automaton is made of zero or more words formed by a
+      sequence of
+      a pair of 1s followed by a 0. |  What is the accepted | What is the accepted language 
+I dont' know. Just try asking something like, "How is the automaton represented?" |  how much does the representation takes  | how much does the representation takes 
+The automaton can be represented with the states arranged as vertices of a triangle. |  How is the automaton | How is the automaton represented
+I'm not sure about your question. Try asking about states or transitions. Or
+          you can ask me to briefly describe you the automaton, for example. | the regular expression describing the automata | what is the regular expression describing the automata 
+This automaton accepts zero or more words in a binary alphabet formed by a sequence of a pair of 1s followed by a 0. |  can you,describe the automata | can you briefly describe the automata 
+There are a total of 3 states. q0, q1, and q2. q0 is both initial and final
+      state. |  | how many states 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a
+      sequence of a pair of 1s followed by a 0. There are a total of 3 states: q0, q1, and
+      q2. q0 is both initial and end state.
+      From each state 1 arc starts: from q0 the arc points to q2 and is marked with 1.
+      From q2 it points to q1 and is marked with 1.
+      From q1 it points to q0 and is marked with 0. |  HOW MANY ARCS,the automata | how many transitions 
+There are a total of 3 arcs. Try asking me if there is a particular pattern among
+      them. |  | how many arcs 
+There are a total of 3 states. q0, q1, and q2. q0 is both initial and final
+      state. |  | how many states 
+There are a total of 3 arcs. Try asking me if there is a particular pattern among
+      them. |  | how many arcs 
+Yes, there is only one arc starting from each state. The first 2 in anti-clockwise
+      direction are marked by 1, the remaining by 0. |  is there a | is there a pattern 
+There are a total of 5 arcs. Try asking me if there is a particular pattern among      them. |  | how many arcs
+There is only one arc starting from each state. The first three in clockwise      direction are marked with 1, the remaining two with 0. |  is there a | is there a pattern 
+There are a total of 5 states. q0, q1, q2, q3, and q4. q0 is both initial and final      state. |  | how many states 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a pair of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again with 0. |  | describe
+This automaton accepts zero or more words in a binary alphabet formed by a sequence of a triple of 1s followed by a pair of 0s. |  describe | describe briefly
+Examples of questions may be: Briefly describe the automaton, How many states are there?, Is      there an arc from q0 to q1?, How is the automaton represented?      For more information click on Homepage tab. |  how can you,me | how can you help me
+I dont' know. Try just asking something like, "How many states are there?" |  Summarise the automaton  | Summarise the automaton
+There are a total of 3 states. q0, q1, and q2. q0 is both initial and final
+      state. | are there | How many states are there 
+The language accepted by this automaton is made of zero or more words formed by a
+      sequence of
+      a pair of 1s followed by a 0. |  What,does the automaton accept | What language does the automaton accept 
+There are a total of 3 arcs. Try asking me if there is a particular pattern among
+      them. | does the automata have | How many transitions does the automata have 
+I dont' know. Try just asking something like, "How many states are there?" |  What transitions does the automaton have  | What transitions does the automaton have 
+This automaton has three transitions. The first one starts at
+          q0, being it the initial and final state. From q0 and q2 there is a transition marked as
+          1. From q2 to q1 there is another transition marked as 1. Finally from q1 to q0 there is a
+          transition marked as 0. | the transitions | What are the transitions 
+This automaton accepts zero or more words in a binary alphabet formed by a sequence of a triple of 1s followed by a pair of 0s. | describe the automaton | briefly describe the automaton
+This automaton accepts zero or more words in a binary alphabet formed by a sequence of a triple of 1s followed by a pair of 0s. | describe the automaton | briefly describe the automaton
+There are a total of 5 states. q0, q1, q2, q3, and q4. q0 is both initial and final      state. | are there | how many states are there
+There are a total of 5 arcs. Try asking me if there is a particular pattern among      them. | there are | how many arcs there are
+There is only one arc starting from each state. The first three in clockwise      direction are marked with 1, the remaining two with 0. |  is there a particulare | is there a particulare pattern 
+From q0 there is only one transition to q1 marked with 1. |  are there arcs between q2 and, are there arcs between q2 and  | are there arcs between q2 and q0
+From q4 there is only one transition to q0 marked with 0. |  are there arcs from, are there arcs from  | are there arcs from q4
+From q4 there is only one transition to q0 marked with 0. |  are there arcs from, are there arcs from  | are there arcs from q4
+I'm not sure about your question. Try asking about states or transitions. Or          you can ask me to briefly describe you the automaton, for example. | the final states | what are the final states
+I dont' know. Try just asking something like, "How many states are there?" |  how many final states there are  | how many final states there are
+q0 is both the initial and final state. |  is q0 a, is q0 a | is q0 a final state
+q0 is both the initial and final state. |  is q4 a, is q4 a | is q4 a final state 
+I dont' know. Try asking something like, "Which is the initial state?" |  which are the final states  | which are the final states 
+q0 is both the initial and final state. |  which is the, which is the | which is the final state
+I dont' know. Try asking something like, "What is the accepted language?" |  How many final states are there  | How many final states are there 
+I dont' know. Try just asking something like, "How many states are there?" |  I wonder how this automaton is  | I wonder how this automaton is
+I dont' know. Try just asking something like, "How many states are there?" |  I wonder how this automaton is displayed  | I wonder how this automaton is displayed
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a pair of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again with 0. |  How would you | How would you describe the automaton
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a pair of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again with 0. |  | Describe the automaton
+From q1 there is only one transition to q2 marked with 1. |  Is there a so called state, Is there a so called state  | Is there a so called state q1 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a pair of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again with 0. |  | describe me the automaton
+Hi. I'm the chatbot NoVAGraphS. I'm programmed to answer questions to describe      graphical structures, and in particular, automata. Ask me to describe you in general Automaton      1 or a more specific question about it. |  | hi
+Examples of questions may be: Briefly describe the automaton, How many states are there?, Is      there an arc from q0 to q1?, How is the automaton represented?      For more information click on Homepage tab. |  | help
+I'm not sure about your question. Try asking about states or transitions. Or          you can ask me to briefly describe you the automaton, for example. | the weather like | what s the weather like
+Hi. I'm the chatbot NoVAGraphS. I'm programmed to answer questions to describe      graphical structures, and in particular, automata. Ask me to describe you in general Automaton      1 or a more specific question about it. |  | Hi
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a pair of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again with 0. | me this automaton | Describe me this automaton
+There are a total of 5 states. q0, q1, q2, q3, and q4. q0 is both initial and final      state. | are there | How many states are there 
+I dont' know. Try just asking something like, "How many states are there?" |  How many state are there  | How many state are there 
+I dont' know. Try asking something like, "Describe the automaton." |  Pippo  | Pippo
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a pair of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again with 0. |  | Describe the automaton 
+I dont' know. Try asking something like, "Describe the automaton." |  Tell me a little bit about the automaton  | Tell me a little bit about the automaton 
+I dont' know. Try just asking something like, "How many states are there?" |  Tell me a little bit about the automaton  | Tell me a little bit about the automaton 
+There are a total of 5 states. q0, q1, q2, q3, and q4. q0 is both initial and final      state. | are there | How many states are there 
+There are a total of 5 arcs. Try asking me if there is a particular pattern among      them. | are there | How many transitions are there 
+There are a total of 5 arcs. Try asking me if there is a particular pattern among      them. | are there | How many transitions are there 
+There is only one arc starting from each state. The first three in clockwise      direction are marked with 1, the remaining two with 0. |  Is there a,among the transitions | Is there a pattern among the transitions 
+From q0 there is only one transition to q1 marked with 1. |  Is there a transition from,q5 | Is there a transition from q0 to q5 
+The language accepted by this automaton is made of zero or more words formed by a      sequence of a triple of 1s followed by a pair of 0s. |  Does the automaton accept a,allowing words made of an odd number of 0s and 1s | Does the automaton accept a language allowing words made of an odd number of 0s and 1s 
+I dont' know. Try asking something like, "What is the accepted language?" |  Is it possible to repeat transitions  | Is it possible to repeat transitions 
+There is only one arc starting from each state. The first three in clockwise      direction are marked with 1, the remaining two with 0. |  It is possible to find a repetitive,in the transitions | It is possible to find a repetitive pattern in the transitions 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a pair of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again with 0. | it | describe it
+From q0 there is only one transition to q1 marked with 1. |  arcs between q4 and, arcs between q4 and  | arcs between q4 and q0
+From q4 there is only one transition to q0 marked with 0. |  arcs from, arcs from  | arcs from q4
+I dont' know. Try asking something like, "Which is the initial state?" |  final states  | final states
+I dont' know. Try asking something like, "Describe the automaton." |  which are the final states  | which are the final states 
+q0 is both the initial and final state. |  which is, which is | which is initial state
+q0 is both the initial and final state. |  which is, which is | which is final state
+q0 is both the initial and final state. |  which is, which is | final state
+I dont' know. Just try asking something like, "How is the automaton represented?" |  final states  |  final states
+From q1 there is only one transition to q2 marked with 1. |  arc from q2 to, arc from q2 to  | arc from q2 to q1
+Yes, there is a transition from q3 to q4 and is marked with 0. |  label from,q4 | label from q3 to q4
+There are a total of 5 arcs. Try asking me if there is a particular pattern among      them. |  | how many arcs
+There is only one arc starting from each state. The first three in clockwise      direction are marked with 1, the remaining two with 0. | among arcs | pattern among arcs
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a pair of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again with 0. |  | describe 
+From q2 there is only one transition to q3 marked with 1. |  arc from, arc from  | arc from q2
+From q3 there is only one transition to q4 marked with 0. |  transition from, transition from  | transition from q3
+q0 is both the initial and final state. |  the transitions,the transitions | initial state
+From q0 there is only one transition to q2 marked with 1. |  arc from, arc from  | arc from q0
+From q0 there is only one transition to q2 marked with 1. |  arc from, arc from  | arc from q0
+From q2 there is only one transition to q1 marked with 1. |  arc from, arc from  |  arc from q2
+From q1 there is only one transition to q0 marked with 0. |  transition from, transition from  | transition from q1
+Yes, there is only one arc starting from each state. The first 2 in anti-clockwise
+      direction are marked by 1, the remaining by 0. |  transition, transition  | transitions
+There are a total of 3 arcs. Try asking me if there is a particular pattern among
+      them. |  transition  | how many transitions
+Yes, there is only one arc starting from each state. The first 2 in anti-clockwise
+      direction are marked by 1, the remaining by 0. |  | pattern
+I dont' know. Try just asking something like, "How many states are there?" |  loops  | loops
+I dont' know. Try asking something like, "Describe the automaton." |  how many loops are there  | how many loops are there
+There are a total of 3 states. q0, q1, and q2. q0 is both initial and final
+      state. |  | how many states
+There is only one arc starting from each state. The first three in clockwise      direction are marked with 1, the remaining two with 0. |  transition, transition  | how many transitions
+There are a total of 5 states. q0, q1, q2, q3, and q4. q0 is both initial and final      state. | are there | how many states are there 
+I dont' know. Just try asking something like, "How is the automaton represented?" |  which are the states connected with 0  | which are the states connected with 0 
+I dont' know. Try asking something like, "Which is the initial state?" |  what arcs are marked with 0  | what arcs are marked with 0 
+This automaton has five transitions. From q0 to q1 there is an arc          marked as 1. From q1 to q2 there is another arc marked as 1. From q2 to q3 there is an arc          marked as 1. From q3 to q4 there is an arc marked as 0. Finally, from q4 to q0 there is an          arc marked as 0. | the arcs | what are the arcs 
+I dont' know. Try asking something like, "Which is the initial state?" |  overview of the automaton  | overview of the automaton
+I dont' know. Just try asking something like, "How is the automaton represented?" |  overview of the automaton  | overview of the automaton
+I dont' know. Try just asking something like, "How many states are there?" |  how is the automaton  |  how is the automaton 
+I dont' know. Just try asking something like, "How is the automaton represented?" |  how many 0 art here  | how many 0 art here 
+There are a total of 5 arcs. Try asking me if there is a particular pattern among      them. | marked by 1 are there | how many arcs marked by 1 are there 
+I'm not sure about your question. Try asking about states or transitions. Or          you can ask me to briefly describe you the automaton, for example. | the patterns | what are the patterns
+I'm not sure about your question. Try asking about states or transitions. Or          you can ask me to briefly describe you the automaton, for example. | the patterns | what are the patterns 
+There is only one arc starting from each state. The first three in clockwise      direction are marked with 1, the remaining two with 0. |  patterns among arc  | patterns among arc
+There is only one arc starting from each state. The first three in clockwise      direction are marked with 1, the remaining two with 0. |  patterns among arcs  | patterns among arcs
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a pair of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again with 0. | the shape of the automaton | describe the shape of the automaton
+I'm not sure about your question. Try asking about states or transitions. Or
+          you can ask me to briefly describe you the automaton, for example. | the states and the connections between states | what are the states and the connections between states 
+I'm not sure about your question. Try asking about states or transitions. Or
+          you can ask me to briefly describe you the automaton, for example. | the states and the transitions | what are the states and the transitions 
+I dont' know. Just try asking something like, "How is the automaton represented?" |  which are the states and the transitions  | which are the states and the transitions 
+The automaton can be represented with the states arranged as vertices of a triangle. |  how is the automaton | how is the automaton represented 
+I dont' know. Try just asking something like, "How many states are there?" |  states and transitions  | states and transitions
+There are a total of 3 states. q0, q1, and q2. q0 is both initial and final
+      state. | are there | how many states are there 
+I dont' know. Try asking something like, "Which is the initial state?" |  whar are the transitions  | whar are the transitions 
+There are a total of 3 arcs. Try asking me if there is a particular pattern among
+      them. |  whar are the transitions  |  how many transitions 
+From q0 there is only one transition to q2 marked with 1. |  q1,q1 | arc between q0 and q1 
+This automaton has three transitions. The first one starts at
+          q0, being it the initial and final state. From q0 and q2 there is a transition marked as
+          1. From q2 to q1 there is another transition marked as 1. Finally from q1 to q0 there is a
+          transition marked as 0. | the transitions | what are the transitions 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a
+      sequence of a pair of 1s followed by a 0. There are a total of 3 states: q0, q1, and
+      q2. q0 is both initial and end state.
+      From each state 1 arc starts: from q0 the arc points to q2 and is marked with 1.
+      From q2 it points to q1 and is marked with 1.
+      From q1 it points to q0 and is marked with 0. | the transitions | describe the transitions
+Yes, there is a transtion from q0 to q2 and is marked with 1. |  q2,q2 | how is marked the arc between q0 and q2 
+The automaton can be represented with the states arranged as vertices of a triangle. |  how is | how is represented
+I'm not sure about your question. Try asking about states or transitions. Or
+          you can ask me to briefly describe you the automaton, for example. | the final states | what are the final states
+I dont' know. Try just asking something like, "How many states are there?" |  final states  | final states
+I dont' know. Try asking something like, "Describe the automaton." |  start states  | start states
+I dont' know. Try just asking something like, "How many states are there?" |  which is the start state  | which is the start state 
+A finite-state automaton is a dynamic, discrete, invariant system          in which the sets of input, output and state are finite.          The system can be in any of a finite number of internal states that define the automaton.          A particularly important class of automata is that of automata capable of recognizing          whether or not a string is part of a given language or not: recognizer automata.          Such a finite-state automaton consists of a finite set of states and a finite set of          transitions from one state to another. For each distinct pair formed by a state of the          automaton (the departure state) and an alphabet symbol, there is a transition to an          arrival state. The symbol of the pair is said to be associated with the transition, or          even that the transition "accepts the symbol." The state of arrival state can also          coincide with the start state. Each finite-state automaton is uniquely associated with an          oriented graph called a transition diagram. The nodes of the graph coincide with the          states of the automaton. If there is a transition from state q to state p with a as the          associated symbol, then there is an arc oriented from node q to node p and labeled with          the symbol a. See the Homepage for more. | an automaton | what is an automaton
+I dont' know. Try asking something like, "Which is the initial state?" |  transition diagram  | transition diagram
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a pair of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again with 0. | the transition diagram | describe the transition diagram
+There are a total of 5 arcs. Try asking me if there is a particular pattern among      them. | are ther ein the automaton | how many transitions are ther ein the automaton 
+I'm not sure about your question. Try asking about states or transitions. Or          you can ask me to briefly describe you the automaton, for example. | a pattern | what is a pattern
+I'm not sure about your question. Try asking about states or transitions. Or          you can ask me to briefly describe you the automaton, for example. | a particular pattern among arcs | what is a particular pattern among arcs 
+This automaton accepts zero or more words in a binary alphabet formed by a sequence of a triple of 1s followed by a pair of 0s. | describe the automaton | briefly describe the automaton
+I'm not sure about your question. Try asking about states or transitions. Or          you can ask me to briefly describe you the automaton, for example. | the number of nodes | what s the number of nodes 
+I dont' know. Try asking something like, "Describe the automaton." |  the nodes  |  the nodes
+I dont' know. Try asking something like, "What is the accepted language?" |  nodes  | nodes
+There are a total of 5 states. q0, q1, q2, q3, and q4. q0 is both initial and final      state. |  nodes  | states
+I dont' know. Try asking something like, "Which is the initial state?" |  nodes  | nodes
+I dont' know. Try asking something like, "What is the accepted language?" |  is 1 a label for some arc  | is 1 a label for some arc 
+The language accepted by this automaton is made of zero or more words formed by a      sequence of a triple of 1s followed by a pair of 0s. |  what is the accepted | what is the accepted language
+The language accepted by this automaton is made of zero or more words formed by a      sequence of a triple of 1s followed by a pair of 0s. |  does the automaton accept other languages  | does the automaton accept other languages 
+The language accepted by this automaton is made of zero or more words formed by a      sequence of a triple of 1s followed by a pair of 0s. |  does the automaton accept other languages  Q0 TO  does the automaton accept other languages  | q0
+The language accepted by this automaton is made of zero or more words formed by a      sequence of a triple of 1s followed by a pair of 0s. |  does the automaton accept other languages  Q0 TO  does the automaton accept other languages  Q2 TO  does the automaton accept other languages  Q0 TO  does the automaton accept other languages  | q2
+Yes, there is a transition from q2 to q3 and is marked with 1. | q3 | q2 to q3
+From q2 there is only one transition to q3 marked with 1. |  q3 to, q3 to  | q3 to q2
+Yes, there is a transition from q3 to q4 and is marked with 0. | q4 | q3 to q4
+From q0 there is only one transition to q1 marked with 1. |  q4 to, q4 to  | q4 to q0
+From q0 there is only one transition to q1 marked with 1. | q4 | q0 to q4
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a pair of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again with 0. | the position of nodes | describe the position of nodes
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a pair of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again with 0. | the arcs | describe the arcs
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a pair of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again with 0. | the position of arcs | describe the position of arcs
+I dont' know. Try asking something like, "Describe the automaton." |  is there any self loop  | is there any self loop 
+I'm not sure about your question. Try asking about states or transitions. Or          you can ask me to briefly describe you the automaton, for example. | a connection | what is a connection 
+I dont' know. Try asking something like, "What is the accepted language?" |  represent the automaton  | represent the automaton
+There are a total of 5 states. q0, q1, q2, q3, and q4. q0 is both initial and final      state. |  | how many states 
+I'm not sure about your question. Try asking about states or transitions. Or          you can ask me to briefly describe you the automaton, for example. | the input | what is the input 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a pair of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again with 0. |  can you | can you describe the automaton 
+From q1 there is only one transition to q2 marked with 1. |  which arc from, which arc from  | which arc from q1
+From q2 there is only one transition to q3 marked with 1. |  which arc from, which arc from  | which arc from q2
+From q3 there is only one transition to q4 marked with 0. |  which arc from, which arc from  | which arc from q3 
+From q3 there is only one transition to q4 marked with 0. |  which arc from, which arc from  | which arc from q3 
+From q4 there is only one transition to q0 marked with 0. |  which arc from, which arc from  | which arc from q4 
+It is an automaton which accepts zero or more words in a binary alphabet formed by a      sequence of a triple of 1s followed by a pair of 0s. There are a total of 5 states: q0, q1,      q2, q3, and q4. q0 is both initial and end state.      From each state 1 arc starts: from q0 the arc points to q1 and is marked with 1.      From q1 it points to q2 and is marked with 1.      From q2 it points to q3 and is marked with 1.      From q3 points to q4 and is marked with 0.      Finally, from q4 points to q0 and is marked again with 0. |  can you,the transitions | can you describe the transitions 
+There are a total of 5 states. q0, q1, q2, q3, and q4. q0 is both initial and final      state. |  | how many states 
+Hi. I'm the chatbot NoVAGraphS. I'm programmed to answer questions to describe      graphical structures, and in particular, automata. Ask me to describe you in general Automaton      1 or a more specific question about it. |  | hi

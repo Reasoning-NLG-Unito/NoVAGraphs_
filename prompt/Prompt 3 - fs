@@ -1,0 +1,329 @@
+You have a state table (ST) in HTML representing the transitions of a finite state automaton.
+
+ST = """
+<table> 
+    <thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> * -> q0 </th>
+            <th> </th>
+            <th> q2 </th>
+        </tr>
+        <tr>
+            <th> q1 </th>
+            <th> q0 </th>
+            <th> </th>
+        </tr>
+        <tr>
+            <th> q2 </th>
+            <th> </th>
+            <th> q1 </th>
+        </tr>
+    </tbody>
+</table>
+"""
+Alphabet = {0,1}
+The automaton can be drawn as a triangle.
+
+How to read the ST: 
+-> indicates an initial state; 
+* indicates a final state. 
+
+Note that these symbols in a cell mark the state that follows as initial and/or final, they are not state names.
+
+The ST contains a header (between <thead>...</thead>). The header contains a first empty cell, followed by as many cells as there are characters in the alphabet, one cell per character. In the body (between <tbody>...</tbody>), there are as many rows as the number of states in the automaton. The first column represents a specific state. In the following columns, you can either find empty cells, indicating no corresponding transition, or cells with state names, representing transitions to those states using the character in the corresponding column.
+
+How to know the accepted language:
+You need to follow the transitions starting from the initial state and ending with the final one. You have to consider all the possible paths that can lead to the final state.
+
+Here below, you can find 10 examples from which to learn:
+
+Example 1:
+<table>
+    <thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> * -> q0 </th>
+            <th> </th>
+            <th> q0 </th>
+        </tr>
+    </tbody>
+</table>
+
+The accepted language in example 1 is (1)*. The reason is that since q0 is both initial and accepting state, the empty string is part of the language (indicated by *) and from q0 there is only one transition to q0 with input 1 (cell contains q0, in the last column). Therefore, the only strings accepted are the empty string and the ones which are sequences of 1.
+
+Example 2:
+<table>
+	<thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> * -> q0 </th>
+            <th> q0 </th>
+            <th> </th>
+        </tr>
+	</tbody>
+</table>
+
+The accepted language in example 2 is (0)*. The reason is that since q0 is both initial and accepting state, the empty string is part of the language (indicated by *) and from q0 there is only one transition to q0 with input 0 (cell contains q0, in the middle column). Therefore, the only strings accepted are the empty string and the ones which are sequences of 0.
+
+Example 3:
+<table>
+	<thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> -> q0 </th>
+            <th> q1 </th>
+            <th> </th>
+        </tr>
+        <tr>
+            <th> * q1</th>
+            <th> q0 </th>
+            <th> </th>
+        </tr>
+	</tbody>
+</table>
+
+The accepted language in example 3 is all strings with odd occurrences of 0 (i.e. 0|0(00)+).
+The reason is that from q0, the initial state, with input 0 it is possible to arrive to q1, the final state. Thus, the string accepted can be 0. It can also continue from q1 to q0 with input 0. From q0 then with another 0 it is possible to go to q1. The string can be accepted at this point (000) or it can do another round.
+
+Example 4:
+<table>
+	<thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> * q0 </th>
+            <th> </th>
+            <th> q1 </th>
+        </tr>
+        <tr>
+            <th> -> q1</th>
+            <th> q0 </th>
+            <th> </th>
+        </tr>
+	</tbody>
+</table>
+
+The language accepted in example 4 is made of 0 or 0 plus 10 repeated n times (i.e. 0(10)*).
+The reason is that from q1, the initial state, with input 0 it is possible to arrive to q0, the final state. Thus, the string accepted can be 0. It can also continue from q0 to q1 with input 1. From q1 then with a 0 it is possible to go to q0. The string can be accepted at this point (010) or it can do another round. 
+
+Example 5:
+<table>
+	<thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> * q0 </th>
+            <th> </th>
+            <th> q0 </th>
+        </tr>
+        <tr>
+            <th> -> q1</th>
+            <th> q0 </th>
+            <th> </th>
+        </tr>
+	</tbody>
+</table>
+
+The language accepted in example 5 is made of 0 or 0 plus n times 1 (with n equals to 1 or more) (i.e. 0(1)*).
+The reason is that from q1, the initial state, with input 0 it is possible to arrive to q0, the final state. Thus, the string accepted can be 0. It can also continue from q0 to q0 (itself) with input 1.  The string can be accepted at this point (01) or it can loop in q0. 
+
+Example 6:
+<table>
+	<thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> * q0 </th>
+            <th> </th>
+            <th> </th>
+        </tr>
+        <tr>
+            <th> -> q1</th>
+            <th> q0 </th>
+            <th> q1 </th>
+        </tr>
+	</tbody>
+</table>
+
+The language accepted in example 6 is 0 or n times 1 (with n equals to 1 or more) followed by 0 (i.e. 0|1+0).
+The reason is that from q1, the initial state, with input 0 it is possible to arrive to q0, the final state, from which no transitions start. Thus, the string accepted can be 0. If to the initial state, q1, 1 is received, it can go from q1 to q1 (itself) looping as long as 1 is received. The string can be accepted only when 0 is received instead of 1. 
+
+Example 7:
+<table>
+	<thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+            <th>2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> -> q0 </th>
+            <th> q1 </th>
+            <th> </th>
+            <th> </th>
+        </tr>
+        <tr>
+            <th> q1 </th>
+            <th> </th>
+            <th> q2 </th>
+            <th> </th>
+        </tr>
+        <tr>
+            <th> * q2 </th>
+            <th> </th>
+            <th> </th>
+            <th> q0 </th>
+        </tr>
+	</tbody>
+</table>
+
+The language accepted in example 7 is 01 or n times 01201 (with n equals to 1 or more) (i.e. 01|(012)+01).
+The reason is that from q0, the initial state, with input 0 it is possible to arrive to q1. Then from q1 it is possible to reach q2 with input 1. Being q2 the final state, the string accepted can be 01. However, from q2 it can continue to q0 if the input 2 is received. Thus, it is possible to go again from q0 to q1 with input 0 and from q1 to q2 with input 1, reaching again the accepting state. 
+
+Example 8:
+<table>
+	<thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> * -> q0 </th>
+            <th> q2 </th>
+            <th> </th>
+        </tr>
+        <tr>
+            <th> q1 </th>
+            <th> </th>
+            <th> q2 </th>
+        </tr>
+        <tr>
+            <th> q2 </th>
+            <th> q0 </th>
+            <th> q1 </th>
+        </tr>
+	</tbody>
+</table>
+
+The language accepted in example 8 is formed by zero or an even number of 0s followed or not by one or more occurrence of the string 0(11)+0, which again can be followed or not by an even number of 0s (i.e. (00)*((0(11)+0)+((00)+)?)?).
+The empty string can be accepted because q0 is both initial and accepting state. Then, with input 0 from q0 it is possible to reach q2. From q2 two paths are viable. With input 0 it goes back into q0, so the string 00 can be accepted or it can loop again. With input 1 it goes to q1, with start an obliged path again to q2 with can loop. But to be accepted it is necenssary that after an even number of 1s a 0 is received so that from q2 it is possible to go into q0 (the final, accepting state). From here an even number of 0s can be accepted as receving 0 it goes to q2 and with another 0 again to q0.
+
+Example 9:
+<table>
+	<thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> -> q0 </th>
+            <th> q2 </th>
+            <th> q0 </th>
+        </tr>
+        <tr>
+            <th> * q1 </th>
+            <th> q1 </th>
+            <th> </th>
+        </tr>
+        <tr>
+            <th> q2 </th>
+            <th> q1 </th>
+            <th> q0 </th>
+        </tr>
+	</tbody>
+</table>
+
+The language accepted in example 9 is made of zero or more occurrences of 1 followed by 0 and one or more occurrences of 1 followed by 0 and one or more occurrences of 0 (i.e. 1*01+00+).
+The reason is that from q0, the initial state, with input 1 it loops in itself, with input 0 it goes into q2. Then from q2 with input 1 goes back to q0, where it can loop again with input 1 or go back to q2 with input 0; with input 0 it reaches the accepting state, q1. Now, the string can be accepted or it can loop with input 0 in q1.
+
+Example 10:
+<table>
+	<thead>
+        <tr>
+            <th> </th>
+            <th>0</th>
+            <th>1</th>
+            <th>2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th> -> * q0 </th>
+            <th> q3 </th>
+            <th> </th>
+            <th> </th>
+        </tr>
+        <tr>
+            <th> q1 </th>
+            <th> q0 </th>
+            <th> </th>
+            <th> q3 </th>
+        </tr>
+        <tr>
+            <th> q2 </th>
+            <th> </th>
+            <th> q3 </th>
+            <th> </th>
+        </tr>
+        <tr>
+            <th> q3 </th>
+            <th> </th>
+            <th> q2 </th>
+            <th> q1 </th>
+        </tr>
+	</tbody>
+</table>
+
+The language accepted in example 10 is made of zero or more occurrences of the string made of 0 followed by zero or more pairs of 1s and or zero or more pairs of 2s followed by 20 (i.e. (0(11)*(22)*20)*).
+The empty string can be accepted because q0 is both initial and accepting state. Then, with input 0 from q0 it is possible to reach q3. From q3 two paths are viable. With input 1 it goes into q2, from were it can only go back to q3 with input 1. With input 2 it goes into q1 from where it can go back to q3 with input 2 or reach the final state, q0, with input 0.
+
+Based on the ST provided between """, can you tell me what is the accepted language? Please answer using the template "The accepted language is x." (where x is the accepted language you identified) followed by a motivation.

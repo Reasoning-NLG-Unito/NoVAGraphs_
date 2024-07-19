@@ -1,0 +1,111 @@
+<?xml version="1.0" ?>
+<aiml>
+    <category>
+        <pattern>* ROMA * ASSOCIATO * </pattern>
+        <template><think><set name="dialogue_act">setQuestion</set></think><think><set name="elemento1">roma</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">funzione_inversa</set></think>roma non è associato a nessun elemento del dominio<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">roma</svgElement></template>
+    </category>
+    <category>
+        <pattern>* ROMA * COLLEGATO * </pattern>
+        <template><think><set name="dialogue_act">setQuestion</set></think><think><set name="elemento1">roma</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">funzione_inversa</set></think>roma non è associato a nessun elemento del dominio<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">roma</svgElement></template>
+    </category>
+    <category>
+        <pattern>* ASSOCIATO * ROMA *</pattern>
+        <template><think><set name="dialogue_act">setQuestion</set></think><think><set name="elemento1">roma</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">funzione_inversa</set></think>roma non è associato a nessun elemento del dominio<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">roma</svgElement></template>
+    </category>
+    <category>
+        <pattern>* COLLEGATO * ROMA *</pattern>
+        <template><think><set name="dialogue_act">setQuestion</set></think><think><set name="elemento1">roma</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">funzione_inversa</set></think>roma non è associato a nessun elemento del dominio<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">roma</svgElement></template>
+    </category>
+    <category>
+        <pattern>* CONTROIMMAGINE * ROMA *</pattern>
+        <template><think><set name="dialogue_act">setQuestion</set></think><think><set name="elemento1">roma</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">funzione_inversa</set></think>roma non è associato a nessun elemento del dominio<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">roma</svgElement></template>
+    </category>
+    <category>
+        <pattern>* FUNZIONE INVERSA * ROMA *</pattern>
+        <template><think><set name="dialogue_act">setQuestion</set></think><think><set name="elemento1">roma</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">funzione_inversa</set></think>roma non è associato a nessun elemento del dominio<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">roma</svgElement></template>
+    </category>
+    <category>
+        <pattern>* F^-1 * ROMA *</pattern>
+        <template><think><set name="dialogue_act">setQuestion</set></think><think><set name="elemento1">roma</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">funzione_inversa</set></think>roma non è associato a nessun elemento del dominio<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">roma</svgElement></template>
+    </category>
+    <category>
+        <pattern>* F-1 *ROMA *</pattern>
+        <template><think><set name="dialogue_act">setQuestion</set></think><think><set name="elemento1">roma</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">funzione_inversa</set></think>roma non è associato a nessun elemento del dominio<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">roma</svgElement></template>
+    </category>
+    <category>
+        <pattern>* BOLOGNA * ASSOCIATO * </pattern>
+        <template><think><set name="dialogue_act">setQuestion</set></think><think><set name="elemento1">bologna</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">funzione_inversa</set></think>bologna non è associato a nessun elemento del dominio<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">bologna</svgElement></template>
+    </category>
+    <category>
+        <pattern>* BOLOGNA * COLLEGATO * </pattern>
+        <template><think><set name="dialogue_act">setQuestion</set></think><think><set name="elemento1">bologna</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">funzione_inversa</set></think>bologna non è associato a nessun elemento del dominio<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">bologna</svgElement></template>
+    </category>
+    <category>
+        <pattern>* ASSOCIATO * BOLOGNA *</pattern>
+        <template><think><set name="dialogue_act">setQuestion</set></think><think><set name="elemento1">bologna</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">funzione_inversa</set></think>bologna non è associato a nessun elemento del dominio<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">bologna</svgElement></template>
+    </category>
+    <category>
+        <pattern>* COLLEGATO * BOLOGNA *</pattern>
+        <template><think><set name="dialogue_act">setQuestion</set></think><think><set name="elemento1">bologna</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">funzione_inversa</set></think>bologna non è associato a nessun elemento del dominio<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">bologna</svgElement></template>
+    </category>
+    <category>
+        <pattern>* CONTROIMMAGINE * BOLOGNA *</pattern>
+        <template><think><set name="dialogue_act">setQuestion</set></think><think><set name="elemento1">bologna</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">funzione_inversa</set></think>bologna non è associato a nessun elemento del dominio<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">bologna</svgElement></template>
+    </category>
+    <category>
+        <pattern>* FUNZIONE INVERSA * BOLOGNA *</pattern>
+        <template><think><set name="dialogue_act">setQuestion</set></think><think><set name="elemento1">bologna</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">funzione_inversa</set></think>bologna non è associato a nessun elemento del dominio<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">bologna</svgElement></template>
+    </category>
+    <category>
+        <pattern>* F^-1 * BOLOGNA *</pattern>
+        <template><think><set name="dialogue_act">setQuestion</set></think><think><set name="elemento1">bologna</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">funzione_inversa</set></think>bologna non è associato a nessun elemento del dominio<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">bologna</svgElement></template>
+    </category>
+    <category>
+        <pattern>* F-1 *BOLOGNA *</pattern>
+        <template><think><set name="dialogue_act">setQuestion</set></think><think><set name="elemento1">bologna</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">funzione_inversa</set></think>bologna non è associato a nessun elemento del dominio<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">bologna</svgElement></template>
+    </category>
+    <category>
+        <pattern>* INSIEME A *</pattern>
+        <template><think><set name="dialogue_act">setQuestion</set></think><think><set name="elemento1">none</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">A</set></think><think><set name="topic">insieme</set></think>L'insieme A è composto da 4 elementi: josephine, kevin, luigi, silvia.<image>insiemi/funzione.svg</image><svgElement style-name="fill" style-value="#04ed00">insieme-dominio</svgElement></template>
+    </category>
+    <category>
+        <pattern>* DOMINIO *</pattern>
+        <template><think><set name="dialogue_act">setQuestion</set></think><think><set name="elemento1">none</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">A</set></think><think><set name="topic">insieme</set></think>L'insieme A è composto da 4 elementi: josephine, kevin, luigi, silvia.<image>insiemi/funzione.svg</image><svgElement style-name="fill" style-value="#04ed00">insieme-dominio</svgElement></template>
+    </category>
+    <category>
+        <pattern>* INSIEME B *</pattern>
+        <template><think><set name="dialogue_act">setQuestion</set></think><think><set name="elemento1">none</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">insieme</set></think>L'insieme B è composto da 5 elementi: bari, roma, milano, bologna, siena.<image>insiemi/funzione.svg</image><svgElement style-name="fill" style-value="#04ed00">insieme-codominio</svgElement></template>
+    </category>
+    <category>
+        <pattern>* CODOMINIO *</pattern>
+        <template><think><set name="dialogue_act">setQuestion</set></think><think><set name="elemento1">none</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">insieme</set></think>L'insieme B è composto da 5 elementi: bari, roma, milano, bologna, siena.<image>insiemi/funzione.svg</image><svgElement style-name="fill" style-value="#04ed00">insieme-codominio</svgElement></template>
+    </category>
+    <category>
+        <pattern>* JOSEPHINE *</pattern>
+        <template><think><set name="dialogue_act">setQuestion</set></think><think><set name="elemento1">josephine</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">A</set></think><think><set name="topic">funzione</set></think>La funzione associa l'elemento josephine dell'insieme A all'elemento bari dell'insieme B.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">link-josephine-bari</svgElement></template>
+    </category>
+    <category>
+        <pattern>* SILVIA *</pattern>
+        <template><think><set name="dialogue_act">setQuestion</set></think><think><set name="elemento1">silvia</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">A</set></think><think><set name="topic">funzione</set></think>La funzione associa l'elemento silvia dell'insieme A all'elemento milano dell'insieme B.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">link-silvia-milano</svgElement></template>
+    </category>
+    <category>
+        <pattern>* LUIGI *</pattern>
+        <template><think><set name="dialogue_act">setQuestion</set></think><think><set name="elemento1">luigi</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">A</set></think><think><set name="topic">funzione</set></think>La funzione associa l'elemento luigi dell'insieme A all'elemento milano dell'insieme B.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">link-luigi-milano</svgElement></template>
+    </category>
+    <category>
+        <pattern>* KEVIN *</pattern>
+        <template><think><set name="dialogue_act">setQuestion</set></think><think><set name="elemento1">kevin</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">A</set></think><think><set name="topic">funzione</set></think>La funzione associa l'elemento kevin dell'insieme A all'elemento siena dell'insieme B.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">link-kevin-siena</svgElement></template>
+    </category>
+    <category>
+        <pattern>* BARI *</pattern>
+        <template><think><set name="dialogue_act">setQuestion</set></think><think><set name="elemento1">bari</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">funzione_inversa</set></think>L'elemento bari dell'insieme B è associato all'elemento josephine dell'insieme A.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">link-josephine-bari</svgElement></template>
+    </category>
+    <category>
+        <pattern>* MILANO *</pattern>
+        <template><think><set name="dialogue_act">setQuestion</set></think><think><set name="elemento1">milano</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">funzione_inversa</set></think>L'elemento milano dell'insieme B è associato all'elemento luigi dell'insieme A.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">link-luigi-milano</svgElement></template>
+    </category>
+    <category>
+        <pattern>* SIENA *</pattern>
+        <template><think><set name="dialogue_act">setQuestion</set></think><think><set name="elemento1">siena</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">funzione_inversa</set></think>L'elemento siena dell'insieme B è associato all'elemento kevin dell'insieme A.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">link-kevin-siena</svgElement></template>
+    </category>
+</aiml>

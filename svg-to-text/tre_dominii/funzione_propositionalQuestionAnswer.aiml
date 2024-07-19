@@ -1,0 +1,467 @@
+<?xml version="1.0" ?>
+<aiml>
+    <category>
+        <pattern>* JOSEPHINE * ASSOCIATO * BARI *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">josephine</set></think><think><set name="elemento2">bari</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>josephine è immagine di bari.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">link-josephine-bari</svgElement></template>
+    </category>
+    <category>
+        <pattern>* JOSEPHINE * COLLEGATO * BARI *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">josephine</set></think><think><set name="elemento2">bari</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>josephine è immagine di bari.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">link-josephine-bari</svgElement></template>
+    </category>
+    <category>
+        <pattern>* FUNZIONE * JOSEPHINE * BARI *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">josephine</set></think><think><set name="elemento2">bari</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>josephine è immagine di bari.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">link-josephine-bari</svgElement></template>
+    </category>
+    <category>
+        <pattern>* F * JOSEPHINE * BARI *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">josephine</set></think><think><set name="elemento2">bari</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>josephine è immagine di bari.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">link-josephine-bari</svgElement></template>
+    </category>
+    <category>
+        <pattern>* JOSEPHINE * ASSOCIATO * ROMA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">josephine</set></think><think><set name="elemento2">roma</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>josephine non è immagine di roma.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">josephine</svgElement></template>
+    </category>
+    <category>
+        <pattern>* JOSEPHINE * COLLEGATO * ROMA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">josephine</set></think><think><set name="elemento2">roma</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>josephine non è immagine di roma.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">josephine</svgElement></template>
+    </category>
+    <category>
+        <pattern>* FUNZIONE * JOSEPHINE * ROMA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">josephine</set></think><think><set name="elemento2">roma</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>josephine non è immagine di roma.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">josephine</svgElement></template>
+    </category>
+    <category>
+        <pattern>* F * JOSEPHINE * ROMA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">josephine</set></think><think><set name="elemento2">roma</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>josephine non è immagine di roma.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">josephine</svgElement></template>
+    </category>
+    <category>
+        <pattern>* JOSEPHINE * ASSOCIATO * MILANO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">josephine</set></think><think><set name="elemento2">milano</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>josephine non è immagine di milano.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">josephine</svgElement></template>
+    </category>
+    <category>
+        <pattern>* JOSEPHINE * COLLEGATO * MILANO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">josephine</set></think><think><set name="elemento2">milano</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>josephine non è immagine di milano.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">josephine</svgElement></template>
+    </category>
+    <category>
+        <pattern>* FUNZIONE * JOSEPHINE * MILANO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">josephine</set></think><think><set name="elemento2">milano</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>josephine non è immagine di milano.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">josephine</svgElement></template>
+    </category>
+    <category>
+        <pattern>* F * JOSEPHINE * MILANO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">josephine</set></think><think><set name="elemento2">milano</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>josephine non è immagine di milano.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">josephine</svgElement></template>
+    </category>
+    <category>
+        <pattern>* JOSEPHINE * ASSOCIATO * BOLOGNA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">josephine</set></think><think><set name="elemento2">bologna</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>josephine non è immagine di bologna.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">josephine</svgElement></template>
+    </category>
+    <category>
+        <pattern>* JOSEPHINE * COLLEGATO * BOLOGNA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">josephine</set></think><think><set name="elemento2">bologna</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>josephine non è immagine di bologna.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">josephine</svgElement></template>
+    </category>
+    <category>
+        <pattern>* FUNZIONE * JOSEPHINE * BOLOGNA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">josephine</set></think><think><set name="elemento2">bologna</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>josephine non è immagine di bologna.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">josephine</svgElement></template>
+    </category>
+    <category>
+        <pattern>* F * JOSEPHINE * BOLOGNA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">josephine</set></think><think><set name="elemento2">bologna</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>josephine non è immagine di bologna.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">josephine</svgElement></template>
+    </category>
+    <category>
+        <pattern>* JOSEPHINE * ASSOCIATO * SIENA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">josephine</set></think><think><set name="elemento2">siena</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>josephine non è immagine di siena.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">josephine</svgElement></template>
+    </category>
+    <category>
+        <pattern>* JOSEPHINE * COLLEGATO * SIENA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">josephine</set></think><think><set name="elemento2">siena</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>josephine non è immagine di siena.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">josephine</svgElement></template>
+    </category>
+    <category>
+        <pattern>* FUNZIONE * JOSEPHINE * SIENA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">josephine</set></think><think><set name="elemento2">siena</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>josephine non è immagine di siena.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">josephine</svgElement></template>
+    </category>
+    <category>
+        <pattern>* F * JOSEPHINE * SIENA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">josephine</set></think><think><set name="elemento2">siena</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>josephine non è immagine di siena.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">josephine</svgElement></template>
+    </category>
+    <category>
+        <pattern>* KEVIN * ASSOCIATO * BARI *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">kevin</set></think><think><set name="elemento2">bari</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>kevin non è immagine di bari.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">kevin</svgElement></template>
+    </category>
+    <category>
+        <pattern>* KEVIN * COLLEGATO * BARI *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">kevin</set></think><think><set name="elemento2">bari</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>kevin non è immagine di bari.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">kevin</svgElement></template>
+    </category>
+    <category>
+        <pattern>* FUNZIONE * KEVIN * BARI *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">kevin</set></think><think><set name="elemento2">bari</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>kevin non è immagine di bari.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">kevin</svgElement></template>
+    </category>
+    <category>
+        <pattern>* F * KEVIN * BARI *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">kevin</set></think><think><set name="elemento2">bari</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>kevin non è immagine di bari.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">kevin</svgElement></template>
+    </category>
+    <category>
+        <pattern>* KEVIN * ASSOCIATO * ROMA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">kevin</set></think><think><set name="elemento2">roma</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>kevin non è immagine di roma.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">kevin</svgElement></template>
+    </category>
+    <category>
+        <pattern>* KEVIN * COLLEGATO * ROMA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">kevin</set></think><think><set name="elemento2">roma</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>kevin non è immagine di roma.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">kevin</svgElement></template>
+    </category>
+    <category>
+        <pattern>* FUNZIONE * KEVIN * ROMA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">kevin</set></think><think><set name="elemento2">roma</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>kevin non è immagine di roma.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">kevin</svgElement></template>
+    </category>
+    <category>
+        <pattern>* F * KEVIN * ROMA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">kevin</set></think><think><set name="elemento2">roma</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>kevin non è immagine di roma.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">kevin</svgElement></template>
+    </category>
+    <category>
+        <pattern>* KEVIN * ASSOCIATO * MILANO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">kevin</set></think><think><set name="elemento2">milano</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>kevin non è immagine di milano.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">kevin</svgElement></template>
+    </category>
+    <category>
+        <pattern>* KEVIN * COLLEGATO * MILANO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">kevin</set></think><think><set name="elemento2">milano</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>kevin non è immagine di milano.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">kevin</svgElement></template>
+    </category>
+    <category>
+        <pattern>* FUNZIONE * KEVIN * MILANO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">kevin</set></think><think><set name="elemento2">milano</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>kevin non è immagine di milano.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">kevin</svgElement></template>
+    </category>
+    <category>
+        <pattern>* F * KEVIN * MILANO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">kevin</set></think><think><set name="elemento2">milano</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>kevin non è immagine di milano.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">kevin</svgElement></template>
+    </category>
+    <category>
+        <pattern>* KEVIN * ASSOCIATO * BOLOGNA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">kevin</set></think><think><set name="elemento2">bologna</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>kevin non è immagine di bologna.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">kevin</svgElement></template>
+    </category>
+    <category>
+        <pattern>* KEVIN * COLLEGATO * BOLOGNA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">kevin</set></think><think><set name="elemento2">bologna</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>kevin non è immagine di bologna.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">kevin</svgElement></template>
+    </category>
+    <category>
+        <pattern>* FUNZIONE * KEVIN * BOLOGNA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">kevin</set></think><think><set name="elemento2">bologna</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>kevin non è immagine di bologna.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">kevin</svgElement></template>
+    </category>
+    <category>
+        <pattern>* F * KEVIN * BOLOGNA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">kevin</set></think><think><set name="elemento2">bologna</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>kevin non è immagine di bologna.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">kevin</svgElement></template>
+    </category>
+    <category>
+        <pattern>* KEVIN * ASSOCIATO * SIENA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">kevin</set></think><think><set name="elemento2">siena</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>kevin è immagine di siena.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">link-kevin-siena</svgElement></template>
+    </category>
+    <category>
+        <pattern>* KEVIN * COLLEGATO * SIENA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">kevin</set></think><think><set name="elemento2">siena</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>kevin è immagine di siena.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">link-kevin-siena</svgElement></template>
+    </category>
+    <category>
+        <pattern>* FUNZIONE * KEVIN * SIENA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">kevin</set></think><think><set name="elemento2">siena</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>kevin è immagine di siena.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">link-kevin-siena</svgElement></template>
+    </category>
+    <category>
+        <pattern>* F * KEVIN * SIENA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">kevin</set></think><think><set name="elemento2">siena</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>kevin è immagine di siena.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">link-kevin-siena</svgElement></template>
+    </category>
+    <category>
+        <pattern>* LUIGI * ASSOCIATO * BARI *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">luigi</set></think><think><set name="elemento2">bari</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>luigi non è immagine di bari.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">luigi</svgElement></template>
+    </category>
+    <category>
+        <pattern>* LUIGI * COLLEGATO * BARI *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">luigi</set></think><think><set name="elemento2">bari</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>luigi non è immagine di bari.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">luigi</svgElement></template>
+    </category>
+    <category>
+        <pattern>* FUNZIONE * LUIGI * BARI *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">luigi</set></think><think><set name="elemento2">bari</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>luigi non è immagine di bari.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">luigi</svgElement></template>
+    </category>
+    <category>
+        <pattern>* F * LUIGI * BARI *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">luigi</set></think><think><set name="elemento2">bari</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>luigi non è immagine di bari.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">luigi</svgElement></template>
+    </category>
+    <category>
+        <pattern>* LUIGI * ASSOCIATO * ROMA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">luigi</set></think><think><set name="elemento2">roma</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>luigi non è immagine di roma.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">luigi</svgElement></template>
+    </category>
+    <category>
+        <pattern>* LUIGI * COLLEGATO * ROMA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">luigi</set></think><think><set name="elemento2">roma</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>luigi non è immagine di roma.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">luigi</svgElement></template>
+    </category>
+    <category>
+        <pattern>* FUNZIONE * LUIGI * ROMA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">luigi</set></think><think><set name="elemento2">roma</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>luigi non è immagine di roma.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">luigi</svgElement></template>
+    </category>
+    <category>
+        <pattern>* F * LUIGI * ROMA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">luigi</set></think><think><set name="elemento2">roma</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>luigi non è immagine di roma.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">luigi</svgElement></template>
+    </category>
+    <category>
+        <pattern>* LUIGI * ASSOCIATO * MILANO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">luigi</set></think><think><set name="elemento2">milano</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>luigi è immagine di milano.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">link-luigi-milano</svgElement></template>
+    </category>
+    <category>
+        <pattern>* LUIGI * COLLEGATO * MILANO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">luigi</set></think><think><set name="elemento2">milano</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>luigi è immagine di milano.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">link-luigi-milano</svgElement></template>
+    </category>
+    <category>
+        <pattern>* FUNZIONE * LUIGI * MILANO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">luigi</set></think><think><set name="elemento2">milano</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>luigi è immagine di milano.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">link-luigi-milano</svgElement></template>
+    </category>
+    <category>
+        <pattern>* F * LUIGI * MILANO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">luigi</set></think><think><set name="elemento2">milano</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>luigi è immagine di milano.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">link-luigi-milano</svgElement></template>
+    </category>
+    <category>
+        <pattern>* LUIGI * ASSOCIATO * BOLOGNA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">luigi</set></think><think><set name="elemento2">bologna</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>luigi non è immagine di bologna.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">luigi</svgElement></template>
+    </category>
+    <category>
+        <pattern>* LUIGI * COLLEGATO * BOLOGNA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">luigi</set></think><think><set name="elemento2">bologna</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>luigi non è immagine di bologna.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">luigi</svgElement></template>
+    </category>
+    <category>
+        <pattern>* FUNZIONE * LUIGI * BOLOGNA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">luigi</set></think><think><set name="elemento2">bologna</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>luigi non è immagine di bologna.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">luigi</svgElement></template>
+    </category>
+    <category>
+        <pattern>* F * LUIGI * BOLOGNA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">luigi</set></think><think><set name="elemento2">bologna</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>luigi non è immagine di bologna.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">luigi</svgElement></template>
+    </category>
+    <category>
+        <pattern>* LUIGI * ASSOCIATO * SIENA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">luigi</set></think><think><set name="elemento2">siena</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>luigi non è immagine di siena.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">luigi</svgElement></template>
+    </category>
+    <category>
+        <pattern>* LUIGI * COLLEGATO * SIENA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">luigi</set></think><think><set name="elemento2">siena</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>luigi non è immagine di siena.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">luigi</svgElement></template>
+    </category>
+    <category>
+        <pattern>* FUNZIONE * LUIGI * SIENA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">luigi</set></think><think><set name="elemento2">siena</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>luigi non è immagine di siena.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">luigi</svgElement></template>
+    </category>
+    <category>
+        <pattern>* F * LUIGI * SIENA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">luigi</set></think><think><set name="elemento2">siena</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>luigi non è immagine di siena.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">luigi</svgElement></template>
+    </category>
+    <category>
+        <pattern>* SILVIA * ASSOCIATO * BARI *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">silvia</set></think><think><set name="elemento2">bari</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>silvia non è immagine di bari.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">silvia</svgElement></template>
+    </category>
+    <category>
+        <pattern>* SILVIA * COLLEGATO * BARI *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">silvia</set></think><think><set name="elemento2">bari</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>silvia non è immagine di bari.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">silvia</svgElement></template>
+    </category>
+    <category>
+        <pattern>* FUNZIONE * SILVIA * BARI *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">silvia</set></think><think><set name="elemento2">bari</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>silvia non è immagine di bari.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">silvia</svgElement></template>
+    </category>
+    <category>
+        <pattern>* F * SILVIA * BARI *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">silvia</set></think><think><set name="elemento2">bari</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>silvia non è immagine di bari.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">silvia</svgElement></template>
+    </category>
+    <category>
+        <pattern>* SILVIA * ASSOCIATO * ROMA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">silvia</set></think><think><set name="elemento2">roma</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>silvia non è immagine di roma.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">silvia</svgElement></template>
+    </category>
+    <category>
+        <pattern>* SILVIA * COLLEGATO * ROMA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">silvia</set></think><think><set name="elemento2">roma</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>silvia non è immagine di roma.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">silvia</svgElement></template>
+    </category>
+    <category>
+        <pattern>* FUNZIONE * SILVIA * ROMA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">silvia</set></think><think><set name="elemento2">roma</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>silvia non è immagine di roma.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">silvia</svgElement></template>
+    </category>
+    <category>
+        <pattern>* F * SILVIA * ROMA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">silvia</set></think><think><set name="elemento2">roma</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>silvia non è immagine di roma.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">silvia</svgElement></template>
+    </category>
+    <category>
+        <pattern>* SILVIA * ASSOCIATO * MILANO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">silvia</set></think><think><set name="elemento2">milano</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>silvia è immagine di milano.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">link-silvia-milano</svgElement></template>
+    </category>
+    <category>
+        <pattern>* SILVIA * COLLEGATO * MILANO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">silvia</set></think><think><set name="elemento2">milano</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>silvia è immagine di milano.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">link-silvia-milano</svgElement></template>
+    </category>
+    <category>
+        <pattern>* FUNZIONE * SILVIA * MILANO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">silvia</set></think><think><set name="elemento2">milano</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>silvia è immagine di milano.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">link-silvia-milano</svgElement></template>
+    </category>
+    <category>
+        <pattern>* F * SILVIA * MILANO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">silvia</set></think><think><set name="elemento2">milano</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>silvia è immagine di milano.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">link-silvia-milano</svgElement></template>
+    </category>
+    <category>
+        <pattern>* SILVIA * ASSOCIATO * BOLOGNA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">silvia</set></think><think><set name="elemento2">bologna</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>silvia non è immagine di bologna.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">silvia</svgElement></template>
+    </category>
+    <category>
+        <pattern>* SILVIA * COLLEGATO * BOLOGNA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">silvia</set></think><think><set name="elemento2">bologna</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>silvia non è immagine di bologna.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">silvia</svgElement></template>
+    </category>
+    <category>
+        <pattern>* FUNZIONE * SILVIA * BOLOGNA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">silvia</set></think><think><set name="elemento2">bologna</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>silvia non è immagine di bologna.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">silvia</svgElement></template>
+    </category>
+    <category>
+        <pattern>* F * SILVIA * BOLOGNA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">silvia</set></think><think><set name="elemento2">bologna</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>silvia non è immagine di bologna.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">silvia</svgElement></template>
+    </category>
+    <category>
+        <pattern>* SILVIA * ASSOCIATO * SIENA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">silvia</set></think><think><set name="elemento2">siena</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>silvia non è immagine di siena.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">silvia</svgElement></template>
+    </category>
+    <category>
+        <pattern>* SILVIA * COLLEGATO * SIENA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">silvia</set></think><think><set name="elemento2">siena</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>silvia non è immagine di siena.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">silvia</svgElement></template>
+    </category>
+    <category>
+        <pattern>* FUNZIONE * SILVIA * SIENA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">silvia</set></think><think><set name="elemento2">siena</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>silvia non è immagine di siena.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">silvia</svgElement></template>
+    </category>
+    <category>
+        <pattern>* F * SILVIA * SIENA *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">silvia</set></think><think><set name="elemento2">siena</set></think><think><set name="insieme">none</set></think><think><set name="topic">funzione</set></think>silvia non è immagine di siena.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">silvia</svgElement></template>
+    </category>
+    <category>
+        <pattern>* JOSEPHINE * INSIEME A *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">josephine</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">A</set></think><think><set name="topic">insieme</set></think>josephine è nell'insieme A.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">josephine</svgElement></template>
+    </category>
+    <category>
+        <pattern>* JOSEPHINE * DOMINIO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">josephine</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">A</set></think><think><set name="topic">insieme</set></think>josephine è nell'insieme A.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">josephine</svgElement></template>
+    </category>
+    <category>
+        <pattern>* KEVIN * INSIEME A *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">kevin</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">A</set></think><think><set name="topic">insieme</set></think>kevin è nell'insieme A.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">kevin</svgElement></template>
+    </category>
+    <category>
+        <pattern>* KEVIN * DOMINIO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">kevin</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">A</set></think><think><set name="topic">insieme</set></think>kevin è nell'insieme A.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">kevin</svgElement></template>
+    </category>
+    <category>
+        <pattern>* LUIGI * INSIEME A *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">luigi</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">A</set></think><think><set name="topic">insieme</set></think>luigi è nell'insieme A.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">luigi</svgElement></template>
+    </category>
+    <category>
+        <pattern>* LUIGI * DOMINIO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">luigi</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">A</set></think><think><set name="topic">insieme</set></think>luigi è nell'insieme A.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">luigi</svgElement></template>
+    </category>
+    <category>
+        <pattern>* SILVIA * INSIEME A *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">silvia</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">A</set></think><think><set name="topic">insieme</set></think>silvia è nell'insieme A.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">silvia</svgElement></template>
+    </category>
+    <category>
+        <pattern>* SILVIA * DOMINIO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">silvia</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">A</set></think><think><set name="topic">insieme</set></think>silvia è nell'insieme A.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">silvia</svgElement></template>
+    </category>
+    <category>
+        <pattern>* BARI * INSIEME A *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">bari</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">insieme</set></think>bari non è nell'insieme A.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">bari</svgElement></template>
+    </category>
+    <category>
+        <pattern>* BARI * DOMINIO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">bari</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">insieme</set></think>bari non è nell'insieme A.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">bari</svgElement></template>
+    </category>
+    <category>
+        <pattern>* ROMA * INSIEME A *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">roma</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">insieme</set></think>roma non è nell'insieme A.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">roma</svgElement></template>
+    </category>
+    <category>
+        <pattern>* ROMA * DOMINIO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">roma</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">insieme</set></think>roma non è nell'insieme A.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">roma</svgElement></template>
+    </category>
+    <category>
+        <pattern>* MILANO * INSIEME A *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">milano</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">insieme</set></think>milano non è nell'insieme A.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">milano</svgElement></template>
+    </category>
+    <category>
+        <pattern>* MILANO * DOMINIO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">milano</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">insieme</set></think>milano non è nell'insieme A.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">milano</svgElement></template>
+    </category>
+    <category>
+        <pattern>* BOLOGNA * INSIEME A *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">bologna</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">insieme</set></think>bologna non è nell'insieme A.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">bologna</svgElement></template>
+    </category>
+    <category>
+        <pattern>* BOLOGNA * DOMINIO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">bologna</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">insieme</set></think>bologna non è nell'insieme A.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">bologna</svgElement></template>
+    </category>
+    <category>
+        <pattern>* SIENA * INSIEME A *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">siena</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">insieme</set></think>siena non è nell'insieme A.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">siena</svgElement></template>
+    </category>
+    <category>
+        <pattern>* SIENA * DOMINIO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">siena</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">insieme</set></think>siena non è nell'insieme A.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">siena</svgElement></template>
+    </category>
+    <category>
+        <pattern>* BARI * INSIEME B *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">bari</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">insieme</set></think>bari è nell'insieme B.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">bari</svgElement></template>
+    </category>
+    <category>
+        <pattern>* BARI * CODOMINIO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">bari</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">insieme</set></think>bari è nell'insieme B.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">bari</svgElement></template>
+    </category>
+    <category>
+        <pattern>* ROMA * INSIEME B *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">roma</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">insieme</set></think>roma è nell'insieme B.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">roma</svgElement></template>
+    </category>
+    <category>
+        <pattern>* ROMA * CODOMINIO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">roma</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">insieme</set></think>roma è nell'insieme B.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">roma</svgElement></template>
+    </category>
+    <category>
+        <pattern>* MILANO * INSIEME B *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">milano</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">insieme</set></think>milano è nell'insieme B.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">milano</svgElement></template>
+    </category>
+    <category>
+        <pattern>* MILANO * CODOMINIO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">milano</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">insieme</set></think>milano è nell'insieme B.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">milano</svgElement></template>
+    </category>
+    <category>
+        <pattern>* BOLOGNA * INSIEME B *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">bologna</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">insieme</set></think>bologna è nell'insieme B.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">bologna</svgElement></template>
+    </category>
+    <category>
+        <pattern>* BOLOGNA * CODOMINIO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">bologna</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">insieme</set></think>bologna è nell'insieme B.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">bologna</svgElement></template>
+    </category>
+    <category>
+        <pattern>* SIENA * INSIEME B *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">siena</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">insieme</set></think>siena è nell'insieme B.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">siena</svgElement></template>
+    </category>
+    <category>
+        <pattern>* SIENA * CODOMINIO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">siena</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">insieme</set></think>siena è nell'insieme B.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">siena</svgElement></template>
+    </category>
+    <category>
+        <pattern>* JOSEPHINE * INSIEME B *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">josephine</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">insieme</set></think>josephine non è nell'insieme B.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">josephine</svgElement></template>
+    </category>
+    <category>
+        <pattern>* JOSEPHINE * CODOMINIO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">josephine</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">insieme</set></think>josephine non è nell'insieme B.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">josephine</svgElement></template>
+    </category>
+    <category>
+        <pattern>* KEVIN * INSIEME B *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">kevin</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">insieme</set></think>kevin non è nell'insieme B.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">kevin</svgElement></template>
+    </category>
+    <category>
+        <pattern>* KEVIN * CODOMINIO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">kevin</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">insieme</set></think>kevin non è nell'insieme B.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">kevin</svgElement></template>
+    </category>
+    <category>
+        <pattern>* LUIGI * INSIEME B *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">luigi</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">insieme</set></think>luigi non è nell'insieme B.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">luigi</svgElement></template>
+    </category>
+    <category>
+        <pattern>* LUIGI * CODOMINIO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">luigi</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">insieme</set></think>luigi non è nell'insieme B.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">luigi</svgElement></template>
+    </category>
+    <category>
+        <pattern>* SILVIA * INSIEME B *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">silvia</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">insieme</set></think>silvia non è nell'insieme B.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">silvia</svgElement></template>
+    </category>
+    <category>
+        <pattern>* SILVIA * CODOMINIO *</pattern>
+        <template><think><set name="dialogue_act">propositionalQuestion</set></think><think><set name="elemento1">silvia</set></think><think><set name="elemento2">none</set></think><think><set name="insieme">B</set></think><think><set name="topic">insieme</set></think>silvia non è nell'insieme B.<image>insiemi/funzione.svg</image><svgElement style-name="stroke" style-value="#04ed00">silvia</svgElement></template>
+    </category>
+</aiml>

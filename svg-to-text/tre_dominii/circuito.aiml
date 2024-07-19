@@ -1,0 +1,531 @@
+<?xml version="1.0" ?>
+<aiml>
+    <category>
+        <pattern>* CIRCUITO * ESERCIZIO *</pattern>
+        <template>Il circuito è composto da 8 nodi e da 10 rami. Il ramo che va da A a B è composto da un generatore seguito da una resistenza R1. Il ramo che va da B a C non è composto da alcun elemento. Il ramo che va da C a D è composto da una resistenza R3. Il ramo che va da D a E non è composto da alcun elemento. Il ramo che va da C a H è composto da una resistenza R2. Il ramo che va da E a H è composto da un generatore. Il ramo che va da E a F è composto da una resistenza R4. Il ramo che va da H a G è composto da una resistenza R5. Il ramo che va da F a G non è composto da alcun elemento. Il ramo che va da G a A è composto da una resistenza R6<image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* CIRCUITO * GENERALE *</pattern>
+        <template>Il circuito è composto da 8 nodi e da 10 rami. Il ramo che va da A a B è composto da un generatore seguito da una resistenza R1. Il ramo che va da B a C non è composto da alcun elemento. Il ramo che va da C a D è composto da una resistenza R3. Il ramo che va da D a E non è composto da alcun elemento. Il ramo che va da C a H è composto da una resistenza R2. Il ramo che va da E a H è composto da un generatore. Il ramo che va da E a F è composto da una resistenza R4. Il ramo che va da H a G è composto da una resistenza R5. Il ramo che va da F a G non è composto da alcun elemento. Il ramo che va da G a A è composto da una resistenza R6<image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * A * B *</pattern>
+        <template>si, c'è la resistenza R1<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * B * A *</pattern>
+        <template>si, c'è la resistenza R1<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * A * B *</pattern>
+        <template>si, c'è un generatore<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * B * A *</pattern>
+        <template>si, c'è un generatore<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * A * C *</pattern>
+        <template>si, c'è la resistenza R1<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * C * A *</pattern>
+        <template>si, c'è la resistenza R1<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * A * C *</pattern>
+        <template>si, c'è un generatore<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * C * A *</pattern>
+        <template>si, c'è un generatore<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * A * D *</pattern>
+        <template>si, c'è la resistenza R1seguita dalla resistenza R3<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * D * A *</pattern>
+        <template>si, c'è la resistenza R1seguita dalla resistenza R3<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * A * D *</pattern>
+        <template>si, c'è un generatore<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * D * A *</pattern>
+        <template>si, c'è un generatore<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * A * E *</pattern>
+        <template>si, c'è la resistenza R1seguita dalla resistenza R3<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * E * A *</pattern>
+        <template>si, c'è la resistenza R1seguita dalla resistenza R3<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * A * E *</pattern>
+        <template>si, c'è un generatore<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * E * A *</pattern>
+        <template>si, c'è un generatore<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * A * H *</pattern>
+        <template>si, c'è la resistenza R1seguita dalla resistenza R3<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * H * A *</pattern>
+        <template>si, c'è la resistenza R1seguita dalla resistenza R3<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * A * H *</pattern>
+        <template>si, ci sono 2 generatori<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * H * A *</pattern>
+        <template>si, ci sono 2 generatori<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * A * G *</pattern>
+        <template>si, c'è la resistenza R6<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * G * A *</pattern>
+        <template>si, c'è la resistenza R6<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * A * G *</pattern>
+        <template>no, non c'è alcun generatore<image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * G * A *</pattern>
+        <template>no, non c'è alcun generatore<image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * B * C *</pattern>
+        <template>no, non c'è alcuna resistenza<image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * C * B *</pattern>
+        <template>no, non c'è alcuna resistenza<image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * B * C *</pattern>
+        <template>no, non c'è alcun generatore<image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * C * B *</pattern>
+        <template>no, non c'è alcun generatore<image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * C * D *</pattern>
+        <template>si, c'è la resistenza R3<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * D * C *</pattern>
+        <template>si, c'è la resistenza R3<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * C * D *</pattern>
+        <template>no, non c'è alcun generatore<image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * D * C *</pattern>
+        <template>no, non c'è alcun generatore<image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * D * E *</pattern>
+        <template>no, non c'è alcuna resistenza<image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * E * D *</pattern>
+        <template>no, non c'è alcuna resistenza<image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * D * E *</pattern>
+        <template>no, non c'è alcun generatore<image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * E * D *</pattern>
+        <template>no, non c'è alcun generatore<image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * C * H *</pattern>
+        <template>si, c'è la resistenza R2<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r2</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * H * C *</pattern>
+        <template>si, c'è la resistenza R2<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r2</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * C * H *</pattern>
+        <template>no, non c'è alcun generatore<image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * H * C *</pattern>
+        <template>no, non c'è alcun generatore<image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * E * H *</pattern>
+        <template>no, non c'è alcuna resistenza<image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * H * E *</pattern>
+        <template>no, non c'è alcuna resistenza<image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * E * H *</pattern>
+        <template>si, c'è un generatore<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g2-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * H * E *</pattern>
+        <template>si, c'è un generatore<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g2-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * E * F *</pattern>
+        <template>si, c'è la resistenza R4<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * F * E *</pattern>
+        <template>si, c'è la resistenza R4<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * E * F *</pattern>
+        <template>no, non c'è alcun generatore<image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * F * E *</pattern>
+        <template>no, non c'è alcun generatore<image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * H * G *</pattern>
+        <template>si, c'è la resistenza R6seguita dalla resistenza R1seguita dalla resistenza R3<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * G * H *</pattern>
+        <template>si, c'è la resistenza R6seguita dalla resistenza R1seguita dalla resistenza R3<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * H * G *</pattern>
+        <template>si, ci sono 2 generatori<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * G * H *</pattern>
+        <template>si, ci sono 2 generatori<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * F * G *</pattern>
+        <template>no, non c'è alcuna resistenza<image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * G * F *</pattern>
+        <template>no, non c'è alcuna resistenza<image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * F * G *</pattern>
+        <template>no, non c'è alcun generatore<image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * G * F *</pattern>
+        <template>no, non c'è alcun generatore<image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * G * B *</pattern>
+        <template>si, c'è la resistenza R6seguita dalla resistenza R1<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * B * G *</pattern>
+        <template>si, c'è la resistenza R6seguita dalla resistenza R1<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * G * B *</pattern>
+        <template>si, c'è un generatore<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * B * G *</pattern>
+        <template>si, c'è un generatore<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * G * C *</pattern>
+        <template>si, c'è la resistenza R6seguita dalla resistenza R1<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * C * G *</pattern>
+        <template>si, c'è la resistenza R6seguita dalla resistenza R1<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * G * C *</pattern>
+        <template>si, c'è un generatore<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * C * G *</pattern>
+        <template>si, c'è un generatore<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * G * D *</pattern>
+        <template>si, c'è la resistenza R6seguita dalla resistenza R1seguita dalla resistenza R3<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * D * G *</pattern>
+        <template>si, c'è la resistenza R6seguita dalla resistenza R1seguita dalla resistenza R3<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * G * D *</pattern>
+        <template>si, c'è un generatore<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * D * G *</pattern>
+        <template>si, c'è un generatore<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * G * E *</pattern>
+        <template>si, c'è la resistenza R6seguita dalla resistenza R1seguita dalla resistenza R3<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * E * G *</pattern>
+        <template>si, c'è la resistenza R6seguita dalla resistenza R1seguita dalla resistenza R3<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * G * E *</pattern>
+        <template>si, c'è un generatore<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * E * G *</pattern>
+        <template>si, c'è un generatore<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO A * NODO B *</pattern>
+        <template>Il ramo che va da A a B è composto da un generatore seguito da una resistenza R1<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO B * NODO A *</pattern>
+        <template>Il ramo che va da A a B è composto da un generatore seguito da una resistenza R1<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO A * NODO C *</pattern>
+        <template>Il ramo che va da A a C è composto da un generatore seguito da una resistenza R1<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO C * NODO A *</pattern>
+        <template>Il ramo che va da A a C è composto da un generatore seguito da una resistenza R1<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO A * NODO D *</pattern>
+        <template>Il ramo che va da A a D è composto da un generatore seguito da una resistenza R1 seguita da una resistenza R3<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO D * NODO A *</pattern>
+        <template>Il ramo che va da A a D è composto da un generatore seguito da una resistenza R1 seguita da una resistenza R3<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO A * NODO E *</pattern>
+        <template>Il ramo che va da A a E è composto da un generatore seguito da una resistenza R1 seguita da una resistenza R3<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO E * NODO A *</pattern>
+        <template>Il ramo che va da A a E è composto da un generatore seguito da una resistenza R1 seguita da una resistenza R3<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO A * NODO H *</pattern>
+        <template>Il ramo che va da A a H è composto da un generatore seguito da una resistenza R1 seguita da una resistenza R3 seguita da un generatore<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO H * NODO A *</pattern>
+        <template>Il ramo che va da A a H è composto da un generatore seguito da una resistenza R1 seguita da una resistenza R3 seguita da un generatore<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO A * NODO G *</pattern>
+        <template>Il ramo che va da G a A è composto da una resistenza R6<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO G * NODO A *</pattern>
+        <template>Il ramo che va da G a A è composto da una resistenza R6<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO B * NODO C *</pattern>
+        <template>Il ramo che va da B a C non è composto da alcun elemento<image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* NODO C * NODO B *</pattern>
+        <template>Il ramo che va da B a C non è composto da alcun elemento<image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* NODO C * NODO D *</pattern>
+        <template>Il ramo che va da C a D è composto da una resistenza R3<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO D * NODO C *</pattern>
+        <template>Il ramo che va da C a D è composto da una resistenza R3<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO D * NODO E *</pattern>
+        <template>Il ramo che va da D a E non è composto da alcun elemento<image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* NODO E * NODO D *</pattern>
+        <template>Il ramo che va da D a E non è composto da alcun elemento<image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* NODO C * NODO H *</pattern>
+        <template>Il ramo che va da C a H è composto da una resistenza R2<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r2</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO H * NODO C *</pattern>
+        <template>Il ramo che va da C a H è composto da una resistenza R2<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r2</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO E * NODO H *</pattern>
+        <template>Il ramo che va da E a H è composto da un generatore<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g2-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO H * NODO E *</pattern>
+        <template>Il ramo che va da E a H è composto da un generatore<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g2-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO E * NODO F *</pattern>
+        <template>Il ramo che va da E a F è composto da una resistenza R4<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO F * NODO E *</pattern>
+        <template>Il ramo che va da E a F è composto da una resistenza R4<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO H * NODO G *</pattern>
+        <template>Il ramo che va da G a H è composto da una resistenza R6 seguita da un generatore seguito da una resistenza R1 seguita da una resistenza R3 seguita da un generatore<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO G * NODO H *</pattern>
+        <template>Il ramo che va da G a H è composto da una resistenza R6 seguita da un generatore seguito da una resistenza R1 seguita da una resistenza R3 seguita da un generatore<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO F * NODO G *</pattern>
+        <template>Il ramo che va da F a G non è composto da alcun elemento<image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* NODO G * NODO F *</pattern>
+        <template>Il ramo che va da F a G non è composto da alcun elemento<image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* NODO G * NODO B *</pattern>
+        <template>Il ramo che va da G a B è composto da una resistenza R6 seguita da un generatore seguito da una resistenza R1<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO B * NODO G *</pattern>
+        <template>Il ramo che va da G a B è composto da una resistenza R6 seguita da un generatore seguito da una resistenza R1<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO G * NODO C *</pattern>
+        <template>Il ramo che va da G a C è composto da una resistenza R6 seguita da un generatore seguito da una resistenza R1<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO C * NODO G *</pattern>
+        <template>Il ramo che va da G a C è composto da una resistenza R6 seguita da un generatore seguito da una resistenza R1<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO G * NODO D *</pattern>
+        <template>Il ramo che va da G a D è composto da una resistenza R6 seguita da un generatore seguito da una resistenza R1 seguita da una resistenza R3<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO D * NODO G *</pattern>
+        <template>Il ramo che va da G a D è composto da una resistenza R6 seguita da un generatore seguito da una resistenza R1 seguita da una resistenza R3<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO G * NODO E *</pattern>
+        <template>Il ramo che va da G a E è composto da una resistenza R6 seguita da un generatore seguito da una resistenza R1 seguita da una resistenza R3<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO E * NODO G *</pattern>
+        <template>Il ramo che va da G a E è composto da una resistenza R6 seguita da un generatore seguito da una resistenza R1 seguita da una resistenza R3<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* QUANTE * RESISTENZE *</pattern>
+        <template>Ci sono 6 resistenze<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r2</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r5</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement></template>
+    </category>
+    <category>
+        <pattern>* QUALI * RESISTENZE *</pattern>
+        <template>Le resistenze del circuito sono R1, R3, R2, R4, R5, R6<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r2</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r5</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement></template>
+    </category>
+    <category>
+        <pattern>* QUANTI * GENERATORI *</pattern>
+        <template>Ci sono 2 generatori<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* QUALI * GENERATORI *</pattern>
+        <template>I generatori del circuito sono G1, G2<image>circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* VALORE * R6 *</pattern>
+        <template>Il valore della r6 è 3 Ω<svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* VALE * R6 *</pattern>
+        <template>Il valore della r6 è 3 Ω<svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* VALORE * R5 *</pattern>
+        <template>Il valore della r5 è 4 Ω<svgElement style-name="stroke" style-value="#04ed00">simbolo-r5</svgElement><image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* VALE * R5 *</pattern>
+        <template>Il valore della r5 è 4 Ω<svgElement style-name="stroke" style-value="#04ed00">simbolo-r5</svgElement><image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* VALORE * R4 *</pattern>
+        <template>Il valore della r4 è 6 Ω<svgElement style-name="stroke" style-value="#04ed00">simbolo-r4</svgElement><image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* VALE * R4 *</pattern>
+        <template>Il valore della r4 è 6 Ω<svgElement style-name="stroke" style-value="#04ed00">simbolo-r4</svgElement><image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* VALORE * G2 *</pattern>
+        <template>Il valore della g2 è 6 V<svgElement style-name="stroke" style-value="#04ed00">g2-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-4</svgElement><image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* VALE * G2 *</pattern>
+        <template>Il valore della g2 è 6 V<svgElement style-name="stroke" style-value="#04ed00">g2-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-4</svgElement><image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* VALORE * R2 *</pattern>
+        <template>Il valore della r2 è 6 Ω<svgElement style-name="stroke" style-value="#04ed00">simbolo-r2</svgElement><image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* VALE * R2 *</pattern>
+        <template>Il valore della r2 è 6 Ω<svgElement style-name="stroke" style-value="#04ed00">simbolo-r2</svgElement><image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* VALORE * R3 *</pattern>
+        <template>Il valore della r3 è 4 Ω<svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement><image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* VALE * R3 *</pattern>
+        <template>Il valore della r3 è 4 Ω<svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement><image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* VALORE * R1 *</pattern>
+        <template>Il valore della r1 è 3 Ω<svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* VALE * R1 *</pattern>
+        <template>Il valore della r1 è 3 Ω<svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* VALORE * G1 *</pattern>
+        <template>Il valore della g1 è 42 V<svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* VALE * G1 *</pattern>
+        <template>Il valore della g1 è 42 V<svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><image>circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* VALORE *</pattern>
+        <template>Il componente non è presente nel circuito</template>
+    </category>
+    <category>
+        <pattern>* VALE * </pattern>
+        <template>Il componente non è presente nel circuito</template>
+    </category>
+</aiml>

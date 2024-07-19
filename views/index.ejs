@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Novagraph</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ========================== -->
+        <!-- ========= css ============ -->
+        <!-- ========================== -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-zPXXoOhkaaGtJzUhR9E9XZ5Y5V7jK1RdfuV7z5cOFJnK7Q/cJxgMWVn+XfKmpY6ArvJ6wEa6J2BC8yKjJ0d7Ng==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- ========================== -->
+        <!-- ========= js ============= -->
+        <!-- ========================== -->
+        <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- MathJax -->
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <a class="navbar-brand" href="#">NoVAGraphS</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08"
+                    aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbar-novagraphs">
+                    <ul class="nav nav-tabs nav-tabs-lg">
+                        <li class="nav-item">
+                            <a class="nav-link <%= pageTitle === 'Homepage' ? 'active' : '' %>" href="/">
+                                Homepage<span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link <%= pageTitle === 'Esempio 1' ? 'active' : '' %>" href="/esempio1">
+                                Esempio 1
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link <%= pageTitle === 'Esempio 2' ? 'active' : '' %>" href="/esempio2">
+                                Esempio 2
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link <%= pageTitle === 'Esempio 3' ? 'active' : '' %>" href="/esempio3">
+                                Esempio 3
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link <%= pageTitle === 'Esempio 4' ? 'active' : '' %>" href="/esempio4">
+                                Esempio 4
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link <%= pageTitle === 'Esempio 5' ? 'active' : '' %>" href="/esempio5">
+                                Esempio 5
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link <%= pageTitle === 'Esempio 6' ? 'active' : '' %>" href="/esempio6">
+                                Esempio 6
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link <%= pageTitle === 'Esempio 7' ? 'active' : '' %>" href="/esempio7">
+                                Esempio 7
+                            </a>
+                        </li>                        
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container my-5">
+            <%- include(section) %>
+        </div>
+
+        <footer class="footer">
+            <p>All Right Reserved © NoVAGraphS - Università degli Studi di Torino</p>
+        </footer>
+    </body>
+</html>

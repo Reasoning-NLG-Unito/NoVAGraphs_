@@ -1,0 +1,1 @@
+L'esempio è composto da due insiemi: il primo insieme, l'insieme A, detto in questo caso dominio, è composto da 2 elementi: Luca, Davide. Il secondo insieme, l'insieme B, noto come codominio, è invece composto da 2 elementi: 27, 30. Gli elementi del dominio sono collegati agli elementi del codominio. In particolare, Luca è associato a 27.

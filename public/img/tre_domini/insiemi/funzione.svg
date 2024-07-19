@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="100mm"
+   viewBox="0 0 210 100"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="funzione.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showguides="true"
+     showgrid="true"
+     inkscape:zoom="1.8032699"
+     inkscape:cx="394.83829"
+     inkscape:cy="121.72332"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="funzioni1">
+    <inkscape:grid
+       visible="true"
+       id="grid1"
+       units="mm"
+       originx="0"
+       originy="0"
+       spacingx="0.99999998"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="marker20"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path20" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker19"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path19" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker18"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path18" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="ConcaveTriangle"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path7" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Dot"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Dot"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 5,0 C 5,2.76 2.76,5 0,5 -2.76,5 -5,2.76 -5,0 c 0,-2.76 2.3,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         sodipodi:nodetypes="sssss"
+         id="path17" />
+    </marker>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect17"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect16"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect15"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect14"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect13"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect12"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect3"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect3-6"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+  </defs>
+  <g
+     inkscape:label="funzioni1"
+     inkscape:groupmode="layer"
+     id="funzioni1">
+    <a
+       id="dominio"
+       inkscape:label="dominio">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:none;stroke:#000000;stroke-width:0.358;stroke-dasharray:none;stroke-opacity:1"
+         x="46.625996"
+         y="20.148628"
+         id="nome-dominio"
+         inkscape:label="nome-dominio"><tspan
+           sodipodi:role="line"
+           id="tspan20"
+           style="stroke-width:0.358"
+           x="46.625996"
+           y="20.148628">A</tspan></text>
+      <path
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.73769367;stroke-dasharray:none"
+         d="m 78.207563,26.05904 c -3.257379,-4.079334 -8.128229,-7.306272 -13.060013,-7.367127 -4.931784,-0.06086 -9.924305,3.04425 -13.212143,7.093193 -3.287838,4.048943 -4.870832,9.041461 -4.962146,14.003688 -0.09132,4.962227 1.309026,9.893862 4.444684,13.273032 3.135658,3.37917 8.006407,5.205701 13.029522,5.266569 5.023114,0.06087 10.198288,-1.643894 13.607898,-4.992652 3.409611,-3.348758 5.05349,-8.341279 5.053473,-13.303505 -1.7e-5,-4.962225 -1.643896,-9.893863 -4.901275,-13.973198 z"
+         id="insieme-dominio"
+         inkscape:path-effect="#path-effect3"
+         inkscape:original-d="m 79.821031,25.206642 c -4.870847,-3.226937 -9.741696,-6.453875 -14.612546,-9.680812 -4.992719,3.105228 -9.98524,6.210332 -14.977858,9.315498 -1.583058,4.992721 -3.166052,9.985239 -4.749078,14.97786 1.400397,4.931833 2.800739,9.863468 4.201107,14.795203 4.870947,1.826604 9.741696,3.653137 14.612546,5.479704 5.175379,-1.70483 10.350553,-3.409593 15.525829,-5.114391 1.643946,-4.992719 3.287824,-9.98524 4.931735,-14.977858 -1.643943,-4.931834 -3.287823,-9.863471 -4.931735,-14.795204 z"
+         transform="matrix(1.251162,0,0,1.4687042,-14.508749,-11.109077)"
+         inkscape:label="insieme-dominio" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:#000000;stroke-width:0.358;stroke-dasharray:none"
+         x="66.539444"
+         y="40.922085"
+         id="josephine"
+         inkscape:label="josephine"><tspan
+           sodipodi:role="line"
+           id="tspan23">Josephine</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:#000000;stroke-width:0.358;stroke-dasharray:none"
+         x="50.941101"
+         y="49.145866"
+         id="kevin"
+         inkscape:label="kevin"><tspan
+           sodipodi:role="line"
+           id="tspan6">Kevin</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:#000000;stroke-width:0.358;stroke-dasharray:none"
+         x="65.637543"
+         y="59.276413"
+         id="luigi"
+         inkscape:label="luigi"><tspan
+           sodipodi:role="line"
+           id="tspan7">Luigi</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:#000000;stroke-width:0.358;stroke-dasharray:none"
+         x="58.404518"
+         y="29.590405"
+         id="silvia"
+         inkscape:label="silvia"><tspan
+           sodipodi:role="line"
+           id="tspan4"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055556px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.358;stroke-dasharray:none"
+           x="58.404518"
+           y="29.590405">Silvia</tspan></text>
+    </a>
+    <a
+       id="codominio"
+       inkscape:label="codominio">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:none;stroke:#000000;stroke-width:0.358;stroke-dasharray:none;stroke-opacity:1"
+         x="154.34367"
+         y="20.019472"
+         id="nome-codominio"
+         inkscape:label="nome-codominio"><tspan
+           sodipodi:role="line"
+           id="tspan21"
+           style="stroke-width:0.358"
+           x="154.34367"
+           y="20.019472">B</tspan></text>
+      <path
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.73769367;stroke-dasharray:none"
+         d="m 78.207563,26.05904 c -3.257379,-4.079334 -8.128229,-7.306272 -13.060013,-7.367127 -4.931784,-0.06086 -9.924305,3.04425 -13.212143,7.093193 -3.287838,4.048943 -4.870832,9.041461 -4.962146,14.003688 -0.09132,4.962227 1.309026,9.893862 4.444684,13.273032 3.135658,3.37917 8.006407,5.205701 13.029522,5.266569 5.023114,0.06087 10.198288,-1.643894 13.607898,-4.992652 3.409611,-3.348758 5.05349,-8.341279 5.053473,-13.303505 -1.7e-5,-4.962225 -1.643896,-9.893863 -4.901275,-13.973198 z"
+         id="insieme-codominio"
+         inkscape:path-effect="#path-effect3-6"
+         inkscape:original-d="m 79.821031,25.206642 c -4.870847,-3.226937 -9.741696,-6.453875 -14.612546,-9.680812 -4.992719,3.105228 -9.98524,6.210332 -14.977858,9.315498 -1.583058,4.992721 -3.166052,9.985239 -4.749078,14.97786 1.400397,4.931833 2.800739,9.863468 4.201107,14.795203 4.870947,1.826604 9.741696,3.653137 14.612546,5.479704 5.175379,-1.70483 10.350553,-3.409593 15.525829,-5.114391 1.643946,-4.992719 3.287824,-9.98524 4.931735,-14.977858 -1.643943,-4.931834 -3.287823,-9.863471 -4.931735,-14.795204 z"
+         transform="matrix(1.251162,0,0,1.4687042,56.305871,-10.82529)"
+         inkscape:label="insieme-codominio" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:#000000;stroke-width:0.358;stroke-dasharray:none"
+         x="131.56989"
+         y="30.032755"
+         id="bari"
+         inkscape:label="bari"><tspan
+           sodipodi:role="line"
+           id="tspan8">Bari</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:#000000;stroke-width:0.358;stroke-dasharray:none"
+         x="142.53101"
+         y="40.453392"
+         id="roma"
+         inkscape:label="roma"><tspan
+           sodipodi:role="line"
+           id="tspan9"
+           x="142.53101"
+           y="40.453392">Roma</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:#000000;stroke-width:0.358;stroke-dasharray:none"
+         x="125.3266"
+         y="45.62978"
+         id="milano"
+         inkscape:label="milano"><tspan
+           sodipodi:role="line"
+           id="tspan10">Milano</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:#000000;stroke-width:0.358;stroke-dasharray:none"
+         x="140.73535"
+         y="54.185047"
+         id="bologna"
+         inkscape:label="bologna"><tspan
+           sodipodi:role="line"
+           id="tspan22">Bologna</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:#000000;stroke-width:0.358;stroke-dasharray:none"
+         x="130.47656"
+         y="64.452751"
+         id="siena"
+         inkscape:label="siena"><tspan
+           sodipodi:role="line"
+           id="tspan12">Siena</tspan></text>
+    </a>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.358;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Dot);marker-end:url(#marker18)"
+       d="m 76.461466,36.680838 c 6.535628,-3.293999 13.501951,-5.732212 20.665259,-7.23284 10.472535,-2.193871 21.363915,-2.370251 31.901995,-0.516634"
+       id="link-josephine-bari"
+       inkscape:path-effect="#path-effect14"
+       inkscape:original-d="m 76.461466,36.680838 c 6.974525,-2.410947 13.819891,-4.821894 20.665259,-7.23284 6.845365,-2.41095 21.267995,-0.344422 31.901995,-0.516634"
+       inkscape:label="link-jospehine-bari" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.358;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Dot);marker-end:url(#ConcaveTriangle)"
+       d="m 64.578938,24.927471 c 10.679464,-4.522322 22.777791,-5.62217 34.097682,-3.099789 11.77698,2.624234 22.64648,9.164353 30.48126,18.340417"
+       id="link-silvia-milano"
+       inkscape:path-effect="#path-effect15"
+       inkscape:original-d="m 64.578938,24.927471 c 11.279791,-1.076316 22.688735,-2.023474 34.097682,-3.099789 11.40894,-1.076316 20.32084,12.183894 30.48126,18.340417"
+       inkscape:label="link-silvia-milano" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.358;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Dot);marker-end:url(#marker19)"
+       d="m 71.295151,62.124941 c 9.735583,1.716227 19.816156,1.450948 29.447999,-0.774949 9.65705,-2.231723 18.85463,-6.432541 26.86483,-12.269999"
+       id="link-luigi-milano"
+       inkscape:path-effect="#path-effect16"
+       inkscape:original-d="m 71.295151,62.124941 c 9.600734,-0.172212 19.588942,-0.602737 29.447999,-0.774949 9.85905,-0.172209 17.86684,-8.093892 26.86483,-12.269999"
+       inkscape:label="link-luigi-milano" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.358;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Dot);marker-end:url(#marker20)"
+       d="m 55.796203,51.404837 c 8.361875,9.779458 19.811793,16.878406 32.289472,20.01947 14.322535,3.605477 29.913455,1.925018 43.138725,-4.649684"
+       id="link-kevin-siena"
+       inkscape:path-effect="#path-effect17"
+       inkscape:original-d="m 55.796203,51.404837 c 10.547895,6.673157 21.483262,13.346313 32.289472,20.01947 10.806208,6.673157 28.716095,-3.09979 43.138725,-4.649684"
+       inkscape:label="link-kevin-siena" />
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:3.175px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Light';fill:#ffffff;stroke:#000000;stroke-width:0.358"
+       x="99.772453"
+       y="19.661043"
+       id="f-silvia-milano"
+       inkscape:label="f-silvia-milano"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="stroke-width:0.358"
+         x="99.772453"
+         y="19.661043">f</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:3.175px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Light';fill:#ffffff;stroke:#000000;stroke-width:0.358"
+       x="96.375336"
+       y="27.246893"
+       id="f-josephine-bari"
+       inkscape:label="f-josephine-bari"><tspan
+         sodipodi:role="line"
+         id="tspan1-3"
+         style="stroke-width:0.358"
+         x="96.375336"
+         y="27.246893">f</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:3.175px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Light';fill:#ffffff;stroke:#000000;stroke-width:0.358"
+       x="101.28456"
+       y="57.674057"
+       id="f-luigi-milano"
+       inkscape:label="f-luigi-milano"><tspan
+         sodipodi:role="line"
+         id="tspan1-8"
+         style="stroke-width:0.358"
+         x="101.28456"
+         y="57.674057">f</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:3.175px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Light';fill:#ffffff;stroke:#000000;stroke-width:0.358"
+       x="102.54735"
+       y="71.025879"
+       id="f-kevin-siena"
+       inkscape:label="f-kevin-siena"><tspan
+         sodipodi:role="line"
+         id="tspan1-5"
+         style="stroke-width:0.358"
+         x="102.54735"
+         y="71.025879">f</tspan></text>
+  </g>
+</svg>

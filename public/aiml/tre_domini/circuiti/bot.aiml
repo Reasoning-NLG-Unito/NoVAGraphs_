@@ -1,0 +1,2078 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>    
+    <!--
+    $$$$$$$\   $$$$$$\                                              $$\                     
+    $$  __$$\ $$  __$$\                                             \__|                    
+    $$ |  $$ |$$ /  \__|$$\  $$$$$$\   $$$$$$\   $$$$$$\  $$$$$$$\  $$\ $$$$$$$\   $$$$$$\  
+    $$ |  $$ |\$$$$$$\  \__|$$  __$$\ $$  __$$\ $$  __$$\ $$  __$$\ $$ |$$  __$$\ $$  __$$\ 
+    $$ |  $$ | \____$$\     $$ /  $$ |$$ /  $$ |$$$$$$$$ |$$ |  $$ |$$ |$$ |  $$ |$$ /  $$ |
+    $$ |  $$ |$$\   $$ |$$\ $$ |  $$ |$$ |  $$ |$$   ____|$$ |  $$ |$$ |$$ |  $$ |$$ |  $$ |
+    $$$$$$$  |\$$$$$$  |\__|\$$$$$$  |$$$$$$$  |\$$$$$$$\ $$ |  $$ |$$ |$$ |  $$ |\$$$$$$$ |
+    \_______/  \______/      \______/ $$  ____/  \_______|\__|  \__|\__|\__|  \__| \____$$ |
+                                      $$ |                                        $$\   $$ |
+                                      $$ |                                        \$$$$$$  |
+                                      \__|                                         \______/ 
+    -->
+
+    <category>
+        <pattern>CIAO *</pattern>
+        <template>
+            <think><set name="qud">null</set></think>
+
+            <think><set name="shared_teoria_circuiti">no</set></think>
+            <think><set name="shared_teoria_corrente">no</set></think>
+            <think><set name="shared_teoria_prima_legge_ohm">no</set></think>
+            <think><set name="shared_teoria_seconda_legge_ohm">no</set></think>
+            <think><set name="shared_teoria_prima_legge_kirchhoff">no</set></think>
+            <think><set name="shared_teoria_seconda_legge_kirchhoff">no</set></think>
+
+            <think><set name="shared_esercizio_generico">no</set></think>
+            <think><set name="shared_esercizio_resistenze">no</set></think>
+            <think><set name="shared_esercizio_resistenze_disposizione">no</set></think>
+            <think><set name="shared_esercizio_correnti">no</set></think>
+
+            Ciao, sono NoVABot. 
+            Sono programmato per rispondere a domande riguardanti i circuiti elettrici. 
+            Come posso aiutarti?
+        </template>
+    </category>
+    
+    <category>
+        <pattern>BUONGIORNO *</pattern>
+        <template>
+            <srai>CIAO</srai>
+        </template>
+    </category>
+    
+    <!--
+    /$$$$$$$$ /$$$$$$                                                                     
+    |__  $$__//$$__  $$                                                                    
+       | $$  | $$  \ $$ /$$  /$$$$$$  /$$$$$$$   /$$$$$$$ /$$  /$$  /$$  /$$$$$$   /$$$$$$ 
+       | $$  | $$$$$$$$|__/ |____  $$| $$__  $$ /$$_____/| $$ | $$ | $$ /$$__  $$ /$$__  $$
+       | $$  | $$__  $$      /$$$$$$$| $$  \ $$|  $$$$$$ | $$ | $$ | $$| $$$$$$$$| $$  \__/
+       | $$  | $$  | $$ /$$ /$$__  $$| $$  | $$ \____  $$| $$ | $$ | $$| $$_____/| $$      
+       | $$  | $$  | $$|__/|  $$$$$$$| $$  | $$ /$$$$$$$/|  $$$$$/$$$$/|  $$$$$$$| $$      
+       |__/  |__/  |__/     \_______/|__/  |__/|_______/  \_____/\___/  \_______/|__/                                                                                           
+    -->
+    <category>
+        <pattern>* CIRCUITO * ESERCIZIO *</pattern>
+        <template>Il circuito è composto da 8 nodi e da 10 rami. Il ramo che va da A a B è composto da un generatore seguito da una resistenza R1. Il ramo che va da B a C non è composto da alcun elemento. Il ramo che va da C a D è composto da una resistenza R3. Il ramo che va da D a E non è composto da alcun elemento. Il ramo che va da C a H è composto da una resistenza R2. Il ramo che va da E a H è composto da un generatore. Il ramo che va da E a F è composto da una resistenza R4. Il ramo che va da H a G è composto da una resistenza R5. Il ramo che va da F a G non è composto da alcun elemento. Il ramo che va da G a A è composto da una resistenza R6<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* CIRCUITO * GENERALE *</pattern>
+        <template>Il circuito è composto da 8 nodi e da 10 rami. Il ramo che va da A a B è composto da un generatore seguito da una resistenza R1. Il ramo che va da B a C non è composto da alcun elemento. Il ramo che va da C a D è composto da una resistenza R3. Il ramo che va da D a E non è composto da alcun elemento. Il ramo che va da C a H è composto da una resistenza R2. Il ramo che va da E a H è composto da un generatore. Il ramo che va da E a F è composto da una resistenza R4. Il ramo che va da H a G è composto da una resistenza R5. Il ramo che va da F a G non è composto da alcun elemento. Il ramo che va da G a A è composto da una resistenza R6<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * A * B *</pattern>
+        <template>si, c'è la resistenza R1<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * B * A *</pattern>
+        <template>si, c'è la resistenza R1<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * A * B *</pattern>
+        <template>si, c'è un generatore<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * B * A *</pattern>
+        <template>si, c'è un generatore<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * A * C *</pattern>
+        <template>si, c'è la resistenza R1<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * C * A *</pattern>
+        <template>si, c'è la resistenza R1<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * A * C *</pattern>
+        <template>si, c'è un generatore<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * C * A *</pattern>
+        <template>si, c'è un generatore<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * A * D *</pattern>
+        <template>si, c'è la resistenza R1seguita dalla resistenza R3<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * D * A *</pattern>
+        <template>si, c'è la resistenza R1seguita dalla resistenza R3<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * A * D *</pattern>
+        <template>si, c'è un generatore<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * D * A *</pattern>
+        <template>si, c'è un generatore<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * A * E *</pattern>
+        <template>si, c'è la resistenza R1seguita dalla resistenza R3<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * E * A *</pattern>
+        <template>si, c'è la resistenza R1seguita dalla resistenza R3<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * A * E *</pattern>
+        <template>si, c'è un generatore<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * E * A *</pattern>
+        <template>si, c'è un generatore<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * A * H *</pattern>
+        <template>si, c'è la resistenza R1seguita dalla resistenza R3<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * H * A *</pattern>
+        <template>si, c'è la resistenza R1seguita dalla resistenza R3<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * A * H *</pattern>
+        <template>si, ci sono 2 generatori<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * H * A *</pattern>
+        <template>si, ci sono 2 generatori<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * A * G *</pattern>
+        <template>si, c'è la resistenza R6<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * G * A *</pattern>
+        <template>si, c'è la resistenza R6<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * A * G *</pattern>
+        <template>no, non c'è alcun generatore<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * G * A *</pattern>
+        <template>no, non c'è alcun generatore<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * B * C *</pattern>
+        <template>no, non c'è alcuna resistenza<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * C * B *</pattern>
+        <template>no, non c'è alcuna resistenza<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * B * C *</pattern>
+        <template>no, non c'è alcun generatore<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * C * B *</pattern>
+        <template>no, non c'è alcun generatore<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * C * D *</pattern>
+        <template>si, c'è la resistenza R3<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * D * C *</pattern>
+        <template>si, c'è la resistenza R3<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * C * D *</pattern>
+        <template>no, non c'è alcun generatore<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * D * C *</pattern>
+        <template>no, non c'è alcun generatore<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * D * E *</pattern>
+        <template>no, non c'è alcuna resistenza<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * E * D *</pattern>
+        <template>no, non c'è alcuna resistenza<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * D * E *</pattern>
+        <template>no, non c'è alcun generatore<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * E * D *</pattern>
+        <template>no, non c'è alcun generatore<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * C * H *</pattern>
+        <template>si, c'è la resistenza R2<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r2</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * H * C *</pattern>
+        <template>si, c'è la resistenza R2<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r2</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * C * H *</pattern>
+        <template>no, non c'è alcun generatore<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * H * C *</pattern>
+        <template>no, non c'è alcun generatore<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * E * H *</pattern>
+        <template>no, non c'è alcuna resistenza<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * H * E *</pattern>
+        <template>no, non c'è alcuna resistenza<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * E * H *</pattern>
+        <template>si, c'è un generatore<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g2-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * H * E *</pattern>
+        <template>si, c'è un generatore<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g2-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * E * F *</pattern>
+        <template>si, c'è la resistenza R4<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * F * E *</pattern>
+        <template>si, c'è la resistenza R4<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * E * F *</pattern>
+        <template>no, non c'è alcun generatore<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * F * E *</pattern>
+        <template>no, non c'è alcun generatore<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * H * G *</pattern>
+        <template>si, c'è la resistenza R6seguita dalla resistenza R1seguita dalla resistenza R3<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * G * H *</pattern>
+        <template>si, c'è la resistenza R6seguita dalla resistenza R1seguita dalla resistenza R3<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * H * G *</pattern>
+        <template>si, ci sono 2 generatori<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * G * H *</pattern>
+        <template>si, ci sono 2 generatori<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * F * G *</pattern>
+        <template>no, non c'è alcuna resistenza<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * G * F *</pattern>
+        <template>no, non c'è alcuna resistenza<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * F * G *</pattern>
+        <template>no, non c'è alcun generatore<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * G * F *</pattern>
+        <template>no, non c'è alcun generatore<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * G * B *</pattern>
+        <template>si, c'è la resistenza R6seguita dalla resistenza R1<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * B * G *</pattern>
+        <template>si, c'è la resistenza R6seguita dalla resistenza R1<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * G * B *</pattern>
+        <template>si, c'è un generatore<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * B * G *</pattern>
+        <template>si, c'è un generatore<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * G * C *</pattern>
+        <template>si, c'è la resistenza R6seguita dalla resistenza R1<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * C * G *</pattern>
+        <template>si, c'è la resistenza R6seguita dalla resistenza R1<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * G * C *</pattern>
+        <template>si, c'è un generatore<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * C * G *</pattern>
+        <template>si, c'è un generatore<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * G * D *</pattern>
+        <template>si, c'è la resistenza R6seguita dalla resistenza R1seguita dalla resistenza R3<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * D * G *</pattern>
+        <template>si, c'è la resistenza R6seguita dalla resistenza R1seguita dalla resistenza R3<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * G * D *</pattern>
+        <template>si, c'è un generatore<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * D * G *</pattern>
+        <template>si, c'è un generatore<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * G * E *</pattern>
+        <template>si, c'è la resistenza R6seguita dalla resistenza R1seguita dalla resistenza R3<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* RESISTENZA * E * G *</pattern>
+        <template>si, c'è la resistenza R6seguita dalla resistenza R1seguita dalla resistenza R3<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * G * E *</pattern>
+        <template>si, c'è un generatore<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* GENERATORE * E * G *</pattern>
+        <template>si, c'è un generatore<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO A * NODO B *</pattern>
+        <template>Il ramo che va da A a B è composto da un generatore seguito da una resistenza R1<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO B * NODO A *</pattern>
+        <template>Il ramo che va da A a B è composto da un generatore seguito da una resistenza R1<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO A * NODO C *</pattern>
+        <template>Il ramo che va da A a C è composto da un generatore seguito da una resistenza R1<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO C * NODO A *</pattern>
+        <template>Il ramo che va da A a C è composto da un generatore seguito da una resistenza R1<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO A * NODO D *</pattern>
+        <template>Il ramo che va da A a D è composto da un generatore seguito da una resistenza R1 seguita da una resistenza R3<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO D * NODO A *</pattern>
+        <template>Il ramo che va da A a D è composto da un generatore seguito da una resistenza R1 seguita da una resistenza R3<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO A * NODO E *</pattern>
+        <template>Il ramo che va da A a E è composto da un generatore seguito da una resistenza R1 seguita da una resistenza R3<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO E * NODO A *</pattern>
+        <template>Il ramo che va da A a E è composto da un generatore seguito da una resistenza R1 seguita da una resistenza R3<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO A * NODO H *</pattern>
+        <template>Il ramo che va da A a H è composto da un generatore seguito da una resistenza R1 seguita da una resistenza R3 seguita da un generatore<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO H * NODO A *</pattern>
+        <template>Il ramo che va da A a H è composto da un generatore seguito da una resistenza R1 seguita da una resistenza R3 seguita da un generatore<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO A * NODO G *</pattern>
+        <template>Il ramo che va da G a A è composto da una resistenza R6<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO G * NODO A *</pattern>
+        <template>Il ramo che va da G a A è composto da una resistenza R6<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO B * NODO C *</pattern>
+        <template>Il ramo che va da B a C non è composto da alcun elemento<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* NODO C * NODO B *</pattern>
+        <template>Il ramo che va da B a C non è composto da alcun elemento<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* NODO C * NODO D *</pattern>
+        <template>Il ramo che va da C a D è composto da una resistenza R3<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO D * NODO C *</pattern>
+        <template>Il ramo che va da C a D è composto da una resistenza R3<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO D * NODO E *</pattern>
+        <template>Il ramo che va da D a E non è composto da alcun elemento<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* NODO E * NODO D *</pattern>
+        <template>Il ramo che va da D a E non è composto da alcun elemento<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* NODO C * NODO H *</pattern>
+        <template>Il ramo che va da C a H è composto da una resistenza R2<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r2</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO H * NODO C *</pattern>
+        <template>Il ramo che va da C a H è composto da una resistenza R2<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r2</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO E * NODO H *</pattern>
+        <template>Il ramo che va da E a H è composto da un generatore<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g2-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO H * NODO E *</pattern>
+        <template>Il ramo che va da E a H è composto da un generatore<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g2-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO E * NODO F *</pattern>
+        <template>Il ramo che va da E a F è composto da una resistenza R4<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO F * NODO E *</pattern>
+        <template>Il ramo che va da E a F è composto da una resistenza R4<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO H * NODO G *</pattern>
+        <template>Il ramo che va da G a H è composto da una resistenza R6 seguita da un generatore seguito da una resistenza R1 seguita da una resistenza R3 seguita da un generatore<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO G * NODO H *</pattern>
+        <template>Il ramo che va da G a H è composto da una resistenza R6 seguita da un generatore seguito da una resistenza R1 seguita da una resistenza R3 seguita da un generatore<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO F * NODO G *</pattern>
+        <template>Il ramo che va da F a G non è composto da alcun elemento<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* NODO G * NODO F *</pattern>
+        <template>Il ramo che va da F a G non è composto da alcun elemento<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* NODO G * NODO B *</pattern>
+        <template>Il ramo che va da G a B è composto da una resistenza R6 seguita da un generatore seguito da una resistenza R1<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO B * NODO G *</pattern>
+        <template>Il ramo che va da G a B è composto da una resistenza R6 seguita da un generatore seguito da una resistenza R1<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO G * NODO C *</pattern>
+        <template>Il ramo che va da G a C è composto da una resistenza R6 seguita da un generatore seguito da una resistenza R1<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO C * NODO G *</pattern>
+        <template>Il ramo che va da G a C è composto da una resistenza R6 seguita da un generatore seguito da una resistenza R1<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO G * NODO D *</pattern>
+        <template>Il ramo che va da G a D è composto da una resistenza R6 seguita da un generatore seguito da una resistenza R1 seguita da una resistenza R3<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO D * NODO G *</pattern>
+        <template>Il ramo che va da G a D è composto da una resistenza R6 seguita da un generatore seguito da una resistenza R1 seguita da una resistenza R3<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO G * NODO E *</pattern>
+        <template>Il ramo che va da G a E è composto da una resistenza R6 seguita da un generatore seguito da una resistenza R1 seguita da una resistenza R3<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* NODO E * NODO G *</pattern>
+        <template>Il ramo che va da G a E è composto da una resistenza R6 seguita da un generatore seguito da una resistenza R1 seguita da una resistenza R3<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement></template>
+    </category>
+    <category>
+        <pattern>* QUANTE * RESISTENZE *</pattern>
+        <template>Ci sono 6 resistenze<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r2</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r5</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement></template>
+    </category>
+    <category>
+        <pattern>* QUALI * RESISTENZE *</pattern>
+        <template>Le resistenze del circuito sono R1, R3, R2, R4, R5, R6<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r2</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r4</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r5</svgElement><svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement></template>
+    </category>
+    <category>
+        <pattern>* QUANTI * GENERATORI *</pattern>
+        <template>Ci sono 2 generatori<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* QUALI * GENERATORI *</pattern>
+        <template>I generatori del circuito sono G1, G2<image>tre_domini/circuiti/circuito.svg</image><svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-4</svgElement></template>
+    </category>
+    <category>
+        <pattern>* VALORE * R6 *</pattern>
+        <template>Il valore della r6 è 3 Ω<svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* VALE * R6 *</pattern>
+        <template>Il valore della r6 è 3 Ω<svgElement style-name="stroke" style-value="#04ed00">simbolo-r6</svgElement><image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* VALORE * R5 *</pattern>
+        <template>Il valore della r5 è 4 Ω<svgElement style-name="stroke" style-value="#04ed00">simbolo-r5</svgElement><image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* VALE * R5 *</pattern>
+        <template>Il valore della r5 è 4 Ω<svgElement style-name="stroke" style-value="#04ed00">simbolo-r5</svgElement><image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* VALORE * R4 *</pattern>
+        <template>Il valore della r4 è 6 Ω<svgElement style-name="stroke" style-value="#04ed00">simbolo-r4</svgElement><image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* VALE * R4 *</pattern>
+        <template>Il valore della r4 è 6 Ω<svgElement style-name="stroke" style-value="#04ed00">simbolo-r4</svgElement><image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* VALORE * G2 *</pattern>
+        <template>Il valore della g2 è 6 V<svgElement style-name="stroke" style-value="#04ed00">g2-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-4</svgElement><image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* VALE * G2 *</pattern>
+        <template>Il valore della g2 è 6 V<svgElement style-name="stroke" style-value="#04ed00">g2-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g2-4</svgElement><image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* VALORE * R2 *</pattern>
+        <template>Il valore della r2 è 6 Ω<svgElement style-name="stroke" style-value="#04ed00">simbolo-r2</svgElement><image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* VALE * R2 *</pattern>
+        <template>Il valore della r2 è 6 Ω<svgElement style-name="stroke" style-value="#04ed00">simbolo-r2</svgElement><image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* VALORE * R3 *</pattern>
+        <template>Il valore della r3 è 4 Ω<svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement><image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* VALE * R3 *</pattern>
+        <template>Il valore della r3 è 4 Ω<svgElement style-name="stroke" style-value="#04ed00">simbolo-r3</svgElement><image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* VALORE * R1 *</pattern>
+        <template>Il valore della r1 è 3 Ω<svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* VALE * R1 *</pattern>
+        <template>Il valore della r1 è 3 Ω<svgElement style-name="stroke" style-value="#04ed00">simbolo-r1</svgElement><image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* VALORE * G1 *</pattern>
+        <template>Il valore della g1 è 42 V<svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* VALE * G1 *</pattern>
+        <template>Il valore della g1 è 42 V<svgElement style-name="stroke" style-value="#04ed00">g1-1</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-2</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-3</svgElement><svgElement style-name="stroke" style-value="#04ed00">g1-4</svgElement><image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+    <category>
+        <pattern>* VALORE *</pattern>
+        <template>Il componente non è presente nel circuito</template>
+    </category>
+    <category>
+        <pattern>* VALE * </pattern>
+        <template>Il componente non è presente nel circuito</template>
+    </category>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ================================== -->
+    <!-- ============ GENERICA ============ -->
+    <!-- ================================== -->
+    <!-- nlg -->
+    <category>
+        <pattern>TA ANSWER GENERICO</pattern>
+        <template>
+            <condition name="qud">
+                <li value="null">
+                    Puoi specificare meglio cosa non ti è chiaro?
+                </li>
+                <li>
+                    <srai><get name="qud"/></srai>
+                </li>
+            </condition>
+        </template>
+    </category>
+
+    <!-- ================================== -->
+    <!-- =========== ESERCIZIO ============ -->
+    <!-- ================================== -->
+    <!-- nlg -->
+    <!--<category>
+        <pattern>TA ANSWER ESERCIZIO</pattern>
+        <template>
+            <think><set name="qud">TA ANSWER ESERCIZIO</set></think>
+            <think><set name="shared_esercizio_generico">si</set></think>
+            Il circuito d'esercizio è un circuito contentente maglie interne. E' composta innazitutto da un generatore di corrente di 
+            <formula>42 V</formula> collegata ad una resistenza <formula>R_1</formula> di <formula>3 \text{ ohm}</formula> che vanno dal punto 
+            <formula>a</formula> al punto <formula>b</formula>, con una certa intensità di corrente <formula>I</formula>. 
+            Successivamente vi è un ramo vuoto tra <formula>b</formula> e <formula>c</formula> con una successiva diramazione del circuito 
+            in cui rispettivamente troviamo <formula>R_2</formula>, di <formula>6 \text{ ohm}</formula>,
+            che va dal punto <formula>c</formula> al punto <formula>h</formula> e <formula>R_3</formula>, di <formula>4 \text{ ohm}</formula> che va dal
+            punto <formula>c</formula> al punto <formula>d</formula>.
+            Dal punto <formula>d</formula> vie è nuovamente un ramo vuoto, con una successiva diramazione, il cui primo ramo, parte da <formula>e</formula>
+            per ricollegarsi ad <formula>h</formula>, contentente un generatore di corrente di <formula>6 V</formula>, e il secondo ramo
+            che arriva al nodo <formula>f</formula>, contentente la resistenza <formula>R_4</formula> di <formula>6 \text{ ohm}</formula>.
+            Vi è poi un ramo vuoto dal punto <formula>f</formula> al punto <formula>g</formula> e un ramo contentente una resistenza
+            <formula>R_5</formula> di <formula>4 \text{ ohm}</formula> dal nodo <formula>h</formula> al nodo <formula>g</formula>.
+            Infine, vi è una resistenza <formula>R_6</formula> di <formula>4 \text{ ohm}</formula> dal nodo <formula>g</formula> al nodo 
+            <formula>a</formula>, che chiude il circuito.
+            <image>tre_domini/circuiti/circuito.svg</image>
+        </template>
+    </category>-->
+
+    <!--<category>
+        <pattern>TA ANSWER ESERCIZIO RESISTENZE</pattern>
+        <template>
+            <think><set name="qud">TA ANSWER ESERCIZIO RESISTENZE</set></think>
+            <think><set name="shared_esercizio_resistenze">si</set></think>
+            Le resistenze del circuito sono 6: <formula>R_1</formula>, <formula>R_2</formula>, <formula>R_3</formula>, <formula>R_4</formula>,
+            <formula>R_5</formula> e <formula>R_6</formula>.
+            <image>tre_domini/circuiti/circuito.svg</image>
+        </template>
+    </category>
+
+    <category>
+        <pattern>TA ANSWER ESERCIZIO RESISTENZE DISPOSIZIONE</pattern>
+        <template>
+            <think><set name="qud">TA ANSWER ESERCIZIO RESISTENZE</set></think>
+            <think><set name="shared_esercizio_resistenze">si</set></think>
+            <think><set name="shared_esercizio_resistenze_disposizione">si</set></think>
+            <think><set name="qud">TA ANSWER ESERCIZIO RESISTENZE DISPOSIZIONE</set></think>
+            Il circuito d'esercizio ha una resistenza <formula>R_1</formula> di <formula>3 \text{ ohm}</formula> che va dal nodo 
+            <formula>a</formula> al nodo <formula>b</formula>.
+            Successivamente vi è un ramo vuoto tra <formula>b</formula> e <formula>c</formula> con una successiva diramazione del circuito 
+            in cui rispettivamente troviamo <formula>R_2</formula>, di <formula>6 \text{ ohm}</formula>,
+            che va dal punto <formula>c</formula> al punto <formula>h</formula> e <formula>R_3</formula>, di <formula>4 \text{ ohm}</formula> che va dal
+            punto <formula>c</formula> al punto <formula>d</formula>.
+            Dal punto <formula>d</formula> vie è nuovamente un ramo vuoto, con una successiva diramazione, il cui primo ramo, parte da <formula>e</formula>
+            per ricollegarsi ad <formula>h</formula>, e il secondo ramo
+            che arriva al nodo <formula>f</formula>, contentente la resistenza <formula>R_4</formula> di <formula>6 \text{ ohm}</formula>.
+            Vi è poi un ramo vuoto dal punto <formula>f</formula> al punto <formula>g</formula> e un ramo contentente una resistenza
+            <formula>R_5</formula> di <formula>4 \text{ ohm}</formula> dal nodo <formula>h</formula> al nodo <formula>g</formula>.
+            Infine, vi è una resistenza <formula>R_6</formula> di <formula>4 \text{ ohm}</formula> dal nodo <formula>g</formula> al nodo 
+            <formula>a</formula>, che chiude il circuito.          
+            <image>tre_domini/circuiti/circuito.svg</image>
+        </template>
+    </category>
+
+    <category>
+        <pattern>TA ANSWER ESERCIZIO CORRENTI</pattern>
+        <template>
+            <think><set name="qud">TA ANSWER ESERCIZIO CORRENTI</set></think>
+            <think><set name="shared_esercizio_correnti">si</set></think>
+            Il circuito d'esercizio ha una corrente <formula>I</formula> che va dal nodo <formula>g</formula> al nodo 
+            <formula>c</formula>.
+            Successivamente vi è una diramazione, in cui, usando la prima legge di Kirchhoff, possiamo affermare che ci ha una intensità
+            di corrente <formula>I_1</formula> che va dal nodo <formula>c</formula> al nodo <formula>e</formula> e una intensità di corrente
+            <formula>I - I_1</formula> che va dal nodo <formula>c</formula> al nodo <formula>h</formula>.
+            Dal nodo <formula>e</formula> vi è una nuova diramazione, con un ramo che va da <formula>e</formula> ad <formula>h</formula> 
+            con una corrente <formula>I_1 - I_2</formula> e un ramo che va da <formula>e</formula> al nodo <formula>g</formula> con una
+            corrente <formula>I_2</formula>.
+            Infine, tra il nodo <formula>h</formula> e il nodo <formula>g</formula> vi è una corrente <formula>I - I_2</formula>.
+            Tutto ciò è stato dedotto, come detto, avvalendosi della prima legge di Kirchhoff.
+            <image>tre_domini/circuiti/circuito.svg</image>
+        </template>
+    </category>
+
+    <category>
+        <pattern>TA ANSWER ESERCIZIO GENERATORI</pattern>
+        <template>
+            <think><set name="qud">TA ANSWER ESERCIZIO GENERATORI</set></think>
+            <think><set name="shared_esercizio_generatori">si</set></think>
+            I generatori nel circuito sono 2.
+            Il primo di <formula>42 V</formula> si trova nel ramo che va dal nodo <formula>a</formula> al nodo
+            <formula>b</formula>.
+            Il secondo generatore, di <formula>6 V</formula>, si trova nel ramo che va dal nodo <formula>e</formula> al nodo
+            <formula>h</formula>.
+            <image>tre_domini/circuiti/circuito.svg</image>
+            <svgElement style-name="stroke" style-value="#04ed00">link-josephine-bari</svgElement>
+        </template>
+    </category>-->
+
+    <!-- ================================== -->
+    <!-- ============ CIRCUITO ============ -->
+    <!-- ================================== -->
+    <!-- nlg -->
+    <category>
+        <pattern>TA ANSWER CIRCUITO</pattern>
+        <template>
+            <think><set name="qud">TA ANSWER CIRCUITO</set></think>
+            <condition name="shared_teoria_circuiti">
+                <li value="si">
+                    <random>
+                        <li>Provo a rispiegartelo. </li>
+                        <li>Okay, te lo rispiego. </li>
+                    </random>
+                    <random>
+                        <li>Un circuito elettrico è composto da componenti elettrici collegati in modo da formare un percorso continuo per il flusso di corrente. Questi componenti includono una fonte di energia (come una batteria), cavi conduttori e dispositivi (come lampadine o motori) che utilizzano l'energia.</li>
+                        <li>Un circuito elettrico è un percorso chiuso attraverso il quale l'elettricità può viaggiare senza interruzioni. Quando un dispositivo è collegato ad una fonte di energia elettrica tramite cavi conduttori, gli elettroni possono fluire dal polo positivo al polo negativo della fonte, passando attraverso il dispositivo e ritornando alla fonte.</li>
+                        <li>Un circuito elettrico segue le leggi fondamentali, come la legge di Kirchhoff delle correnti e la legge di Kirchhoff delle tensioni. La prima afferma che la somma delle correnti in un punto di divisione in un circuito è uguale alla somma delle correnti in arrivo in quel punto. La seconda afferma che la somma delle differenze di potenziale (tensioni) in un loop chiuso di un circuito è zero.</li>
+                        <li>Un circuito elettrico può essere analizzato in dettaglio considerando la disposizione dei componenti, la resistenza offerta dai materiali conduttori e dagli altri dispositivi, la tensione fornita dalla fonte elettrica e la corrente che scorre attraverso il circuito. Questi fattori determinano il comportamento del circuito e come l'energia viene trasferita ai vari componenti.</li>
+                    </random>
+                </li>
+                <li>
+                    <think><set name="shared_teoria_circuiti">si</set></think>
+                    Un circuito elettrico è un percorso chiuso attraverso il quale l'elettricità può fluire. È come un'analogia stradale dove l'elettricità è il traffico e il circuito è la strada che permette a questo traffico di muoversi.
+                </li>
+            </condition>
+        </template>
+    </category>
+
+    <!-- ================================== -->
+    <!-- ============ CORRENTE ============ -->
+    <!-- ================================== -->
+    <!-- nlg -->
+    <category>
+        <pattern>TA ANSWER CORRENTE</pattern>
+        <template>
+            <think><set name="qud">TA ANSWER CORRENTE</set></think>
+            <condition name="shared_teoria_corrente">
+                <li value="si">
+                    <random>
+                        <li>Provo a rispiegartelo. </li>
+                        <li>Okay, te lo rispiego. </li>
+                    </random>
+                    <random>
+                        <li>
+                            La corrente elettrica è il flusso di "pacchetti" di energia, chiamati elettroni, attraverso un conduttore, come un 
+                            filo metallico. Gli elettroni, carichi negativamente, orbitano attorno al nucleo degli atomi. Applicando una 
+                            differenza di potenziale (tensione) al conduttore, gli elettroni si muovono, generando corrente. Questo flusso è 
+                            analogo a un rubinetto d'acqua, con la corrente elettrica rappresentante il flusso di elettroni nel filo. 
+                            La tensione è la forza dell'acqua, e la corrente è la quantità di elettroni in movimento. Misurata in ampere 
+                            (<formula>A</formula>) e la tensione in volt (<formula>V</formula>), la resistenza, misurata in ohm 
+                            (<formula>ohm</formula>), ostacola il flusso. La legge di Ohm (<formula>V = I * R</formula>) collega questi 
+                            concetti, sottolineando che la tensione è il prodotto di corrente e resistenza. La corrente elettrica alimenta 
+                            dispositivi collegati a una fonte di alimentazione, come una lampadina, dove scorre attraverso il filamento, 
+                            producendo luce. Comprendere la corrente elettrica è essenziale per capire i circuiti elettrici e l'utilizzo 
+                            quotidiano dell'elettricità.
+                        </li>       
+                        <li>                             
+                            La corrente elettrica è il continuo movimento di minuscoli "pacchetti" di energia, gli elettroni, che scorrono 
+                            attraverso un conduttore, spesso un filo metallico. Gli elettroni, carichi negativamente, orbitano intorno al 
+                            nucleo degli atomi. Applicando una differenza di potenziale (tensione) alle estremità del conduttore, gli elettroni 
+                            iniziano a spostarsi da un'estremità all'altra, creando una corrente elettrica. Questo flusso è analogo all'apertura 
+                            di un rubinetto d'acqua, dove la corrente elettrica rappresenta il movimento degli elettroni nel filo. La tensione 
+                            è comparabile alla forza dell'acqua nel tubo, mentre la corrente è la quantità di elettroni in movimento. Misurata 
+                            in ampere (<formula>A</formula>) e la tensione in volt (<formula>V</formula>), la resistenza, misurata in ohm 
+                            (<formula>ohm</formula>), ostacola il flusso. La legge di Ohm (<formula>V = I * R</formula>) connette questi 
+                            concetti, affermando che la tensione (<formula>V</formula>) è uguale al prodotto della corrente 
+                            (<formula>I</formula>) e della resistenza (<formula>R</formula>). Quando connetti dispositivi elettrici a una fonte 
+                            di alimentazione, la corrente elettrica fornisce l'energia necessaria per il loro funzionamento. Ad esempio, in una 
+                            lampadina, la corrente attraversa il filamento, generando luce attraverso il riscaldamento. Comprendere la corrente 
+                            elettrica è cruciale per capire il funzionamento dei circuiti elettrici e l'utilizzo quotidiano dell'elettricità.
+                        </li>
+                        <li>
+                            La corrente elettrica è un flusso di minuscoli "pacchetti" di energia, gli elettroni, attraverso un conduttore come un filo metallico. 
+                            Gli elettroni, carichi negativamente, orbitano attorno al nucleo degli atomi. Applicando una differenza di potenziale (tensione) alle 
+                            estremità del conduttore, gli elettroni si spostano, generando corrente elettrica. Questo fenomeno è analogo all'apertura di un 
+                            rubinetto d'acqua, con la corrente elettrica che rappresenta il flusso di elettroni nel filo. La tensione è simile alla forza dell'acqua 
+                            nel tubo, mentre la corrente è la quantità di elettroni in movimento. Misurata in ampere (<formula>A</formula>) e la tensione in volt 
+                            (<formula>V</formula>), la resistenza, ostacolo al flusso degli elettroni, è misurata in ohm (<formula>ohm</formula>). La legge di Ohm 
+                            (<formula>V = I * R</formula>) collega questi concetti, stabilendo che la tensione (<formula>V</formula>) è uguale al prodotto di 
+                            corrente (<formula>I</formula>) e resistenza (<formula>R</formula>). Collegando dispositivi elettrici a una sorgente di alimentazione, 
+                            la corrente elettrica fornisce l'energia necessaria. Un esempio è una lampadina, dove la corrente attraversa il filamento, riscaldandolo 
+                            e producendo luce.
+                        </li>
+                    </random>
+                </li>
+                <li>
+                    <think><set name="shared_teoria_corrente">si</set></think>
+                    La corrente elettrica è il flusso di elettroni attraverso un conduttore, come un filo metallico, causato da una differenza 
+                    di potenziale (tensione). È misurata in ampere (<formula>A</formula>) e fornisce l'energia necessaria per far funzionare 
+                    dispositivi elettrici.
+                </li>
+            </condition>
+        </template>
+    </category>
+
+    <!-- ================================== -->
+    <!-- ====== PRIMA LEGGE OHM =========== -->
+    <!-- ================================== -->
+    <!-- nlg -->
+    <category>
+        <pattern>TA ANSWER PRIMA LEGGE OHM</pattern>
+        <template>
+            <think><set name="qud">TA ANSWER PRIMA LEGGE OHM</set></think>
+            <condition name="shared_teoria_prima_legge_ohm">
+                <li value="si">
+                    <random>
+                        <li>Provo a rispiegartelo. </li>
+                        <li>Okay, te lo rispiego. </li>
+                    </random>
+                    <random>
+                        <li>
+                            La prima legge di Ohm, rappresentata dall'equazione <formula>V = I * R</formula>, afferma che la tensione (<formula>V</formula>) in un circuito è proporzionale alla corrente (<formula>I</formula>) e alla resistenza (<formula>R</formula>). Se la tensione o la corrente aumentano, la resistenza rimane costante e viceversa. Questo principio è fondamentale per comprendere il comportamento dei circuiti elettrici. Immaginalo come la pressione dell'acqua (<formula>V</formula>) in un tubo: se la corrente (<formula>I</formula>) aumenta, la resistenza (<formula>R</formula>) rappresenta la restrizione nel tubo.
+                        </li>       
+                        <li>                             
+                            La legge di Ohm, espressa tramite l'equazione <formula>V = I * R</formula>, stabilisce che la tensione (<formula>V</formula>) in un circuito è direttamente proporzionale alla corrente (<formula>I</formula>) e inversamente proporzionale alla resistenza (<formula>R</formula>). Se la tensione o la corrente variano, la resistenza rimane costante. Analogamente a un tubo d'acqua, dove la tensione rappresenta la pressione, la corrente il flusso e la resistenza la restrizione, questa legge è essenziale per interpretare i circuiti elettrici.
+                        </li>
+                        <li>
+                            La legge di Ohm, espressa tramite l'equazione <formula>V = I * R</formula>, stabilisce che la tensione (<formula>V</formula>) in un circuito è direttamente proporzionale alla corrente (<formula>I</formula>) e inversamente proporzionale alla resistenza (<formula>R</formula>). Se la tensione o la corrente variano, la resistenza rimane costante. Analogamente a un tubo d'acqua, dove la tensione rappresenta la pressione, la corrente il flusso e la resistenza la restrizione, questa legge è essenziale per interpretare i circuiti elettrici.
+                        </li>
+                    </random>
+                </li>
+                <li>
+                    <think><set name="shared_teoria_prima_legge_ohm">si</set></think>
+                    La prima legge di Ohm afferma che la tensione (<formula>V</formula>) in un circuito è proporzionale alla corrente (<formula>I</formula>) e alla resistenza (<formula>R</formula>). In altre parole, se aumenta la tensione o la corrente, la resistenza rimane costante, e viceversa. Questo principio è espresso dall'equazione matematica <formula>V = I * R</formula>, dove <formula>V</formula> è la tensione in volt, <formula>I</formula> è la corrente in ampere e <formula>R</formula> è la resistenza in ohm. Immagina un tubo d'acqua: la tensione è la pressione dell'acqua, la corrente è il flusso d'acqua e la resistenza è la restrizione nel tubo. La legge di Ohm è fondamentale per comprendere il comportamento dei circuiti elettrici.
+                </li>
+            </condition>
+        </template>
+    </category>
+
+    <!-- ================================== -->
+    <!-- ===== SECONDA LEGGE OHM ========== -->
+    <!-- ================================== -->
+    <!-- nlg -->
+    <category>
+        <pattern>TA ANSWER SECONDA LEGGE OHM</pattern>
+        <template>
+            <think><set name="qud">TA ANSWER SECONDA LEGGE OHM</set></think>
+            <condition name="shared_teoria_seconda_legge_ohm">
+                <li value="si">
+                    <random>
+                        <li>Provo a rispiegartelo. </li>
+                        <li>Okay, te lo rispiego. </li>
+                    </random>
+                    <random>
+                        <li>
+                            La seconda legge di Ohm, detta anche legge delle potenze, afferma che la potenza (P) in un circuito è uguale al prodotto della tensione (V) per la corrente (I), ed è rappresentata dall'equazione <formula>P = V * I</formula>. In pratica, questa legge ci dice quanto lavoro può svolgere un dispositivo elettrico. Ad esempio, in una lampadina, se abbiamo una tensione di 220 volt e una corrente di 0,5 ampere, possiamo calcolare la potenza e capire quanto sarà luminosa la lampadina.
+                        </li>       
+                        <li>                             
+                            La seconda legge di Ohm, chiamata anche legge delle potenze, ci fornisce un'idea di quanto lavoro può compiere un dispositivo elettrico in un circuito. L'equazione matematica che la rappresenta è <formula>P = V * I</formula>, dove P è la potenza, V è la tensione e I è la corrente. In sostanza, se sappiamo quanto è grande la tensione e quanto fluisce la corrente in un dispositivo, possiamo calcolare la potenza e capire quanto lavoro può svolgere.
+                        </li>
+                        <li>
+                            Immagina la seconda legge di Ohm come una regola che ci dice quanto lavoro può fare un dispositivo elettrico. Questa legge delle potenze è espressa dall'equazione <formula>P = V * I</formula>, dove P è la potenza, V è la tensione e I è la corrente. Quindi, se hai un elettrodomestico, come un ferro da stiro, con una certa tensione e una certa corrente, puoi calcolare la potenza per capire quanto lavoro energetico sta facendo. In sintesi, è un modo per misurare la capacità di un dispositivo di convertire energia elettrica in altre forme di lavoro.
+                        </li>
+                    </random>
+                </li>
+                <li>
+                    <think><set name="shared_teoria_seconda_legge_ohm">si</set></think>
+                    La seconda legge di Ohm è nota come la legge delle potenze, e afferma che la potenza (P) dissipata in un circuito è uguale al prodotto della corrente (I) per la tensione (V). Matematicamente, questa legge è rappresentata dall'equazione <formula>P = V * I</formula>. In altre parole, la potenza è la quantità di energia elettrica convertita in altre forme, come calore o lavoro, nell'unità di tempo. Questo concetto è fondamentale per comprendere quanto lavoro può essere svolto dai dispositivi elettrici collegati a un circuito. Ad esempio, in una lampadina, la potenza indica quanto luminosa sarà la lampadina in base alla corrente e alla tensione applicate.
+                </li>
+            </condition>
+        </template>
+    </category>
+
+    <!-- ================================== -->
+    <!-- ====== PRIMA LEGGE KIRCHHOFF ====== -->
+    <!-- ================================== -->
+    <!-- nlg -->
+    <category>
+        <pattern>TA ANSWER PRIMA LEGGE KIRCHHOFF</pattern>
+        <template>
+            <think><set name="qud">TA ANSWER PRIMA LEGGE KIRCHHOFF</set></think>
+            <condition name="shared_teoria_prima_legge_kirchhoff">
+                <li value="si">
+                    <random>
+                        <li>Provo a rispiegartelo. </li>
+                        <li>Okay, te lo rispiego. </li>
+                    </random>
+                    <random>
+                        <li>
+                            La prima legge di Kirchhoff, nota come legge dei nodi, afferma che la somma delle correnti che entrano in un punto (nodo) di un circuito è uguale alla somma delle correnti che escono dallo stesso nodo. In termini più semplici, la quantità di carica che entra in un punto deve essere uguale a quella che esce, rispettando il principio di conservazione della carica elettrica. Questa legge è essenziale per analizzare e risolvere circuiti complessi, aiutandoci a comprendere come la corrente si distribuisce all'interno di un sistema.
+                        </li>       
+                        <li>                             
+                            La prima legge di Kirchhoff, detta anche legge dei nodi, stabilisce che la somma totale delle correnti in entrata in un punto di un circuito è pari alla somma totale delle correnti in uscita dallo stesso punto. Questo principio è basato sulla conservazione della carica, che implica che la carica elettrica non può essere creata o distrutta, ma solo redistribuita. Applicando questa legge, possiamo analizzare la corrente in un nodo e comprendere come si distribuisce in diversi rami di un circuito.
+                        </li>
+                        <li>
+                            La prima legge di Kirchhoff, conosciuta anche come legge dei nodi, ci dice che la somma delle correnti che entrano in un punto di un circuito è equivalente alla somma delle correnti che escono dallo stesso punto. Questo concetto deriva dal principio di conservazione della carica, sostenendo che la quantità totale di carica elettrica deve rimanere costante in un sistema. Applicando questa legge nei nodi di un circuito, possiamo analizzare come la corrente si distribuisce e fluisce attraverso i vari rami del circuito.
+                        </li>
+                    </random>
+                </li>
+                <li>
+                    <think><set name="shared_teoria_prima_legge_kirchhoff">si</set></think>
+                    La prima legge di Kirchhoff, chiamata anche la legge dei nodi, afferma che la somma delle correnti in ingresso in un nodo di un circuito elettrico è uguale alla somma delle correnti in uscita dallo stesso nodo. In termini più semplici, la corrente totale che fluisce in un punto di un circuito è uguale alla corrente totale che esce da quel punto. Questa legge si basa sul principio di conservazione della carica elettrica, che sostiene che la carica non può essere creata né distrutta, ma solo redistribuita. La prima legge di Kirchhoff è fondamentale per l'analisi dei circuiti elettrici complessi.
+                </li>
+            </condition>
+        </template>
+    </category>
+
+    <!-- ================================== -->
+    <!-- ===== SECONDA LEGGE KIRCHHOFF ===== -->
+    <!-- ================================== -->
+    <!-- nlg -->
+    <category>
+        <pattern>TA ANSWER SECONDA LEGGE KIRCHHOFF</pattern>
+        <template>
+            <think><set name="qud">TA ANSWER SECONDA LEGGE KIRCHHOFF</set></think>
+            <condition name="shared_teoria_seconda_legge_kirchhoff">
+                <li value="si">
+                    <random>
+                        <li>Provo a rispiegartelo. </li>
+                        <li>Okay, te lo rispiego. </li>
+                    </random>
+                    <random>
+                        <li>
+                            La seconda legge di Kirchhoff, detta anche legge delle maglie, stabilisce che la somma algebrica delle differenze di potenziale (tensioni) in una maglia di un circuito chiuso è sempre zero. In termini più semplici, la quantità totale di energia fornita dalla sorgente di tensione è uguale alla quantità totale di energia "consumata" attraverso le cadute di tensione nei vari componenti del circuito. Questa legge è fondamentale per risolvere circuiti elettrici complessi, consentendoci di calcolare e comprendere la distribuzione delle tensioni nei vari rami.
+                        </li>       
+                        <li>                             
+                            La seconda legge di Kirchhoff, conosciuta anche come legge delle maglie, ci dice che la somma delle tensioni in una maglia di un circuito è sempre zero. Questo significa che la quantità totale di energia fornita da una sorgente di tensione è equivalente alla quantità totale di energia assorbita dalle cadute di tensione nei componenti del circuito. Applicando questa legge, possiamo analizzare come la tensione si distribuisce in un percorso chiuso e comprendere come influisce sul funzionamento complessivo del circuito.
+                        </li>
+                        <li>
+                            La seconda legge di Kirchhoff, detta anche legge delle tensioni o delle maglie, afferma che la somma algebrica delle tensioni in una maglia di un circuito chiuso è sempre zero. Questo concetto si basa sulla conservazione dell'energia elettrica nel circuito. Se attraversiamo una maglia e ritorniamo al punto di partenza, la somma delle differenze di potenziale (tensioni) deve essere zero. Questa legge è essenziale per risolvere circuiti più complessi, aiutandoci a determinare le tensioni in ciascun componente del circuito.
+                        </li>
+                    </random>
+                </li>
+                <li>
+                    <think><set name="shared_teoria_seconda_legge_kirchhoff">si</set></think>
+                    La seconda legge di Kirchhoff, conosciuta come legge delle maglie o delle tensioni, afferma che la somma algebrica delle differenze di potenziale (tensioni) in una qualsiasi maglia di un circuito chiuso è zero. In altre parole, la somma delle cadute di tensione in una maglia è uguale alla somma delle tensioni fornite dalla fonte di alimentazione. Questa legge si basa sul principio di conservazione dell'energia elettrica. Applicando la seconda legge di Kirchhoff, possiamo analizzare e risolvere circuiti elettrici complessi, considerando la distribuzione delle tensioni nei vari rami del circuito.
+                </li>
+            </condition>
+        </template>
+    </category>
+
+    <!--
+    $$$$$$$$\  $$$$$$\                           $$\      $$$$$$\                                  $$\     $$\                     
+    \__$$  __|$$  __$$\                          $$ |    $$  __$$\                                 $$ |    \__|                    
+       $$ |   $$ /  $$ |$$\  $$$$$$$\  $$$$$$\ $$$$$$\   $$ /  $$ |$$\   $$\  $$$$$$\   $$$$$$$\ $$$$$$\   $$\  $$$$$$\  $$$$$$$\  
+       $$ |   $$$$$$$$ |\__|$$  _____|$$  __$$\\_$$  _|  $$ |  $$ |$$ |  $$ |$$  __$$\ $$  _____|\_$$  _|  $$ |$$  __$$\ $$  __$$\ 
+       $$ |   $$  __$$ |    \$$$$$$\  $$$$$$$$ | $$ |    $$ |  $$ |$$ |  $$ |$$$$$$$$ |\$$$$$$\    $$ |    $$ |$$ /  $$ |$$ |  $$ |
+       $$ |   $$ |  $$ |$$\  \____$$\ $$   ____| $$ |$$\ $$ $$\$$ |$$ |  $$ |$$   ____| \____$$\   $$ |$$\ $$ |$$ |  $$ |$$ |  $$ |
+       $$ |   $$ |  $$ |\__|$$$$$$$  |\$$$$$$$\  \$$$$  |\$$$$$$ / \$$$$$$  |\$$$$$$$\ $$$$$$$  |  \$$$$  |$$ |\$$$$$$  |$$ |  $$ |
+       \__|   \__|  \__|    \_______/  \_______|  \____/  \___$$$\  \______/  \_______|\_______/    \____/ \__| \______/ \__|  \__|
+                                                              \___|                                                                
+    -->                                                                                                                               
+    <!-- ================================== -->
+    <!-- ======= ESERCIZIO RESISTENZE ===== -->
+    <!-- ================================== -->                                                                                                                          
+    <!-- redirect -->
+    <!--<category>
+        <pattern>TA SETQUESTION ESERCIZIO RESISTENZE</pattern>
+        <template>
+            <srai>TA ANSWER ESERCIZIO RESISTENZE</srai>
+        </template>
+    </category>-->
+
+    <!-- nlu -->
+    <!--<category>
+        <pattern>QUANTE * RESISTENZE *</pattern>
+        <template><srai>TA SETQUESTION ESERCIZIO RESISTENZE</srai></template>
+    </category>
+    
+    <category>
+        <pattern>QUALI * RESISTENZE *</pattern>
+        <template><srai>TA SETQUESTION ESERCIZIO RESISTENZE</srai></template>
+    </category>-->
+
+    <!-- ========================================= -->
+    <!-- === ESERCIZIO RESISTENZE DISPOSIZIONE === -->
+    <!-- ========================================= -->                                                                                                                          
+    <!-- redirect -->
+    <!--<category>
+        <pattern>TA SETQUESTION ESERCIZIO RESISTENZE DISPOSIZIONE</pattern>
+        <template>
+            <srai>TA ANSWER ESERCIZIO RESISTENZE DISPOSIZIONE</srai>
+        </template>
+    </category>-->
+
+    <!-- nlu -->
+    <!--<category>
+        <pattern>* DISPOSTE * RESISTENZE *</pattern>
+        <template><srai>TA SETQUESTION ESERCIZIO RESISTENZE DISPOSIZIONE</srai></template>
+    </category>
+
+    <category>
+        <pattern>* DISPOSIZIONE * RESISTENZE *</pattern>
+        <template><srai>TA SETQUESTION ESERCIZIO RESISTENZE DISPOSIZIONE</srai></template>
+    </category>-->
+
+    <!-- ========================================= -->
+    <!-- ========== ESERCIZIO CORRENTI =========== -->
+    <!-- ========================================= -->                                                                                                                          
+    <!-- redirect -->
+    <!--<category>
+        <pattern>TA SETQUESTION ESERCIZIO CORRENTI</pattern>
+        <template>
+            <srai>TA ANSWER ESERCIZIO CORRENTI</srai>
+        </template>
+    </category>-->
+
+    <!-- nlu -->
+    <!--<category>
+        <pattern>* CORRENTI *</pattern>
+        <template><srai>TA SETQUESTION ESERCIZIO CORRENTI</srai></template>
+    </category>-->
+
+    <!-- ========================================= -->
+    <!-- ========== ESERCIZIO GENERATORI ========= -->
+    <!-- ========================================= -->                                                                                                                          
+    <!-- redirect -->
+    <!--<category>
+        <pattern>TA SETQUESTION ESERCIZIO GENERATORI</pattern>
+        <template>
+            <srai>TA ANSWER ESERCIZIO GENERATORI</srai>
+        </template>
+    </category>-->
+
+    <!-- nlu -->
+    <!--<category>
+        <pattern>* GENERATORI *</pattern>
+        <template><srai>TA SETQUESTION ESERCIZIO GENERATORI</srai></template>
+    </category>
+
+    <category>
+        <pattern>* GENERATORE *</pattern>
+        <template><srai>TA SETQUESTION ESERCIZIO GENERATORI</srai></template>
+    </category>
+
+    <category>
+        <pattern>* ALIMENTATORE *</pattern>
+        <template><srai>TA SETQUESTION ESERCIZIO GENERATORI</srai></template>
+    </category>
+
+    <category>
+        <pattern>* ALIMENTATORI *</pattern>
+        <template><srai>TA SETQUESTION ESERCIZIO GENERATORI</srai></template>
+    </category>-->
+
+    <!-- ================================== -->
+    <!-- ========== GENERICO ============== -->
+    <!-- ================================== -->
+    <!-- redirect -->
+    <category>
+        <pattern>TA SETQUESTION DISPOSIZIONE GENERICO</pattern>
+        <template>
+            <srai><get name="qud"/> DISPOSIZIONE</srai>
+        </template>
+    </category>
+
+    <!-- nlu -->
+    <category>
+        <pattern>* COLLEGATE *</pattern>
+        <template><srai>TA SETQUESTION DISPOSIZIONE GENERICO</srai></template>
+    </category>
+
+    <!--
+    $$$$$$$$\  $$$$$$\                                                                    $$\     
+    \__$$  __|$$  __$$\                                                                   $$ |    
+       $$ |   $$ /  $$ |$$\  $$$$$$\   $$$$$$\   $$$$$$\  $$\   $$\  $$$$$$\   $$$$$$$\ $$$$$$\   
+       $$ |   $$$$$$$$ |\__|$$  __$$\ $$  __$$\ $$  __$$\ $$ |  $$ |$$  __$$\ $$  _____|\_$$  _|  
+       $$ |   $$  __$$ |    $$ |  \__|$$$$$$$$ |$$ /  $$ |$$ |  $$ |$$$$$$$$ |\$$$$$$\    $$ |    
+       $$ |   $$ |  $$ |$$\ $$ |      $$   ____|$$ |  $$ |$$ |  $$ |$$   ____| \____$$\   $$ |$$\ 
+       $$ |   $$ |  $$ |\__|$$ |      \$$$$$$$\ \$$$$$$$ |\$$$$$$  |\$$$$$$$\ $$$$$$$  |  \$$$$  |
+       \__|   \__|  \__|    \__|       \_______| \____$$ | \______/  \_______|\_______/    \____/ 
+                                                       $$ |                                        
+                                                       $$ |                                        
+                                                       \__|                                        
+    -->
+    <!-- ================================== -->
+    <!-- ============ ESERCIZIO =========== -->
+    <!-- ================================== -->
+    <!-- redirect -->
+    <!--<category>
+        <pattern>TA REQUEST ESERCIZIO</pattern>
+        <template>
+            <srai>TA ANSWER ESERCIZIO</srai>
+        </template>
+    </category>-->
+
+    <!-- nlu -->
+    <!--<category>
+        <pattern>* CIRCUITO * ESEMPIO *</pattern>
+        <template>
+            <srai>TA REQUEST ESERCIZIO</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern> * CIRCUITO * ESEMPIO *</pattern>
+        <template>
+            <srai>TA REQUEST ESERCIZIO</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* CIRCUITO * ESERCIZIO *</pattern>
+        <template>
+            <srai>TA REQUEST ESERCIZIO</srai>
+        </template>
+    </category>-->
+
+    <!-- ================================== -->
+    <!-- ============ CIRCUITO ============ -->
+    <!-- ================================== -->
+    <!-- redirect -->
+    <category>
+        <pattern>TA REQUEST CIRCUITO</pattern>
+        <template>
+            <srai>TA ANSWER CIRCUITO</srai>
+        </template>
+    </category>
+
+    <!-- nlu -->
+    <category>
+        <pattern>NON HO CAPITO * CIRCUITO *</pattern>
+        <template><srai>TA REQUEST CIRCUITO</srai></template>
+    </category>
+
+    <category>
+        <pattern>PARLAMI * CIRCUITO *</pattern>
+        <template><srai>TA REQUEST CIRCUITO</srai></template>
+    </category>
+
+    <category>
+        <pattern>PARLAMI * CIRCUITI *</pattern>
+        <template><srai>TA REQUEST CIRCUITO</srai></template>
+    </category>
+    
+    <category>
+        <pattern>* COS * CIRCUITO *</pattern>
+        <template><srai>TA REQUEST CIRCUITO</srai></template>
+    </category>
+
+    <category>
+        <pattern>* COS * CIRCUITI *</pattern>
+        <template><srai>TA REQUEST CIRCUITO</srai></template>
+    </category>
+
+    <category>
+        <pattern>* SPIEGA * CIRCUITO *</pattern>
+        <template><srai>TA REQUEST CIRCUITO</srai></template>
+    </category>
+
+    <category>
+        <pattern>* SPIEGA * CIRCUITI *</pattern>
+        <template><srai>TA REQUEST CIRCUITO</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGA * CIRCUITO *</pattern>
+        <template><srai>TA REQUEST CIRCUITO</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGA * CIRCUITI *</pattern>
+        <template><srai>TA REQUEST CIRCUITO</srai></template>
+    </category>
+
+    <category>
+        <pattern>* SPIEGAMI * CIRCUITI *</pattern>
+        <template><srai>TA REQUEST CIRCUITO</srai></template>
+    </category>
+
+    <category>
+        <pattern>* SPIEGAMI * CIRCUITO *</pattern>
+        <template><srai>TA REQUEST CIRCUITO</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGAMI * CIRCUITI *</pattern>
+        <template><srai>TA REQUEST CIRCUITO</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGAMI * CIRCUITO *</pattern>
+        <template><srai>TA REQUEST CIRCUITO</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGARMI * CIRCUITI *</pattern>
+        <template><srai>TA REQUEST CIRCUITO</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGARMI * CIRCUITO *</pattern>
+        <template><srai>TA REQUEST CIRCUITO</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGARE * CIRCUITI *</pattern>
+        <template><srai>TA REQUEST CIRCUITO</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGARE * CIRCUITO *</pattern>
+        <template><srai>TA REQUEST CIRCUITO</srai></template>
+    </category>
+
+    <!-- ================================== -->
+    <!-- ============ CORRENTE ============ -->
+    <!-- ================================== -->
+    <!-- redirect -->
+    <category>
+        <pattern>TA REQUEST CORRENTE</pattern>
+        <template>
+            <srai>TA ANSWER CORRENTE</srai>
+        </template>
+    </category>
+
+    <!-- nlu -->
+    <category>
+        <pattern>NON HO CAPITO * CORRENTE *</pattern>
+        <template><srai>TA REQUEST CORRENTE</srai></template>
+    </category>
+
+    <category>
+        <pattern>PARLAMI * CORRENTE *</pattern>
+        <template><srai>TA REQUEST CORRENTE</srai></template>
+    </category>
+
+    <category>
+        <pattern>* COS * CORRENTE *</pattern>
+        <template><srai>TA REQUEST CORRENTE</srai></template>
+    </category>
+
+    <category>
+        <pattern>* SPIEGA * CORRENTE *</pattern>
+        <template><srai>TA REQUEST CORRENTE</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGA * CORRENTE *</pattern>
+        <template><srai>TA REQUEST CORRENTE</srai></template>
+    </category>
+
+    <category>
+        <pattern>* SPIEGAMI * CORRENTE *</pattern>
+        <template><srai>TA REQUEST CORRENTE</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGAMI * CORRENTE *</pattern>
+        <template><srai>TA REQUEST CORRENTE</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGARMI * CORRENTE *</pattern>
+        <template><srai>TA REQUEST CORRENTE</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGARE * CORRENTE *</pattern>
+        <template><srai>TA REQUEST CORRENTE</srai></template>
+    </category>
+
+    <!-- ================================== -->
+    <!-- ========= PRIMA LEGGE OHM ======== -->
+    <!-- ================================== -->
+    <!-- redirect -->
+    <category>
+        <pattern>TA REQUEST PRIMA LEGGE OHM</pattern>
+        <template>
+            <srai>TA ANSWER PRIMA LEGGE OHM</srai>
+        </template>
+    </category>
+
+    <!-- nlu -->
+    <category>
+        <pattern>NON HO CAPITO * PRIMA * OHM *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>PARLAMI * PRIMA * OHM *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>* COS * PRIMA * OHM *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>* SPIEGA * PRIMA * OHM *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGA * PRIMA * OHM *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>* SPIEGAMI * PRIMA * OHM *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGAMI * PRIMA * OHM *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGARMI * PRIMA * OHM *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGARE * PRIMA * OHM *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>NON HO CAPITO * PRIMO * OHM *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>PARLAMI * PRIMO * OHM *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>* COS * PRIMO * OHM *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>* SPIEGA * PRIMO * OHM *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGA * PRIMO * OHM *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>* SPIEGAMI * PRIMO * OHM *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGAMI * PRIMO * OHM *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGARMI * PRIMO * OHM *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGARE * PRIMO * OHM *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE OHM</srai></template>
+    </category>
+
+    <!-- ================================== -->
+    <!-- ========= SECONDA LEGGE OHM ======== -->
+    <!-- ================================== -->
+    <!-- redirect -->
+    <category>
+        <pattern>TA REQUEST SECONDA LEGGE OHM</pattern>
+        <template>
+            <srai>TA ANSWER SECONDA LEGGE OHM</srai>
+        </template>
+    </category>
+
+    <!-- nlu -->
+    <category>
+        <pattern>NON HO CAPITO * SECONDA * OHM *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>PARLAMI * SECONDA * OHM *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>* COS * SECONDA * OHM *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>* SPIEGA * SECONDA * OHM *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGA * SECONDA * OHM *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>* SPIEGAMI * SECONDA * OHM *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGAMI * SECONDA * OHM *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGARMI * SECONDA * OHM *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGARE * SECONDA * OHM *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>NON HO CAPITO * SECONDO * OHM *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>PARLAMI * SECONDO * OHM *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>* COS * SECONDO * OHM *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>* SPIEGA * SECONDO * OHM *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGA * SECONDO * OHM *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>* SPIEGAMI * SECONDO * OHM *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGAMI * SECONDO * OHM *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGARMI * SECONDO * OHM *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE OHM</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGARE * SECONDO * OHM *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE OHM</srai></template>
+    </category>
+
+    <!-- ================================== -->
+    <!-- ======= PRIMA LEGGE KIRCHHOFF ===== -->
+    <!-- ================================== -->
+    <!-- redirect -->
+    <category>
+        <pattern>TA REQUEST PRIMA LEGGE KIRCHHOFF</pattern>
+        <template>
+            <srai>TA ANSWER PRIMA LEGGE KIRCHHOFF</srai>
+        </template>
+    </category>
+
+    <!-- nlu -->
+    <category>
+        <pattern>NON HO CAPITO * PRIMA * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>PARLAMI * PRIMA * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* COS * PRIMA * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* SPIEGA * PRIMA * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGA * PRIMA * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* SPIEGAMI * PRIMA * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGAMI * PRIMA * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGARMI * PRIMA * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGARE * PRIMA * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>NON HO CAPITO * PRIMO * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>PARLAMI * PRIMO * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* COS * PRIMO * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* SPIEGA * PRIMO * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGA * PRIMO * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* SPIEGAMI * PRIMO * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGAMI * PRIMO * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGARMI * PRIMO * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGARE * PRIMO * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>NON HO CAPITO * NODI *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>PARLAMI * NODI *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* COS * NODI *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* SPIEGA * NODI *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGA * NODI *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* SPIEGAMI * NODI *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGAMI * NODI *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGARMI * NODI *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGARE * NODI *</pattern>
+        <template><srai>TA REQUEST PRIMA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <!-- ================================== -->
+    <!-- ===== SECONDA LEGGE KIRCHHOFF ===== -->
+    <!-- ================================== -->
+    <!-- redirect -->
+    <category>
+        <pattern>TA REQUEST SECONDA LEGGE KIRCHHOFF</pattern>
+        <template>
+            <srai>TA ANSWER SECONDA LEGGE KIRCHHOFF</srai>
+        </template>
+    </category>
+
+    <!-- nlu -->
+    <category>
+        <pattern>NON HO CAPITO * SECONDA * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>PARLAMI * SECONDA * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* COS * SECONDA * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* SPIEGA * SECONDA * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGA * SECONDA * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* SPIEGAMI * SECONDA * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGAMI * SECONDA * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGARMI * SECONDA * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGARE * SECONDA * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>NON HO CAPITO * SECONDO * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>PARLAMI * SECONDO * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* COS * SECONDO * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* SPIEGA * SECONDO * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGA * SECONDO * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* SPIEGAMI * SECONDO * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGAMI * SECONDO * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGARMI * SECONDO * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGARE * SECONDO * KIRCHHOFF *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>NON HO CAPITO * MAGLIE *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>PARLAMI * MAGLIE *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* COS * MAGLIE *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* SPIEGA * MAGLIE *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGA * MAGLIE *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* SPIEGAMI * MAGLIE *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGAMI * MAGLIE *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGARMI * MAGLIE *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGARE * MAGLIE *</pattern>
+        <template><srai>TA REQUEST SECONDA LEGGE KIRCHHOFF</srai></template>
+    </category>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ================================== -->
+    <!-- ======= RICHIESTA GENERICO ======= -->
+    <!-- ================================== -->
+    <!-- redirect -->
+    <category>
+        <pattern>TA REQUEST GENERICO</pattern>
+        <template>
+            <srai>TA ANSWER GENERICO</srai>
+        </template>
+    </category>
+
+    <!-- nlu -->
+    <category>
+        <pattern>* RISPIEGARMI *</pattern>
+        <template><srai>TA REQUEST GENERICO</srai></template>
+    </category>
+    
+    <category>
+        <pattern>* RISPIEGARE *</pattern>
+        <template><srai>TA REQUEST GENERICO</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGA *</pattern>
+        <template><srai>TA REQUEST GENERICO</srai></template>
+    </category>
+
+    <category>
+        <pattern>* RISPIEGARMELO *</pattern>
+        <template><srai>TA REQUEST GENERICO</srai></template>
+    </category>
+
+    <category>
+        <pattern>NON * CAPITO *</pattern>
+        <template><srai>TA REQUEST GENERICO</srai></template>
+    </category>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <category>
+        <pattern>* CIRCUITO * </pattern>
+        <template>Il circuito è composto da 8 nodi e da 10 rami. Il ramo che va da A a B è composto da un generatore seguito da una resistenza R1. Il ramo che va da B a C non è composto da alcun elemento. Il ramo che va da C a D è composto da una resistenza R3. Il ramo che va da D a E non è composto da alcun elemento. Il ramo che va da C a H è composto da una resistenza R2. Il ramo che va da E a H è composto da un generatore. Il ramo che va da E a F è composto da una resistenza R4. Il ramo che va da H a G è composto da una resistenza R5. Il ramo che va da F a G non è composto da alcun elemento. Il ramo che va da G a A è composto da una resistenza R6<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+
+    <category>
+        <pattern>* ESEMPIO * </pattern>
+        <template>Il circuito è composto da 8 nodi e da 10 rami. Il ramo che va da A a B è composto da un generatore seguito da una resistenza R1. Il ramo che va da B a C non è composto da alcun elemento. Il ramo che va da C a D è composto da una resistenza R3. Il ramo che va da D a E non è composto da alcun elemento. Il ramo che va da C a H è composto da una resistenza R2. Il ramo che va da E a H è composto da un generatore. Il ramo che va da E a F è composto da una resistenza R4. Il ramo che va da H a G è composto da una resistenza R5. Il ramo che va da F a G non è composto da alcun elemento. Il ramo che va da G a A è composto da una resistenza R6<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+
+    <category>
+        <pattern>* CIRCUITI * </pattern>
+        <template>Il circuito è composto da 8 nodi e da 10 rami. Il ramo che va da A a B è composto da un generatore seguito da una resistenza R1. Il ramo che va da B a C non è composto da alcun elemento. Il ramo che va da C a D è composto da una resistenza R3. Il ramo che va da D a E non è composto da alcun elemento. Il ramo che va da C a H è composto da una resistenza R2. Il ramo che va da E a H è composto da un generatore. Il ramo che va da E a F è composto da una resistenza R4. Il ramo che va da H a G è composto da una resistenza R5. Il ramo che va da F a G non è composto da alcun elemento. Il ramo che va da G a A è composto da una resistenza R6<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+
+    <category>
+        <pattern>* ESEMPI * </pattern>
+        <template>Il circuito è composto da 8 nodi e da 10 rami. Il ramo che va da A a B è composto da un generatore seguito da una resistenza R1. Il ramo che va da B a C non è composto da alcun elemento. Il ramo che va da C a D è composto da una resistenza R3. Il ramo che va da D a E non è composto da alcun elemento. Il ramo che va da C a H è composto da una resistenza R2. Il ramo che va da E a H è composto da un generatore. Il ramo che va da E a F è composto da una resistenza R4. Il ramo che va da H a G è composto da una resistenza R5. Il ramo che va da F a G non è composto da alcun elemento. Il ramo che va da G a A è composto da una resistenza R6<image>tre_domini/circuiti/circuito.svg</image></template>
+    </category>
+
+
+
+
+
+
+
+    <category>
+        <pattern>* CAPITO *</pattern>
+        <template>
+            <random>
+                <li>Ottimo.</li>
+                <li>Perfetto.</li>
+                <li>Benissimo.</li>
+            </random>
+
+            <random>
+                <li>Se hai bisogno di altro, chiedi pure.</li>
+                <li>Se hai bisogno di aiuto, chiedi pure.</li>
+                <li>Se hai bisogno di ulteriori informazioni, chiedi pure.</li>
+                <li>Se hai bisogno di ulteriori dettagli, chiedi pure.</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <template>
+            <random>
+                <li>Non ho capito cosa vuoi dire.</li>
+                <li>Non ho capito.</li>
+                <li>Scusa, non ho capito.</li>
+            </random>
+
+            <random>
+                <li>Prova a chiedere "parla del circuito".</li>
+                <li>Prova a chidere "quante sono le resistenze del circuito?"</li>
+                <li>Prova a chidere "cosa c'è tra il nodo a e il nodo b?"</li>
+            </random>
+        </template>
+    </category>
+</aiml>

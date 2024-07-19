@@ -1,0 +1,89 @@
+    <h1 class="text-center display-4">Chatbot</h1>
+    <h4 class="text-center display-6">Automaton 1</h4>
+    <br>
+    <br>
+    <br>
+    <h3 class="text-center mb-5">Please enter your question</h3>
+    <form action="/sperimentazione_automi/chatbotABC.html" method="post" class="form-group" id="formData" autocomplete="on">
+      <label for="query">Question:</label>
+      <input type="text" name="query" id="query" class="form-control"
+        placeholder="Write down something you want to know about the automaton....">
+      <button type="submit" class="btn btn-primary mt-3 btn-lg btn-block">Send</button>
+    </form>
+    <div id="answer" class="mt-5"></div>
+    <br>
+    <br>
+    <br>
+    <h3 class="text-center mt-5">History of Q&A</h3>
+    <br>
+    <div class="table-responsive mt-5" style="height: 500px;">
+      <table id="history" class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Question</th>
+            <th>Answer</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <br>
+    <br>
+
+  <script>
+    const form = document.querySelector("form");
+    const answer = document.querySelector("#answer");
+    const table = document.querySelector("#history");
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      // Ottieni la query dell'utente
+      const query = form.elements.query.value;
+
+      // Invia la richiesta al server solo se la query non è vuota
+      if (query.trim()) {
+        /*const response = await fetch("//delorean.di.unito.it/novagraph/chatbotABC.html", {
+          method: "POST",
+          body: JSON.stringify({ query }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });*/
+
+        if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
+            var url = "http://localhost:3000/sperimentazione_automi/chatbotABC.html";
+        } else {
+            var url = "//delorean.di.unito.it/novagraph/sperimentazione_automi/chatbotABC.html";
+        }
+
+        const response = await fetch(url, {
+          method: "POST",
+          body: JSON.stringify({ query }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+
+        const data = await response.json();
+        answer.innerHTML = data.answer;
+
+        // Crea una nuova riga e aggiungi le celle
+        const row = table.insertRow(1);
+        const counterCell = row.insertCell(0);
+        const queryCell = row.insertCell(1);
+        const answerCell = row.insertCell(2);
+
+        // Imposta il contenuto delle celle
+        counterCell.innerHTML = table.rows.length - 1;
+        queryCell.innerHTML = data.query;
+        answerCell.innerHTML = data.answer;
+
+        // Pulisci la query dall'input
+        form.elements.query.value = "";
+      }
+    });
+  </script>

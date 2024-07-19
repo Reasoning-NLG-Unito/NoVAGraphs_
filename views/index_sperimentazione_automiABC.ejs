@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Novagraph</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ========================== -->
+        <!-- ========= css ============ -->
+        <!-- ========================== -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-zPXXoOhkaaGtJzUhR9E9XZ5Y5V7jK1RdfuV7z5cOFJnK7Q/cJxgMWVn+XfKmpY6ArvJ6wEa6J2BC8yKjJ0d7Ng==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            body {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #333;
+            }
+
+            h1,
+            h2,
+            label,
+            th {
+                font-weight: 500;
+                color: #000000;
+            }
+
+            .table-responsive {
+                overflow: auto;
+            }
+
+            .footer {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #f2f2f2;
+                padding: 10px;
+            }
+
+            .footer p {
+                flex: 1 1 100%;
+                text-align: center;
+                margin: 0;
+            }
+
+            .nav-tabs.nav-tabs-lg .nav-item .nav-link {
+                font-size: 1.3rem;
+                /* dimensione del testo */
+                padding: 1rem 2rem;
+                /* spazio interno (padding) del link */
+            }
+
+            .navbar-brand {
+                font-size: 1.6rem;
+                /* dimensione del testo */
+                padding: 1rem 2rem;
+                /* spazio interno (padding) del link */
+            }
+
+        </style>
+
+        <!-- ========================== -->
+        <!-- ========= js ============= -->
+        <!-- ========================== -->
+        <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- MathJax -->
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <a class="navbar-brand" href="#">NoVAGraphS</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08"
+                    aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarsExample08">
+                    <ul class="nav nav-tabs nav-tabs-lg">
+                        <li class="nav-item">
+                            <a class="nav-link <%= pageTitle === 'Homepage' ? 'active' : '' %>" href="/sperimentazione_automi/homepageABC">
+                                Homepage<span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <%= pageTitle === 'Automaton' ? 'active' : '' %>" href="/sperimentazione_automi/chatbotABC">
+                                Experiment 1<span class="sr-only"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <%= pageTitle === 'Diagram' ? 'active' : '' %>" href="/sperimentazione_automi/diagramABC">
+                                Experiment 2<span class="sr-only"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container my-5">
+            <%- include(section) %>
+        </div>
+
+        <footer class="footer">
+            <p>All Right Reserved © NoVAGraphS - Università degli Studi di Torino</p>
+        </footer>
+    </body>
+</html>

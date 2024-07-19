@@ -1,0 +1,143 @@
+<h1 class="text-center display-4">NoVABot</h1>
+
+<h3 class="text-center mb-5">Esempio 6 - Insiemi</h3>
+
+<div>
+    Nella figura ci sono due cerchi. In ciascun cerchio sono presenti degli elementi. Ci sono delle frecce orientate che partono da elementi nel primo cerchio (A) e arrivano a elementi del secondo cerchio (B).
+</div>
+
+<br>
+<br>
+
+<form action="/esempio1.html" method="post" class="form-group" id="formData" autocomplete="on">
+    <label for="query">Domanda:</label>
+    <input type="text" name="query" id="query" class="form-control" placeholder="Chiedimi qualcosa rispetto a questa funzione...">
+    
+    <button type="submit" class="btn btn-primary mt-3 btn-lg btn-block">Invia</button>
+</form>
+
+<div id="answer" class="mt-5"></div>
+
+<br>
+<br>
+
+<div class="bot-image-container d-none d-flex justify-content-center align-items-center">
+    <img src="img/insiemi/esempio6.svg" class="bot-image rounded mx-auto d-block" style="min-width: 600px; object-fit: contain;" alt="image">
+</div>
+
+<br>
+<br>
+
+<br>
+<br>
+<br>
+
+<h3 class="text-center mt-5">Storia del dialogo</h3>
+
+<br>
+
+<div class="table-responsive mt-5" style="height: 500px;">
+    <table id="history" class="table">
+    <thead>
+        <tr>
+        <th>#</th>
+        <th>Domanda</th>
+        <th>Risposta</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+    </table>
+</div>
+<br>
+<br>
+<br>
+
+
+<script>
+    $(document).ready(function() {
+        const form = $("form");
+        const answer = $("#answer");
+        const table = $("#history");
+
+        form.on("submit", async function(event) {
+            event.preventDefault();
+
+            // Ottieni la query dell'utente
+            const query = form.find("[name='query']").val();
+
+            // Invia la richiesta al server solo se la query non è vuota
+            if (query.trim()) {
+                if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
+                    var url = "http://localhost:3000/esempio6.html";
+                } else {
+                    var url = "//delorean.di.unito.it/novagraph/esempio6.html";
+                }
+
+                const response = await fetch(url, {
+                    method: "POST",
+                    body: JSON.stringify({ query }),
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                });
+
+                const data = await response.json();
+
+                answer.html(data.answer);
+                // apply mathjax to answer
+                MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+
+                // Crea una nuova riga e aggiungi le celle
+                const row = table.find("tbody").prepend("<tr></tr>").children().first();
+                row.append(`<td>${table.find("tbody tr").length}</td>`);
+                row.append(`<td>${data.query}</td>`);
+                row.append(`<td>${data.answer}</td>`);
+
+                // gestisci immagine
+                const image_link = data.image_link;
+                const bot_image = $('.bot-image');
+                const bot_image_container = $('.bot-image-container');
+
+                const svg = await fetch(image_link).then(response => response.text());
+
+                if (image_link === '') {
+                    bot_image_container.addClass('d-none');
+                    bot_image_container.html('');
+                } else {
+                    bot_image_container.removeClass('d-none');
+                    bot_image_container.html(svg);
+                }
+
+                // gestisci id_element
+                var id_elements = data.id_elements;
+                var style_names = data.style_names;
+                var style_values = data.style_values;
+
+                //check if id_elements have at least one element
+                if (id_elements.length > 0) {
+                    for (var i = 0; i < id_elements.length; i++) {
+                        var id_element = id_elements[i];
+                        var style_name = style_names[i];
+                        var style_value = style_values[i];
+
+                        if (id_element != '') {
+                            if (style_name == '') {
+                                style_name = 'fill';
+                            }
+                            if (style_value == '') {
+                                style_value = '#04ed00';
+                            }
+                            var $svgElement = $(id_element);
+                            $svgElement.css(style_name, style_value);
+                        }
+                    }
+                }
+
+                // Pulisci la query dall'input
+                form.find("[name='query']").val("");
+            }
+        });
+    });
+</script>
+
